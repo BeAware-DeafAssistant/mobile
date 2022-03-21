@@ -49,10 +49,11 @@ struct TextView : View {
                         TextEditor(
                             text: $writtenText
                         )
-                            .shadow(color: .black, radius: 5, x: 0, y: 4)
                             .frame(height: 300)
-                            .font(.custom("Avenir", size: 16))
-                            .cornerRadius(10)
+                            .minimumScaleFactor(0.5)
+                            .font(.custom("Avenir", size: 36))
+                            .lineLimit(5)
+                            .layoutPriority(1)
                             .border(Color("SecondaryColor"), width: 1)
                             .rotationEffect(.degrees(rotation))
                         Text("Preset phrases:")

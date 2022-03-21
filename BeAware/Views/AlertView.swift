@@ -54,13 +54,13 @@ struct AlertView : View {
                             .padding([.top, .leading, .trailing], 20.0)
                         
                         HStack {
-                            Text("Low")
+                            Text("\(Image(systemName:"speaker.wave.1.fill"))")
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
                                 .foregroundColor(Color(hex: 0x014579))
                                 .padding(.leading)
                             Spacer()
-                            Text("High")
+                            Text("\(Image(systemName:"speaker.wave.3.fill"))")
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
                                 .foregroundColor(Color(hex: 0x014579))
