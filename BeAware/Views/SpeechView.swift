@@ -26,7 +26,7 @@ struct SpeechView : View {
                             .font(Font.custom("Avenir", size: 24))
                             .padding(.top, 20)
                             .padding([.leading, .trailing], 30.0)
-                            .foregroundColor(Color (hex: 0xB2CCDE))
+                            .foregroundColor(Color (hex: 0xFFFFFF))
                             .frame(maxHeight: .infinity)
                     }
                     .fixedSize(horizontal: false, vertical: true)
@@ -63,12 +63,12 @@ struct SpeechView : View {
                             ZStack{
                                 Image(systemName: "mic.circle").resizable().scaledToFit()
                                     .frame(width: 50, height: 50)
-                                    .foregroundColor(Color(hex: 0xB2CCDE ))
+                                    .foregroundColor(Color(hex: 0xFFFFFF ))
                                     .accessibilityHidden(true)
                                 
                                 Image(systemName: "record.circle.fill").resizable().scaledToFit()
                                     .frame(width: 132, height: 132)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                                     .accessibilityLabel("Start Transcribing")
                                 
                             }.shadow(color: .black, radius: 5, x: 0, y: 4)
@@ -78,7 +78,7 @@ struct SpeechView : View {
                         {
                             Image(systemName: "stop.circle.fill").resizable().scaledToFit()
                                 .frame(width: 132, height: 132)
-                                .foregroundColor(Color(hex: 0xB2CCDE))
+                                .foregroundColor(Color(hex: 0xFFFFFF))
                                 .shadow(color: .black, radius: 5, x: 0, y: 4)
                                 .accessibilityLabel("Stop Transcribing")
                         }
@@ -105,6 +105,7 @@ struct SpeechView : View {
             }
         }// clsoing bracket for navigation view
         .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
  //closing bracket for vard body some view
     func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {

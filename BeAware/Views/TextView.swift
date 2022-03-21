@@ -21,13 +21,13 @@ struct TextView : View {
     var body : some View {
         NavigationView{
             ZStack{
-                Color(hex: 0x015697)
+                Color(hex: 0x014579)
                 ScrollView{
                     VStack(alignment: .leading) {
                         HStack{
                             Text("Tap below to start typing:")
                                 .font(Font.custom("Avenir", size: 17))
-                                .foregroundColor(Color(hex: 0xB2CCDE))
+                                .foregroundColor(Color(hex: 0xFFFFFF))
                             Spacer()
                             Button(
                                 action: {
@@ -43,7 +43,7 @@ struct TextView : View {
                                     .accessibilityLabel("flip screen")
                                     .accessibilityHint("Flips the screen for the other person to see what you typed")
                                     .accessibilityAddTraits(.isButton)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                             }
                         }
                         TextEditor(
@@ -58,14 +58,14 @@ struct TextView : View {
                         Text("Preset phrases:")
                             .font(Font.custom("Avenir", size: 24))
                             .fontWeight(.heavy)
-                            .foregroundColor(Color(hex: 0xB2CCDE))
+                            .foregroundColor(Color(hex: 0xFFFFFF))
                         //-------
                         ForEach(data, id: \.self) { item in
                             //---
                             HStack{
                                 Text("\(Image(systemName: "plus")) \(item)")
                                     .font(Font.custom("Avenir", size: 17))
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                                     .lineLimit(1)
                                     .accessibilityAddTraits(.isButton)
                                     .accessibilityHint("Tap to add preset phrase to the text editor above")
@@ -78,7 +78,7 @@ struct TextView : View {
                                     .accessibilityLabel("Delete")
                                     .accessibilityHint("Removes the preset phrase")
                                     .accessibilityAddTraits(.isButton)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                                     .onTapGesture(count: 1) {
                                         print("Right on!")
                                         complexSuccess2()
@@ -109,7 +109,7 @@ struct TextView : View {
                                 }
                             ){
                                 ZStack{
-                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color(hex: 0xB2CCDE)).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color(hex: 0xFFFFFF)).shadow(color: .black, radius: 5, x: 0, y: 4)
                                     Text("ADD").foregroundColor(Color("BrandColor"))
                                         .font(.custom("Avenir", size: 17))
                                         .accessibilityLabel("Add")
@@ -134,6 +134,7 @@ struct TextView : View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear(perform: prepareHaptics)
         .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
 

@@ -45,11 +45,11 @@ struct PartnerEntryView : View {
 
     var body: some View {
         ZStack{
-            Color(hex: 0x015697)
+            Color(hex: 0x014579)
                 .ignoresSafeArea()
             HStack{
                 ZStack{
-                    Color(hex: 0xB2CCDE)
+                    Color(hex: 0xFFFFFF)
                     Image("Logo")
                         .resizable()
                         .padding(.all)
@@ -66,15 +66,15 @@ struct PartnerEntryView : View {
                                     .font(Font.custom("Avenir", size: 16))
                                 
                                     .fontWeight(.black)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                                 Text("Transcribing")
                                     .font(Font.custom("Avenir", size: 16))
                                     .fontWeight(.bold)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                             }
                             .padding(.horizontal)
                             Text("\(Image(systemName: "stop.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
-                                .foregroundColor(Color(hex: 0xB2CCDE))
+                                .foregroundColor(Color(hex: 0xFFFFFF))
                                 .padding(.trailing)
                         }
                         else if name == "noise alert"
@@ -84,15 +84,15 @@ struct PartnerEntryView : View {
                                     .font(Font.custom("Avenir", size: 16))
                                 
                                     .fontWeight(.black)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                                 Text("On")
                                     .font(Font.custom("Avenir", size: 16))
                                     .fontWeight(.bold)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                             }
                             .padding(.horizontal)
                             Text("\(Image(systemName: "stop.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
-                                .foregroundColor(Color(hex: 0xB2CCDE))
+                                .foregroundColor(Color(hex: 0xFFFFFF))
                                 .padding(.trailing)
                         }
                         else
@@ -102,15 +102,15 @@ struct PartnerEntryView : View {
                                     .font(Font.custom("Avenir", size: 16))
                                 
                                     .fontWeight(.black)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                                 Text("Stopped")
                                     .font(Font.custom("Avenir", size: 16))
                                     .fontWeight(.bold)
-                                    .foregroundColor(Color(hex: 0xB2CCDE))
+                                    .foregroundColor(Color(hex: 0xFFFFFF))
                             }
                             .padding(.horizontal)
                             Text("\(Image(systemName: "record.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
-                                .foregroundColor(Color(hex: 0xB2CCDE))
+                                .foregroundColor(Color(hex: 0xFFFFFF))
                                 .padding(.trailing)
                         }
                     }
@@ -120,15 +120,15 @@ struct PartnerEntryView : View {
                                 .font(Font.custom("Avenir", size: 16))
                             
                                 .fontWeight(.black)
-                                .foregroundColor(Color(hex: 0xB2CCDE))
+                                .foregroundColor(Color(hex: 0xFFFFFF))
                             Text("Stopped")
                                 .font(Font.custom("Avenir", size: 16))
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(hex: 0xB2CCDE))
+                                .foregroundColor(Color(hex: 0xFFFFFF))
                         }
                         .padding(.horizontal)
                         Text("\(Image(systemName: "record.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
-                            .foregroundColor(Color(hex: 0xB2CCDE))
+                            .foregroundColor(Color(hex: 0xFFFFFF))
                             .padding(.trailing)
                     }
                 }
@@ -138,15 +138,15 @@ struct PartnerEntryView : View {
                             .font(Font.custom("Avenir", size: 16))
                         
                             .fontWeight(.black)
-                            .foregroundColor(Color(hex: 0xB2CCDE))
+                            .foregroundColor(Color(hex: 0xFFFFFF))
                         Text("Stopped")
                             .font(Font.custom("Avenir", size: 16))
                             .fontWeight(.bold)
-                            .foregroundColor(Color(hex: 0xB2CCDE))
+                            .foregroundColor(Color(hex: 0xFFFFFF))
                     }
                     .padding(.horizontal)
                     Text("\(Image(systemName: "record.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
-                        .foregroundColor(Color(hex: 0xB2CCDE))
+                        .foregroundColor(Color(hex: 0xFFFFFF))
                         .padding(.trailing)
                 }
             }
