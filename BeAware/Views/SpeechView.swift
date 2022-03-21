@@ -26,7 +26,7 @@ struct SpeechView : View {
                             .font(Font.custom("Avenir", size: 24))
                             .padding(.top, 20)
                             .padding([.leading, .trailing], 30.0)
-                            .foregroundColor(Color (hex: 0xFFFFFF))
+                            .foregroundColor(Color (hex: 0x014579))
                             .frame(maxHeight: .infinity)
                     }
                     .fixedSize(horizontal: false, vertical: true)
@@ -63,12 +63,12 @@ struct SpeechView : View {
                             ZStack{
                                 Image(systemName: "mic.circle").resizable().scaledToFit()
                                     .frame(width: 50, height: 50)
-                                    .foregroundColor(Color(hex: 0xFFFFFF ))
+                                    .foregroundColor(Color(hex: 0x014579 ))
                                     .accessibilityHidden(true)
                                 
                                 Image(systemName: "record.circle.fill").resizable().scaledToFit()
                                     .frame(width: 132, height: 132)
-                                    .foregroundColor(Color(hex: 0xFFFFFF))
+                                    .foregroundColor(Color(hex: 0x014579))
                                     .accessibilityLabel("Start Transcribing")
                                 
                             }.shadow(color: .black, radius: 5, x: 0, y: 4)
@@ -78,7 +78,7 @@ struct SpeechView : View {
                         {
                             Image(systemName: "stop.circle.fill").resizable().scaledToFit()
                                 .frame(width: 132, height: 132)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .shadow(color: .black, radius: 5, x: 0, y: 4)
                                 .accessibilityLabel("Stop Transcribing")
                         }
@@ -88,23 +88,33 @@ struct SpeechView : View {
                     ).accessibilityHint("This field populates in real time when the voice is being recorded")
                         .font(.custom("Avenir", size: 16))
                         .cornerRadius(10)
+                        .border(Color("SecondaryColor"), width: 1)
                         .padding(.init(top: 12, leading: 25, bottom: 10, trailing: 25))
                 }
             }
-            .navigationTitle("Speech").navigationBarTitleDisplayMode(.inline)
-            .navigationBarTitleTextColor(Color("BrandColor"))                            .toolbar{
+            .navigationTitle("SPEECH").navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleTextColor(Color("SecondaryColor"))                            .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
                     NavigationLink(
                         destination: SettingsView()
                     ) {
-                        Image(systemName: "gear")
-                            .foregroundColor(.blue)
+                        Image(systemName: "info.circle.fill")
+                            .foregroundColor(Color("SecondaryColor"))
                     }
                     
                 }
             }
         }// clsoing bracket for navigation view
+        .onAppear {
+            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation") // Forcing the rotation to portrait
+            AppDelegate.orientationLock = .portrait // And making sure it stays that way
+        }
+        .onDisappear {
+            AppDelegate.orientationLock = .all // Unlocking the rotation when leaving the view
+        }
+        // Added this to dismiss the keyboard when tapping anywhere else on the page
         .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
+        // Added this to fix iPad navigation issue
         .navigationViewStyle(StackNavigationViewStyle())
     }
  //closing bracket for vard body some view

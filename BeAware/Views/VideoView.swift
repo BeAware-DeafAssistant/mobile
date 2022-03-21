@@ -11,7 +11,7 @@ import AVKit
 struct VideoView: View {
     var body: some View {
         ZStack{
-                Color(hex: 0x014579)
+                Color(hex: 0xFFFFFF)
             ScrollView{
                 VStack{
                     VideoPlayer(player: AVPlayer(url: geturl()!)).frame(height: 400)
@@ -19,7 +19,8 @@ struct VideoView: View {
             }
         }
 
-    .navigationTitle("Video").navigationBarTitleTextColor(Color("BrandColor"))
+    .navigationTitle("VIDEO")
+    .navigationBarTitleTextColor(Color("SecondaryColor"))
     }
 }
 

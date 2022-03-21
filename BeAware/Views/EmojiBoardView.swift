@@ -29,7 +29,7 @@ struct EmojiBoardView : View {
                             ForEach(data, id: \.self) { item in
                                 ZStack{
                                     Circle()
-                                        .foregroundColor(Color(hex: 0xFFFFFF))
+                                        .foregroundColor(Color(hex: 0x014579))
                                         .frame(width:70, height:70)
                                         .shadow(color: .black, radius: 2, x: 0, y: 4)
                                     Text(item).font(Font.custom("Avenir", size: 36))
@@ -42,7 +42,7 @@ struct EmojiBoardView : View {
                         //                        {
                         //                            ZStack{
                         //                                Circle()
-                        //                                    .foregroundColor(Color(hex: 0xFFFFFF))
+                        //                                    .foregroundColor(Color(hex: 0x014579))
                         //                                    .frame(width:70, height:70)
                         //                                    .shadow(color: .black, radius: 2, x: 0, y: 4)
                         //                                Image(uiImage: uiImage!)
@@ -53,7 +53,7 @@ struct EmojiBoardView : View {
                             ForEach(images, id: \.self) { item in
                                 ZStack{
                                     Circle()
-                                        .foregroundColor(Color(hex: 0xFFFFFF))
+                                        .foregroundColor(Color(hex: 0x014579))
                                         .frame(width:70, height:70)
                                         .shadow(color: .black, radius: 2, x: 0, y: 4)
                                     Image(uiImage: item!.image)
@@ -68,7 +68,7 @@ struct EmojiBoardView : View {
                         Spacer ()
                         ZStack{
                             Circle()
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .frame(width:70, height:70)
                                 .shadow(color: .black, radius: 2, x: 0, y: 4)
                             Text("➕").font(Font.custom("Avenir", size: 36))
@@ -79,8 +79,8 @@ struct EmojiBoardView : View {
                     }
                     
                 }
-                .navigationTitle("Emoji Board")
-                .navigationBarTitleTextColor(Color("BrandColor"))
+                .navigationTitle("EMOJI BOARD")
+                .navigationBarTitleTextColor(Color("SecondaryColor"))
                 .navigationViewStyle(StackNavigationViewStyle())
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar{
@@ -88,8 +88,8 @@ struct EmojiBoardView : View {
                         NavigationLink(
                             destination: SettingsView()
                         ) {
-                            Image(systemName: "gear")
-                                .foregroundColor(.blue)
+                            Image(systemName: "info.circle.fill")
+                                .foregroundColor(Color("SecondaryColor"))
                         }
                     }
                 }
@@ -106,7 +106,6 @@ struct EmojiBoardView : View {
         print(inputImage)
         image = Image(uiImage: inputImage)
         uiImage = inputImage
-        print(image)
         images.append(AddedImage(image: inputImage))
     }
 }

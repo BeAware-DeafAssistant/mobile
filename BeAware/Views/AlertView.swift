@@ -28,54 +28,52 @@ struct AlertView : View {
                         
                         Text("Noise Length")
                             .font(Font.custom("Avenir", size: 24))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color(hex: 0xFFFFFF))
+                            .foregroundColor(Color(hex: 0x014579))
                             .padding([.top], 20.0)
                         Slider(value: $noiseLength, in: 1...10)
-                            .padding([.top, .leading, .trailing], 30.0)
+                            .padding([.top, .leading, .trailing], 20.0)
                         
                         HStack {
                             Text("Short")
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .padding(.leading)
                             Spacer()
                             Text("Long")
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .padding(.trailing)
                         }
                         Spacer(minLength: 20)
                         Text("Noise Threshold")
                             .font(Font.custom("Avenir", size: 24))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color(hex: 0xFFFFFF))
+                            .foregroundColor(Color(hex: 0x014579))
                         Slider(value: $noiseThreshold, in: 0...30)
-                            .padding([.top, .leading, .trailing], 30.0)
+                            .padding([.top, .leading, .trailing], 20.0)
                         
                         HStack {
                             Text("Low")
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .padding(.leading)
                             Spacer()
                             Text("High")
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .padding(.trailing)
                             
                         }
-                        Spacer(minLength: 40)
+                        Spacer(minLength: 30)
                         if !isRecording{
                             Image(systemName: "record.circle.fill")
                                 .resizable().scaledToFit()
                                 .shadow(color: .black, radius: 5, x: 0, y: 4)
                                 .frame(width: 132, height: 132)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .accessibilityLabel("Start Noise Alert")
                                 .onTapGesture {
                                     simpleBigHaptic()
@@ -95,7 +93,7 @@ struct AlertView : View {
                                 .resizable().scaledToFit()
                                 .shadow(color: .black, radius: 5, x: 0, y: 4)
                                 .frame(width: 132, height: 132)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .accessibilityLabel("Stop Noise Alert")
                                 .onTapGesture {
                                     simpleEndHaptic()
@@ -113,7 +111,7 @@ struct AlertView : View {
                             Text("Stop Noise Alert")
                                 .font(Font.custom("Avenir", size: 24))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .padding([.bottom], 20.0)
                                 .accessibilityHidden(true)
                         }
@@ -121,22 +119,22 @@ struct AlertView : View {
                             Text("Start Noise Alert")
                                 .font(Font.custom("Avenir", size: 24))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0xFFFFFF))
+                                .foregroundColor(Color(hex: 0x014579))
                                 .padding([.bottom], 20.0)
                                 .accessibilityHidden(true)
                         }
                     }
                 }}
-            .navigationTitle("Alert")
-            .navigationBarTitleTextColor(Color("BrandColor"))
+            .navigationTitle("ALERT")
+            .navigationBarTitleTextColor(Color("SecondaryColor"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
                     NavigationLink(
                         destination: SettingsView()
                     ) {
-                        Image(systemName: "gear")
-                            .foregroundColor(.blue)
+                        Image(systemName: "info.circle.fill")
+                            .foregroundColor(Color("SecondaryColor"))
                     }
                     
                 }
