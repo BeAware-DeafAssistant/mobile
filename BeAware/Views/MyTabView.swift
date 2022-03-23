@@ -18,15 +18,15 @@ struct MyTabView: View {
                 .tabItem {
                     Label("Speech", systemImage: "mic")
                 }
-            EmojiBoardView()
-                .tabItem {
-                    Label("Emoji Board", systemImage: "checkerboard.rectangle")
-                }
             TextView ()
                 .tabItem {
                     Label("Text", systemImage: "keyboard")
                 }
-            }
+            EmojiBoardView()
+                .tabItem {
+                    Label("Emoji Board", systemImage: "checkerboard.rectangle")
+                }
+        }
     }
 }
 

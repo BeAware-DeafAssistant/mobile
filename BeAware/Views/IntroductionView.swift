@@ -39,10 +39,11 @@ struct IntroductionView: View {
                             Text("\(Image(systemName: "waveform")) Alert - Be alerted of short or prolonged sounds\n")                .font(Font.custom("Avenir", size: 18))
                                 .foregroundColor(Color(hex: 0x014579))
 
-                            Text("\(Image(systemName: "checkerboard.rectangle")) Emoji Board - Select curated emojis or add ones to communicate easily\n")                        .font(Font.custom("Avenir", size: 18))
+                            Text("\(Image(systemName: "keyboard")) Text - Use a text field to communicate, which can also be played into live phone calls")
+                                .font(Font.custom("Avenir", size: 18))
                                 .foregroundColor(Color(hex: 0x014579))
 
-                            Text("\(Image(systemName: "keyboard")) Text - Use a text field to communicate")
+                            Text("\(Image(systemName: "checkerboard.rectangle")) Emoji Board - Communicate using curated emojis or add images\n")
                                 .font(Font.custom("Avenir", size: 18))
                                 .foregroundColor(Color(hex: 0x014579))
                         }.padding()

@@ -42,18 +42,23 @@ class SpeechRecognizer: ObservableObject {
     init() {
         recognizer = SFSpeechRecognizer()
         
-        Task(priority: .background) {
+        Task(priority: .high) {
             do {
+                print("10A")
                 guard recognizer != nil else {
+                    print("11")
                     throw RecognizerError.nilRecognizer
                 }
                 guard await SFSpeechRecognizer.hasAuthorizationToRecognize() else {
+                    print("12")
                     throw RecognizerError.notAuthorizedToRecognize
                 }
                 guard await AVAudioSession.sharedInstance().hasPermissionToRecord() else {
+                    print("13")
                     throw RecognizerError.notPermittedToRecord
                 }
             } catch {
+                print("14")
                 speakError(error)
             }
         }
@@ -70,16 +75,26 @@ class SpeechRecognizer: ObservableObject {
         The resulting transcription is continuously written to the published `transcript` property.
      */
     func transcribe() {
-        DispatchQueue(label: "Speech Recognizer Queue", qos: .background).async { [weak self] in
+        print("15B")
+        DispatchQueue(label: "Speech Recognizer Queue", qos: .background)
+            .async { [weak self] in
             guard let self = self, let recognizer = self.recognizer, recognizer.isAvailable else {
                 self?.speakError(RecognizerError.recognizerIsUnavailable)
                 return
             }
-            
+            print("16C")
             do {
+                print("17D-")
+
                 let (audioEngine, request) = try Self.prepareEngine()
+                print("17--")
+
                 self.audioEngine = audioEngine
+                print("17---")
+
                 self.request = request
+                print("17----")
+
                 // Create a recognition task for the speech recognition session.
                 // Keep a reference to the task so that it can be canceled.
                 self.task = recognizer.recognitionTask(with: request) { result, error in
@@ -109,7 +124,9 @@ class SpeechRecognizer: ObservableObject {
 
 //                self.task = recognizer.recognitionTask(with: request, resultHandler: self.recognitionHandler(result:error:))
             } catch {
+                print("19F")
                 self.reset()
+
                 self.speakError(error)
             }
         }
@@ -131,36 +148,62 @@ class SpeechRecognizer: ObservableObject {
     
     private static func prepareEngine() throws -> (AVAudioEngine, SFSpeechAudioBufferRecognitionRequest) {
         let audioEngine = AVAudioEngine()
-        
+        print("1E")
         let request = SFSpeechAudioBufferRecognitionRequest()
+        print("2")
         request.shouldReportPartialResults = true
-        
+        print("2-")
+
         // Configure the audio session for the app.
         let audioSession = AVAudioSession.sharedInstance()
-        try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
-        try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
-        let inputNode = audioEngine.inputNode
-        
+        print("2--")
+        do{
+            try audioSession.setCategory(.playAndRecord, mode: .voiceChat, options: .mixWithOthers)
+            print("2---")
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        }
+        catch let error as NSError {
+            print("Unable to activate audio session:  \(error.localizedDescription)")
+        }
+        print("2----")
+        let inputNode:AVAudioInputNode
+        do{
+            inputNode = audioEngine.inputNode
+            print("2-----")
+        }
+        catch let error as NSError {
+            print("Unable to activate audio session:  \(error.localizedDescription)")
+            let utterance = AVSpeechUtterance(string: "")
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+            utterance.rate = 0.5
+            let synthesizer = AVSpeechSynthesizer()        
+            synthesizer.speak(utterance)
+            inputNode = audioEngine.inputNode
+        }
         // Configure the microphone input.
         let recordingFormat = inputNode.outputFormat(forBus: 0)
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
             request.append(buffer)
         }
         audioEngine.prepare()
-        try audioEngine.start()
         
+        try audioEngine.start()
+        print("3")
+
         return (audioEngine, request)
     }
     
     private func recognitionHandler(result: SFSpeechRecognitionResult?, error: Error?) {
         let receivedFinalResult = result?.isFinal ?? false
         let receivedError = error != nil
-        
+        print("4")
+
         if receivedFinalResult || receivedError {
             audioEngine?.stop()
             audioEngine?.inputNode.removeTap(onBus: 0)
         }
-        
+        print("5")
+
         if let result = result {
             speak(result.bestTranscription.formattedString)
         }
@@ -172,11 +215,13 @@ class SpeechRecognizer: ObservableObject {
     
     private func speakError(_ error: Error) {
         var errorMessage = ""
+        print("6")
         if let error = error as? RecognizerError {
             errorMessage += error.message
         } else {
             errorMessage += error.localizedDescription
         }
+        print("7")
         transcript = "<< \(errorMessage) >>"
     }
 }

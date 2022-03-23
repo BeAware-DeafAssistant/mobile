@@ -37,5 +37,7 @@ var infoItems: [Info] = [
     Info(name:"License Agreement", icon: "applepencil"),
     Info(name:"About", icon: "questionmark.app"),
     Info(name:"Video", icon: "video.and.waveform"),
-    Info(name:"Widget", icon: "character.textbox")
+    Info(name:"Widget", icon: "character.textbox"),
+    Info(name:"Contact Us", icon: "envelope"),
+    Info(name:"Share", icon: "square.and.arrow.up")
 ]

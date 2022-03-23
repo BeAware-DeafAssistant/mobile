@@ -63,11 +63,13 @@ struct SpeechView : View {
                             ZStack{
                                 Image(systemName: "mic.circle").resizable().scaledToFit()
                                     .frame(width: 50, height: 50)
-                                    .foregroundColor(Color(hex: 0x014579 ))
+//                                    .foregroundColor(Color(hex: 0x6bd45f ))
+                                    .foregroundColor(Color(hex: 0x014579))
                                     .accessibilityHidden(true)
                                 
                                 Image(systemName: "record.circle.fill").resizable().scaledToFit()
                                     .frame(width: 132, height: 132)
+//                                    .foregroundColor(Color(hex: 0x6bd45f))
                                     .foregroundColor(Color(hex: 0x014579))
                                     .accessibilityLabel("Start Transcribing")
                                 
@@ -78,7 +80,7 @@ struct SpeechView : View {
                         {
                             Image(systemName: "stop.circle.fill").resizable().scaledToFit()
                                 .frame(width: 132, height: 132)
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color(hex: 0xea333c))
                                 .shadow(color: .black, radius: 5, x: 0, y: 4)
                                 .accessibilityLabel("Stop Transcribing")
                         }

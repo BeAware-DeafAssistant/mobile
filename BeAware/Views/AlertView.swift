@@ -15,9 +15,9 @@ var audioRecorder: AVAudioRecorder?
 //let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
 
 struct AlertView : View {
-    @State private var noiseLengthCounter: Double = 0
-    @State private var noiseLength: Double = 2
-    @State private var noiseThreshold: Double = 20
+    @State private var noiseLengthCounter = 0.0
+    @State private var noiseLength = 2.0
+    @State private var noiseThreshold = 20.0
     @State private var isRecording = false
     var body : some View {
         NavigationView{
@@ -26,53 +26,53 @@ struct AlertView : View {
                 ScrollView{
                     VStack {
                         
-                        Text("Noise Length")
+                        Text("Alert Frequency")
                             .font(Font.custom("Avenir", size: 24))
                             .foregroundColor(Color(hex: 0x014579))
                             .padding([.top], 20.0)
-                        Slider(value: $noiseLength, in: 1...10)
-                            .padding([.top, .leading, .trailing], 20.0)
-                        
-                        HStack {
-                            Text("Short")
-                                .font(Font.custom("Avenir", size: 20))
-                                .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0x014579))
-                                .padding(.leading)
-                            Spacer()
-                            Text("Long")
-                                .font(Font.custom("Avenir", size: 20))
-                                .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0x014579))
-                                .padding(.trailing)
+                        Slider(value: $noiseLength, in: 1...10, step: 1){
+                            Text("Length") //Is never visible, but is needed
+                        }minimumValueLabel:{
+                            Text("1s") //Is never visible, but is needed
+                        }maximumValueLabel:{
+                            Text("10s") //Is never visible, but is needed
                         }
+                        .padding(.horizontal)
+                        Text(String(describing: Int(noiseLength)) + " seconds")
+                            .font(Font.custom("Avenir", size: 20))
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color(hex: 0x014579))
+                            .padding(.leading)
                         Spacer(minLength: 20)
+                        
                         Text("Noise Threshold")
                             .font(Font.custom("Avenir", size: 24))
                             .foregroundColor(Color(hex: 0x014579))
-                        Slider(value: $noiseThreshold, in: 0...30)
-                            .padding([.top, .leading, .trailing], 20.0)
-                        
-                        HStack {
+                        Slider(value: $noiseThreshold, in: 0...30, step: 5){
+                            Text("Amplitude") //Is never visible, but is needed
+                        }minimumValueLabel:{
                             Text("\(Image(systemName:"speaker.wave.1.fill"))")
                                 .font(Font.custom("Avenir", size: 20))
-                                .fontWeight(.heavy)
                                 .foregroundColor(Color(hex: 0x014579))
-                                .padding(.leading)
-                            Spacer()
+                        }maximumValueLabel:{
                             Text("\(Image(systemName:"speaker.wave.3.fill"))")
                                 .font(Font.custom("Avenir", size: 20))
-                                .fontWeight(.heavy)
                                 .foregroundColor(Color(hex: 0x014579))
-                                .padding(.trailing)
-                            
                         }
+                        .padding(.horizontal)
+                        Text(String(describing: Int(noiseThreshold) + 60) + " dB")
+                            .font(Font.custom("Avenir", size: 20))
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color(hex: 0x014579))
+                            .padding(.leading)
+
                         Spacer(minLength: 30)
                         if !isRecording{
                             Image(systemName: "record.circle.fill")
                                 .resizable().scaledToFit()
                                 .shadow(color: .black, radius: 5, x: 0, y: 4)
                                 .frame(width: 132, height: 132)
+//                                .foregroundColor(Color(hex: 0x6bd45f))
                                 .foregroundColor(Color(hex: 0x014579))
                                 .accessibilityLabel("Start Noise Alert")
                                 .onTapGesture {
@@ -93,7 +93,7 @@ struct AlertView : View {
                                 .resizable().scaledToFit()
                                 .shadow(color: .black, radius: 5, x: 0, y: 4)
                                 .frame(width: 132, height: 132)
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color(hex: 0xea333c))
                                 .accessibilityLabel("Stop Noise Alert")
                                 .onTapGesture {
                                     simpleEndHaptic()

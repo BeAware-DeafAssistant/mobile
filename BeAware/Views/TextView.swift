@@ -6,12 +6,14 @@
 //
 import SwiftUI
 import CoreHaptics
+import AVFoundation
 
 struct TextView : View {
     @State private var rotation = 0.0
     @State private var engine: CHHapticEngine?
     @State private var writtenText: String = ""
     @State private var newPreset: String = ""
+    @AppStorage("TextFontSize") var fontSize = 50.0
     var placeholderString = "Tap here to start typing"
    
         @AppStorage("items") var data:[String] = ["I would like to see the manager, to request a special accommodation!",
@@ -29,6 +31,38 @@ struct TextView : View {
                                 .font(Font.custom("Avenir", size: 17))
                                 .foregroundColor(Color(hex: 0x014579))
                             Spacer()
+                        }
+                        TextEditor(
+                            text: $writtenText
+                        )
+                            .frame(height: 300)
+                            .minimumScaleFactor(0.5)
+                            .font(.custom("Avenir", size: fontSize))
+                            .lineLimit(5)
+                            .layoutPriority(1)
+                            .border(Color("SecondaryColor"), width: 1)
+                            .rotationEffect(.degrees(rotation))
+                        HStack{
+                            Button(
+                                action: {
+                                    let utterance = AVSpeechUtterance(string: writtenText)
+                                    utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+                                    utterance.rate = 0.5
+
+                                    let synthesizer = AVSpeechSynthesizer()
+                                    synthesizer.mixToTelephonyUplink = true
+                                    synthesizer.speak(utterance)
+
+                                }
+                            ){
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color(hex: 0x014579)).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                    Text("PLAY").foregroundColor(Color("BrandColor"))
+                                        .font(.custom("Avenir", size: 17))
+                                        .accessibilityLabel("Play")
+                                        .accessibilityHint("Play the the text loud, even to the other party during a call")
+                                }
+                            }
                             Button(
                                 action: {
                                     if rotation == 0{
@@ -39,23 +73,29 @@ struct TextView : View {
                                     }
                                 }
                             ){
-                                Image(systemName: "arrow.uturn.up.square.fill")
-                                    .accessibilityLabel("flip screen")
-                                    .accessibilityHint("Flips the screen for the other person to see what you typed")
-                                    .accessibilityAddTraits(.isButton)
-                                    .foregroundColor(Color(hex: 0x014579))
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 10).frame(width: 100, height: 40).foregroundColor(Color(hex: 0x014579)).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                    Text("FLIP TEXT").foregroundColor(Color("BrandColor"))
+                                        .font(.custom("Avenir", size: 17))
+                                        .accessibilityLabel("flip screen")
+                                        .accessibilityHint("Flips the screen for the other person to see what you typed")
+                                }
                             }
+                            Slider(value: $fontSize, in: 18...50, step: 4)
+                            {
+                                    Text("Speed")
+                                } minimumValueLabel: {
+                                    Text("A")
+                                        .font(Font.custom("Avenir", size: 12))
+                                        .foregroundColor(Color(hex: 0x014579))
+
+                                } maximumValueLabel: {
+                                    Text("A")
+                                        .font(Font.custom("Avenir", size: 20))
+                                        .foregroundColor(Color(hex: 0x014579))
+                                }
+                                .padding(.leading)
                         }
-                        TextEditor(
-                            text: $writtenText
-                        )
-                            .frame(height: 300)
-                            .minimumScaleFactor(0.5)
-                            .font(.custom("Avenir", size: 36))
-                            .lineLimit(5)
-                            .layoutPriority(1)
-                            .border(Color("SecondaryColor"), width: 1)
-                            .rotationEffect(.degrees(rotation))
                         Text("Preset phrases:")
                             .font(Font.custom("Avenir", size: 24))
                             .fontWeight(.heavy)
