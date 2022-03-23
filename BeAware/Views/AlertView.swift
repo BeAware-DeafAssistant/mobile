@@ -16,57 +16,60 @@ var audioRecorder: AVAudioRecorder?
 
 struct AlertView : View {
     @State private var noiseLengthCounter = 0.0
-    @State private var noiseLength = 2.0
-    @State private var noiseThreshold = 20.0
+    @AppStorage("noiseLength") var noiseLength = 2.0
+    @AppStorage("noiseThreshold") private var noiseThreshold = 20.0
     @State private var isRecording = false
+    @AppStorage("isCritical") var isCritical = false
     var body : some View {
         NavigationView{
             ZStack {
                 Color("BrandColor")
                 ScrollView{
                     VStack {
-                        
-                        Text("Alert Frequency")
-                            .font(Font.custom("Avenir", size: 24))
-                            .foregroundColor(Color(hex: 0x014579))
-                            .padding([.top], 20.0)
-                        Slider(value: $noiseLength, in: 1...10, step: 1){
-                            Text("Length") //Is never visible, but is needed
-                        }minimumValueLabel:{
-                            Text("1s") //Is never visible, but is needed
-                        }maximumValueLabel:{
-                            Text("10s") //Is never visible, but is needed
-                        }
-                        .padding(.horizontal)
-                        Text(String(describing: Int(noiseLength)) + " seconds")
-                            .font(Font.custom("Avenir", size: 20))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color(hex: 0x014579))
-                            .padding(.leading)
-                        Spacer(minLength: 20)
-                        
-                        Text("Noise Threshold")
-                            .font(Font.custom("Avenir", size: 24))
-                            .foregroundColor(Color(hex: 0x014579))
-                        Slider(value: $noiseThreshold, in: 0...30, step: 5){
-                            Text("Amplitude") //Is never visible, but is needed
-                        }minimumValueLabel:{
-                            Text("\(Image(systemName:"speaker.wave.1.fill"))")
-                                .font(Font.custom("Avenir", size: 20))
+                        VStack{
+                            Text("Alert Frequency")
+                                .font(Font.custom("Avenir", size: 24))
                                 .foregroundColor(Color(hex: 0x014579))
-                        }maximumValueLabel:{
-                            Text("\(Image(systemName:"speaker.wave.3.fill"))")
+                                .padding([.top], 20.0)
+                            Slider(value: $noiseLength, in: 1...10, step: 1){
+                                Text("Length") //Is never visible, but is needed
+                            }minimumValueLabel:{
+                                Text("1s") //Is never visible, but is needed
+                            }maximumValueLabel:{
+                                Text("10s") //Is never visible, but is needed
+                            }
+                            .padding(.horizontal)
+                            Text(String(describing: Int(noiseLength)) + " seconds")
                                 .font(Font.custom("Avenir", size: 20))
+                                .fontWeight(.heavy)
                                 .foregroundColor(Color(hex: 0x014579))
+                                .padding(.leading)
+                            Spacer(minLength: 20)
                         }
-                        .padding(.horizontal)
-                        Text(String(describing: Int(noiseThreshold) + 60) + " dB")
-                            .font(Font.custom("Avenir", size: 20))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color(hex: 0x014579))
-                            .padding(.leading)
+                        VStack{
+                            Text("Noise Threshold")
+                                .font(Font.custom("Avenir", size: 24))
+                                .foregroundColor(Color(hex: 0x014579))
+                            Slider(value: $noiseThreshold, in: 0...30, step: 5){
+                                Text("Amplitude") //Is never visible, but is needed
+                            }minimumValueLabel:{
+                                Text("\(Image(systemName:"speaker.wave.1.fill"))")
+                                    .font(Font.custom("Avenir", size: 20))
+                                    .foregroundColor(Color(hex: 0x014579))
+                            }maximumValueLabel:{
+                                Text("\(Image(systemName:"speaker.wave.3.fill"))")
+                                    .font(Font.custom("Avenir", size: 20))
+                                    .foregroundColor(Color(hex: 0x014579))
+                            }
+                            .padding(.horizontal)
+                            Text(String(describing: Int(noiseThreshold) + 60) + " dB")
+                                .font(Font.custom("Avenir", size: 20))
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color(hex: 0x014579))
+                                .padding(.leading)
 
-                        Spacer(minLength: 30)
+                            Spacer(minLength: 30)
+                        }
                         if !isRecording{
                             Image(systemName: "record.circle.fill")
                                 .resizable().scaledToFit()
@@ -123,6 +126,21 @@ struct AlertView : View {
                                 .padding([.bottom], 20.0)
                                 .accessibilityHidden(true)
                         }
+                        Spacer()
+                        HStack{
+                            NavigationLink(
+                                destination: CriticalAlertsView()
+                            ) {
+                                Text("Mark alerts as critical \(Image(systemName:"questionmark.app.fill"))")
+                                    .font(Font.custom("Avenir", size: 20))
+                                    .foregroundColor(Color(hex: 0x014579))
+                                    .padding(.leading)
+                            }.layoutPriority(1000)
+                            Spacer()
+                            Toggle("", isOn: $isCritical)
+                                .padding(.trailing)
+                        }
+                        .padding(.bottom)
                     }
                 }}
             .navigationTitle("ALERT")
@@ -143,7 +161,7 @@ struct AlertView : View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onReceive(timer) { input in
-            print("Raven was here")
+            print("1s timer on")
             if isRecording{
                 checkNoiseLevel()
             }
@@ -168,28 +186,15 @@ struct AlertView : View {
         if (peak > Float(60 + noiseThreshold))
         {
             
-            toggleTorch(on: true)
             
             
             let content = UNMutableNotificationContent()
             content.title = "Noise alert notification"
             content.body = "The noise is loud at " + String(describing: Int(peak.rounded())) + "dB"
-            content.sound = .defaultCritical
-//
-//            if (device.hasTorch) {
-//                do {
-//                    try device.lockForConfiguration()
-//                    if (device.torchMode == AVCaptureTorchMode.On) {
-//                        device.torchMode = AVCaptureTorchMode.Off
-//                    } else {
-//                        try device.setTorchModeOnWithLevel(1.0)
-//                    }
-//                    device.unlockForConfiguration()
-//                } catch {
-//                    print(error)
-//                }
-//            }
-//
+            if isCritical{
+                toggleTorch(on: true)
+                content.sound = .defaultCritical
+            }
             
             // Configure the recurring date.
             var dateComponents = DateComponents()
@@ -300,5 +305,3 @@ func toggleTorch(on: Bool) {
         print("Torch is not available")
     }
 }
-
-//AVCaptureDevice.maxAvailableTorchLevel.significand)

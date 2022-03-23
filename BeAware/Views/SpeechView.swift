@@ -107,13 +107,13 @@ struct SpeechView : View {
                 }
             }
         }// clsoing bracket for navigation view
-        .onAppear {
-            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation") // Forcing the rotation to portrait
-            AppDelegate.orientationLock = .portrait // And making sure it stays that way
-        }
-        .onDisappear {
-            AppDelegate.orientationLock = .all // Unlocking the rotation when leaving the view
-        }
+//        .onAppear {
+//            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation") // Forcing the rotation to portrait
+//            AppDelegate.orientationLock = .portrait // And making sure it stays that way
+//        }
+//        .onDisappear {
+//            AppDelegate.orientationLock = .all // Unlocking the rotation when leaving the view
+//        }
         // Added this to dismiss the keyboard when tapping anywhere else on the page
         .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
         // Added this to fix iPad navigation issue
