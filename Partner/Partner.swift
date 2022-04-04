@@ -45,11 +45,11 @@ struct PartnerEntryView : View {
 
     var body: some View {
         ZStack{
-            Color(hex: 0xFFFFFF)
+            Color("BrandColor")
                 .ignoresSafeArea()
             HStack{
                 ZStack{
-                    Color(hex: 0xFFFFFF)
+                    Color("BrandColor")
                     Image("Splash")
                         .resizable()
                         .scaledToFit()
@@ -66,11 +66,11 @@ struct PartnerEntryView : View {
                                     .font(Font.custom("Avenir", size: 16))
                                 
                                     .fontWeight(.black)
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                                 Text("Transcribing")
                                     .font(Font.custom("Avenir", size: 16))
                                     .fontWeight(.bold)
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                             }
                             Text("\(Image(systemName: "stop.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
                                 .foregroundColor(Color("stopred"))
@@ -81,11 +81,11 @@ struct PartnerEntryView : View {
                                 Text("Noise Alert")
                                     .font(Font.custom("Avenir", size: 16))
                                     .fontWeight(.black)
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                                 Text("On")
                                     .font(Font.custom("Avenir", size: 16))
                                     .fontWeight(.bold)
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                             }
                             Text("\(Image(systemName: "stop.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
                                 .foregroundColor(Color("stopred"))
@@ -96,14 +96,14 @@ struct PartnerEntryView : View {
                                 Text("Noise Alert")
                                     .font(Font.custom("Avenir", size: 16))
                                     .fontWeight(.black)
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                                 Text("Stopped")
                                     .font(Font.custom("Avenir", size: 16))
                                     .fontWeight(.bold)
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                             }
                             Text("\(Image(systemName: "record.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                         }
                     }
                     else{
@@ -111,14 +111,14 @@ struct PartnerEntryView : View {
                             Text("Noise Alert")
                                 .font(Font.custom("Avenir", size: 16))
                                 .fontWeight(.black)
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                             Text("Stopped")
                                 .font(Font.custom("Avenir", size: 16))
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                         }
                         Text("\(Image(systemName: "record.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
-                            .foregroundColor(Color(hex: 0x014579))
+                            .foregroundColor(Color("SecondaryColor"))
                     }
                 }
                 else{
@@ -127,14 +127,14 @@ struct PartnerEntryView : View {
                             .font(Font.custom("Avenir", size: 16))
                         
                             .fontWeight(.black)
-                            .foregroundColor(Color(hex: 0x014579))
+                            .foregroundColor(Color("SecondaryColor"))
                         Text("Stopped")
                             .font(Font.custom("Avenir", size: 16))
                             .fontWeight(.bold)
-                            .foregroundColor(Color(hex: 0x014579))
+                            .foregroundColor(Color("SecondaryColor"))
                     }
                     Text("\(Image(systemName: "record.circle.fill"))")                .font(Font.custom("Avenir", size: 48))
-                        .foregroundColor(Color(hex: 0x014579))
+                        .foregroundColor(Color("SecondaryColor"))
                 }
             }
         }

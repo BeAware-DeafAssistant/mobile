@@ -54,7 +54,7 @@ struct EmojiBoardView : View {
                             }
                         ){
                             ZStack{
-                                RoundedRectangle(cornerRadius: 10).frame(width: 120, height: 40).foregroundColor(Color(hex: 0x014579)).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                RoundedRectangle(cornerRadius: 10).frame(width: 120, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
                                 Text("ADD IMAGE").foregroundColor(Color("BrandColor"))
                                     .font(.custom("Avenir", size: 17))
                                     .accessibilityLabel("Add")
@@ -66,7 +66,7 @@ struct EmojiBoardView : View {
                             ForEach(images, id: \.self) { item in
                                 ZStack{
                                     Circle()
-                                        .foregroundColor(Color(hex: 0x014579))
+                                        .foregroundColor(Color("SecondaryColor"))
                                         .frame(width:70, height:70)
                                         .shadow(color: .black, radius: 2, x: 0, y: 4)
                                     Image(uiImage: item!.image)

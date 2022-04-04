@@ -29,13 +29,13 @@ struct AboutRow: View {
             Text(aboutItem.title)
                 .font(Font.custom("Avenir", size: 24))
                 .fontWeight(.heavy)
-                .foregroundColor(Color(hex: 0x014579))
+                .foregroundColor(Color("SecondaryColor"))
                 .multilineTextAlignment(.leading)
                 .padding(.top)
             
             Text(aboutItem.description)
                 .font(Font.custom("Avenir", size: 18))
-                .foregroundColor(Color(hex: 0x014579))
+                .foregroundColor(Color("SecondaryColor"))
                 .padding(.bottom)
         }
     }

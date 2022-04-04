@@ -7,6 +7,7 @@
 import SwiftUI
 import CoreHaptics
 import AVFoundation
+import AVFAudio
 
 struct TextView : View {
     @State private var rotation = 0.0
@@ -23,13 +24,13 @@ struct TextView : View {
     var body : some View {
         NavigationView{
             ZStack{
-                Color(hex: 0xFFFFFF)
+                Color("BrandColor")
                 ScrollView{
                     VStack(alignment: .leading) {
                         HStack{
                             Text("Tap below to start typing:")
                                 .font(Font.custom("Avenir", size: 17))
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                             Spacer()
                         }
                         TextEditor(
@@ -47,6 +48,7 @@ struct TextView : View {
                                 action: {
                                     let utterance = AVSpeechUtterance(string: writtenText)
                                     utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+                                    utterance.voice = AVSpeechSynthesisVoice(language: AVSpeechSynthesisVoice.currentLanguageCode())
                                     utterance.rate = 0.5
 
                                     let synthesizer = AVSpeechSynthesizer()
@@ -56,7 +58,7 @@ struct TextView : View {
                                 }
                             ){
                                 ZStack{
-                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color(hex: 0x014579)).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
                                     Text("PLAY").foregroundColor(Color("BrandColor"))
                                         .font(.custom("Avenir", size: 17))
                                         .accessibilityLabel("Play")
@@ -74,7 +76,7 @@ struct TextView : View {
                                 }
                             ){
                                 ZStack{
-                                    RoundedRectangle(cornerRadius: 10).frame(width: 100, height: 40).foregroundColor(Color(hex: 0x014579)).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                    RoundedRectangle(cornerRadius: 10).frame(width: 100, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
                                     Text("FLIP TEXT").foregroundColor(Color("BrandColor"))
                                         .font(.custom("Avenir", size: 17))
                                         .accessibilityLabel("flip screen")
@@ -87,26 +89,26 @@ struct TextView : View {
                                 } minimumValueLabel: {
                                     Text("A")
                                         .font(Font.custom("Avenir", size: 12))
-                                        .foregroundColor(Color(hex: 0x014579))
+                                        .foregroundColor(Color("SecondaryColor"))
 
                                 } maximumValueLabel: {
                                     Text("A")
                                         .font(Font.custom("Avenir", size: 20))
-                                        .foregroundColor(Color(hex: 0x014579))
+                                        .foregroundColor(Color("SecondaryColor"))
                                 }
                                 .padding(.leading)
                         }
                         Text("Preset phrases:")
                             .font(Font.custom("Avenir", size: 24))
                             .fontWeight(.heavy)
-                            .foregroundColor(Color(hex: 0x014579))
+                            .foregroundColor(Color("SecondaryColor"))
                         //-------
                         ForEach(data, id: \.self) { item in
                             //---
                             HStack{
                                 Text("\(Image(systemName: "plus")) \(item)")
                                     .font(Font.custom("Avenir", size: 17))
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                                     .lineLimit(1)
                                     .accessibilityAddTraits(.isButton)
                                     .accessibilityHint("Tap to add preset phrase to the text editor above")
@@ -119,7 +121,7 @@ struct TextView : View {
                                     .accessibilityLabel("Delete")
                                     .accessibilityHint("Removes the preset phrase")
                                     .accessibilityAddTraits(.isButton)
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                                     .onTapGesture(count: 1) {
                                         print("Right on!")
                                         complexSuccess2()
@@ -150,7 +152,7 @@ struct TextView : View {
                                 }
                             ){
                                 ZStack{
-                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color(hex: 0x014579)).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
                                     Text("ADD").foregroundColor(Color("BrandColor"))
                                         .font(.custom("Avenir", size: 17))
                                         .accessibilityLabel("Add")

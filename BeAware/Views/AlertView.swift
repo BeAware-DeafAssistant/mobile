@@ -29,7 +29,7 @@ struct AlertView : View {
                         VStack{
                             Text("Alert Frequency")
                                 .font(Font.custom("Avenir", size: 24))
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                                 .padding([.top], 20.0)
                             Slider(value: $noiseLength, in: 1...10, step: 1){
                                 Text("Length") //Is never visible, but is needed
@@ -42,30 +42,30 @@ struct AlertView : View {
                             Text(String(describing: Int(noiseLength)) + " seconds")
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                                 .padding(.leading)
                             Spacer(minLength: 20)
                         }
                         VStack{
                             Text("Noise Threshold")
                                 .font(Font.custom("Avenir", size: 24))
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                             Slider(value: $noiseThreshold, in: 0...30, step: 5){
                                 Text("Amplitude") //Is never visible, but is needed
                             }minimumValueLabel:{
                                 Text("\(Image(systemName:"speaker.wave.1.fill"))")
                                     .font(Font.custom("Avenir", size: 20))
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                             }maximumValueLabel:{
                                 Text("\(Image(systemName:"speaker.wave.3.fill"))")
                                     .font(Font.custom("Avenir", size: 20))
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                             }
                             .padding(.horizontal)
                             Text(String(describing: Int(noiseThreshold) + 60) + " dB")
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                                 .padding(.leading)
 
                             Spacer(minLength: 30)
@@ -76,7 +76,7 @@ struct AlertView : View {
                                 .shadow(color: .black, radius: 5, x: 0, y: 4)
                                 .frame(width: 132, height: 132)
 //                                .foregroundColor(Color(hex: 0x6bd45f))
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                                 .accessibilityLabel("Start Noise Alert")
                                 .onTapGesture {
                                     simpleBigHaptic()
@@ -114,7 +114,7 @@ struct AlertView : View {
                             Text("Stop Noise Alert")
                                 .font(Font.custom("Avenir", size: 24))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                                 .padding([.bottom], 20.0)
                                 .accessibilityHidden(true)
                         }
@@ -122,7 +122,7 @@ struct AlertView : View {
                             Text("Start Noise Alert")
                                 .font(Font.custom("Avenir", size: 24))
                                 .fontWeight(.heavy)
-                                .foregroundColor(Color(hex: 0x014579))
+                                .foregroundColor(Color("SecondaryColor"))
                                 .padding([.bottom], 20.0)
                                 .accessibilityHidden(true)
                         }
@@ -133,7 +133,7 @@ struct AlertView : View {
                             ) {
                                 Text("Mark alerts as critical \(Image(systemName:"questionmark.app.fill"))")
                                     .font(Font.custom("Avenir", size: 20))
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                                     .padding(.leading)
                             }.layoutPriority(1000)
                             Spacer()
@@ -265,7 +265,7 @@ func startRecording()
         try audioSession.setActive(true)
         audioRecorder?.isMeteringEnabled = true
     } catch let err {
-        print("Unable start recording", err)
+        print("Unable to start recording", err)
     }
 }
 

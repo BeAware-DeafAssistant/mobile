@@ -26,7 +26,7 @@ struct SpeechView : View {
                             .font(Font.custom("Avenir", size: 24))
                             .padding(.top, 20)
                             .padding([.leading, .trailing], 30.0)
-                            .foregroundColor(Color (hex: 0x014579))
+                            .foregroundColor(Color("SecondaryColor"))
                             .frame(maxHeight: .infinity)
                     }
                     .fixedSize(horizontal: false, vertical: true)
@@ -64,13 +64,13 @@ struct SpeechView : View {
                                 Image(systemName: "mic.circle").resizable().scaledToFit()
                                     .frame(width: 50, height: 50)
 //                                    .foregroundColor(Color(hex: 0x6bd45f ))
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                                     .accessibilityHidden(true)
                                 
                                 Image(systemName: "record.circle.fill").resizable().scaledToFit()
                                     .frame(width: 132, height: 132)
 //                                    .foregroundColor(Color(hex: 0x6bd45f))
-                                    .foregroundColor(Color(hex: 0x014579))
+                                    .foregroundColor(Color("SecondaryColor"))
                                     .accessibilityLabel("Start Transcribing")
                                 
                             }.shadow(color: .black, radius: 5, x: 0, y: 4)
