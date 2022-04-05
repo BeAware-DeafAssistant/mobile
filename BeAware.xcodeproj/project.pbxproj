@@ -33,6 +33,8 @@
 		76CE03ED27B0F416001FF3E9 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE03EC27B0F416001FF3E9 /* TextView.swift */; };
 		76CE03EF27B0F43D001FF3E9 /* EmojiBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE03EE27B0F43D001FF3E9 /* EmojiBoardView.swift */; };
 		76CE03F127B0F732001FF3E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE03F027B0F732001FF3E9 /* SettingsView.swift */; };
+		76E087E027FB80F90008F4F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76E087DE27FB80F90008F4F0 /* Localizable.strings */; };
+		76E087E327FB810E0008F4F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76E087E127FB810E0008F4F0 /* Localizable.strings */; };
 		76F348B927BC719600BABBAD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F348B827BC719600BABBAD /* ImagePicker.swift */; };
 		76F348BB27BC7E1D00BABBAD /* AddedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F348BA27BC7E1D00BABBAD /* AddedImages.swift */; };
 		76F348DE27BCC16E00BABBAD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F348DD27BCC16E00BABBAD /* WidgetKit.framework */; };
@@ -99,6 +101,8 @@
 		76CE03EC27B0F416001FF3E9 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		76CE03EE27B0F43D001FF3E9 /* EmojiBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiBoardView.swift; sourceTree = "<group>"; };
 		76CE03F027B0F732001FF3E9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		76E087DF27FB80F90008F4F0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Localizable.strings; sourceTree = "<group>"; };
+		76E087E227FB810E0008F4F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		76F348B827BC719600BABBAD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		76F348BA27BC7E1D00BABBAD /* AddedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedImages.swift; sourceTree = "<group>"; };
 		76F348DB27BCC16E00BABBAD /* PartnerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PartnerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +161,8 @@
 		1F1DD5EB27AB0EB9008FD66F /* BeAware */ = {
 			isa = PBXGroup;
 			children = (
+				76E087DD27FB80CE0008F4F0 /* fr.lproj */,
+				76E087DC27FB80C10008F4F0 /* en.lproj */,
 				76F348F427BCC69B00BABBAD /* BeAware.entitlements */,
 				76F348BC27BC7E2600BABBAD /* Views */,
 				1F1DD5EC27AB0EB9008FD66F /* BeAwareApp.swift */,
@@ -181,6 +187,22 @@
 				1F1DD5F327AB0EBA008FD66F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76E087DC27FB80C10008F4F0 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				76E087E127FB810E0008F4F0 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		76E087DD27FB80CE0008F4F0 /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				76E087DE27FB80F90008F4F0 /* Localizable.strings */,
+			);
+			path = fr.lproj;
 			sourceTree = "<group>";
 		};
 		76F348BC27BC7E2600BABBAD /* Views */ = {
@@ -291,6 +313,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 1F1DD5E027AB0EB9008FD66F;
 			productRefGroup = 1F1DD5EA27AB0EB9008FD66F /* Products */;
@@ -309,7 +332,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				760262FC27B47277003E52C1 /* Launch Screen.storyboard in Resources */,
+				76E087E027FB80F90008F4F0 /* Localizable.strings in Resources */,
 				1F1DD5F427AB0EBA008FD66F /* Preview Assets.xcassets in Resources */,
+				76E087E327FB810E0008F4F0 /* Localizable.strings in Resources */,
 				767F74CE27B63868009E757C /* ding.wav in Resources */,
 				769462E927C573E4006A660D /* BeAware-tutorial.mp4 in Resources */,
 				1F1DD5F127AB0EBA008FD66F /* Assets.xcassets in Resources */,
@@ -378,6 +403,25 @@
 			targetProxy = 76F348EA27BCC17000BABBAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76E087DE27FB80F90008F4F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76E087DF27FB80F90008F4F0 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		76E087E127FB810E0008F4F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76E087E227FB810E0008F4F0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1F1DD5F527AB0EBA008FD66F /* Debug */ = {

@@ -12,19 +12,19 @@ struct MyTabView: View {
         TabView {
             AlertView ()
                 .tabItem {
-                    Label("Alert", systemImage: "waveform")
+                    Label(NSLocalizedString("ALERT", comment: "Alert Title"), systemImage: "waveform")
                 }
             SpeechView()
                 .tabItem {
-                    Label("Speech", systemImage: "mic")
+                    Label(NSLocalizedString("SPEECH", comment: "Speech Title"), systemImage: "mic")
                 }
             TextView ()
                 .tabItem {
-                    Label("Text", systemImage: "keyboard")
+                    Label(NSLocalizedString("TEXT", comment: "Text Title"), systemImage: "keyboard")
                 }
             EmojiBoardView()
                 .tabItem {
-                    Label("Emoji Board", systemImage: "checkerboard.rectangle")
+                    Label(NSLocalizedString("EMOJI BOARD", comment: "Emoji Board Title"), systemImage: "checkerboard.rectangle")
                 }
         }
     }
