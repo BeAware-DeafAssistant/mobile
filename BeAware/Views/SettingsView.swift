@@ -50,6 +50,8 @@ struct SettingsView : View {
                                 WebView(url: URL(string: "https://forms.gle/RbQxn7ymAAHWGSoy8")!).navigationTitle("CONTACT")
                             case "License Agreement":
                                 WebView(url: URL(string: "https://github.com/philparkus/BeAware/blob/main/LICENSE")!).navigationTitle("LICENSE")
+                            case "Terms Of Use":
+                                WebView(url: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!).navigationTitle("TERMS OF USE")
                             default:
                                 VideoView()
                             }

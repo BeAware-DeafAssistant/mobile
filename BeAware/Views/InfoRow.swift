@@ -34,10 +34,11 @@ struct Info: Identifiable {
 
 var infoItems: [Info] = [
     Info(name:"Tutorial", icon: "book"),
-    Info(name:"License Agreement", icon: "applepencil"),
     Info(name:"About", icon: "questionmark.app"),
     Info(name:"Video", icon: "video.and.waveform"),
     Info(name:"Widget", icon: "character.textbox"),
+    Info(name:"Share", icon: "square.and.arrow.up"),
     Info(name:"Contact Us", icon: "envelope"),
-    Info(name:"Share", icon: "square.and.arrow.up")
+    Info(name:"License Agreement", icon: "applepencil"),
+    Info(name:"Terms Of Use", icon: "scroll"),
 ]
