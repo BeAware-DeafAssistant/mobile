@@ -11,10 +11,15 @@ import WidgetKit
 //private let speechRecognizer = SFSpeechRecognizer()
 
 struct SpeechView : View {
-    @StateObject var speechRecognizer = SpeechRecognizer() // StateObject and not Observed object because there's only one source of truth, so you'll only have one source of truth for the whole app
     @State private var isRecording = false
+    @State private var permissionStatus = SFSpeechRecognizerAuthorizationStatus.notDetermined
+    @State private var errorMessage = ""
+    @State private var transcription = ""
+    @State private var task: SFSpeechRecognitionTask? = SFSpeechRecognitionTask()
+    @State private var audioEngine = AVAudioEngine()
+    @State private var request = SFSpeechAudioBufferRecognitionRequest()
     private var player: AVPlayer { AVPlayer.sharedDingPlayer }
-
+    
     var body : some View {
         NavigationView{
             
@@ -30,7 +35,7 @@ struct SpeechView : View {
                             .frame(maxHeight: .infinity)
                     }
                     .fixedSize(horizontal: false, vertical: true)
-
+                    
                     Button(action: {
                         Task
                         {
@@ -41,11 +46,7 @@ struct SpeechView : View {
                                     userDefaults.setValue("transcribing", forKey: "state")
                                 }
                                 WidgetCenter.shared.reloadAllTimelines()
-
-                                player.seek(to: .zero)
-                                player.play()
-                                speechRecognizer.reset()
-                                speechRecognizer.transcribe()
+                                startSpeechRecognization()
                             }
                             else{
                                 simpleBigHaptic()
@@ -53,9 +54,7 @@ struct SpeechView : View {
                                     userDefaults.setValue("stopped", forKey: "state")
                                 }
                                 WidgetCenter.shared.reloadAllTimelines()
-
-                                speechRecognizer.stopTranscribing()
-                                print(speechRecognizer.transcript)
+                                cancelSpeechRecognization()
                             }
                         }})
                     {
@@ -63,18 +62,16 @@ struct SpeechView : View {
                             ZStack{
                                 Image(systemName: "mic.circle").resizable().scaledToFit()
                                     .frame(width: 50, height: 50)
-//                                    .foregroundColor(Color(hex: 0x6bd45f ))
                                     .foregroundColor(Color("SecondaryColor"))
                                     .accessibilityHidden(true)
                                 
                                 Image(systemName: "record.circle.fill").resizable().scaledToFit()
                                     .frame(width: 132, height: 132)
-//                                    .foregroundColor(Color(hex: 0x6bd45f))
                                     .foregroundColor(Color("SecondaryColor"))
                                     .accessibilityLabel("Start Transcribing")
                                 
                             }.shadow(color: .black, radius: 5, x: 0, y: 4)
-
+                            
                         }
                         else
                         {
@@ -85,8 +82,15 @@ struct SpeechView : View {
                                 .accessibilityLabel("Stop Transcribing")
                         }
                     }
+                    if (permissionStatus != SFSpeechRecognizerAuthorizationStatus.authorized)
+                    {
+                        Text("For this functionality to work, you need to provide permission in your settings")
+                            .font(Font.custom("Avenir", size: 16))
+                            .padding()
+                            .foregroundColor(Color("SecondaryColor"))
+                    }
                     TextEditor(
-                        text: $speechRecognizer.transcript
+                        text: $transcription
                     ).accessibilityHint("This field populates in real time when the voice is being recorded")
                         .font(.custom("Avenir", size: 16))
                         .cornerRadius(10)
@@ -107,19 +111,12 @@ struct SpeechView : View {
                 }
             }
         }// clsoing bracket for navigation view
-//        .onAppear {
-//            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation") // Forcing the rotation to portrait
-//            AppDelegate.orientationLock = .portrait // And making sure it stays that way
-//        }
-//        .onDisappear {
-//            AppDelegate.orientationLock = .all // Unlocking the rotation when leaving the view
-//        }
-        // Added this to dismiss the keyboard when tapping anywhere else on the page
         .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
+        .onAppear{requestPermission()}
         // Added this to fix iPad navigation issue
         .navigationViewStyle(StackNavigationViewStyle())
     }
- //closing bracket for vard body some view
+    //closing bracket for vard body some view
     func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
         if available {
             print("Available")
@@ -127,7 +124,77 @@ struct SpeechView : View {
             print("Available")
         }
     }
+    
+    func requestPermission()  {
+        SFSpeechRecognizer.requestAuthorization { (authState) in
+            OperationQueue.main.addOperation {
+                if authState == .authorized {
+                    permissionStatus = .authorized
+                } else if authState == .denied {
+                    permissionStatus = .denied
+                } else if authState == .notDetermined {
+                    permissionStatus = .notDetermined
+                } else if authState == .restricted {
+                    permissionStatus = .restricted
+                }
+            }
+        }
+    }
+    
+    func startSpeechRecognization(){
+        let node = audioEngine.inputNode
+        let recordingFormat = node.outputFormat(forBus: 0)
+        
+        node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, _) in
+            request.append(buffer)
+        }
+        
+        audioEngine.prepare()
+        do {
+            try audioEngine.start()
+        } catch let error {
+            errorMessage = "Error comes here for starting the audio listner =\(error.localizedDescription)"
+        }
+        
+        guard let myRecognization = SFSpeechRecognizer() else {
+            errorMessage = "Recognization is not allow on your local"
+            return
+        }
+        
+        print(myRecognization.isAvailable)
+        if !myRecognization.isAvailable {
+            errorMessage = "Recognization is not free right now, Please try again after some time."
+        }
+        
+        task = myRecognization.recognitionTask(with: request) { (response, error) in
+            guard let response = response else {
+                if error != nil {
+                    errorMessage = error.debugDescription
+                }else {
+                    errorMessage = "Problem in giving the response"
+                }
+                return
+            }
+            let message = response.bestTranscription.formattedString
+            transcription = message
+        }
+    }
+    
+    func cancelSpeechRecognization() {
+        task?.finish()
+        task?.cancel()
+        task = nil
+        
+        request.endAudio()
+        audioEngine.stop()
+        
+        //MARK: UPDATED
+        if audioEngine.inputNode.numberOfInputs > 0 {
+            audioEngine.inputNode.removeTap(onBus: 0)
+        }
+    }
 }
+
 struct SpeechView_Previews : PreviewProvider {
     static var previews: some View {
         SpeechView()

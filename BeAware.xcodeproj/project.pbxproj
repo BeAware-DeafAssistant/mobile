@@ -14,7 +14,6 @@
 		1FEB47DE27C40BCA0060F29A /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB47DD27C40BCA0060F29A /* TutorialView.swift */; };
 		1FEB47E027C433E40060F29A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB47DF27C433E40060F29A /* VideoView.swift */; };
 		760262FC27B47277003E52C1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760262FB27B47277003E52C1 /* Launch Screen.storyboard */; };
-		767F74CA27B6351B009E757C /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F74C927B6351B009E757C /* SpeechRecognizer.swift */; };
 		767F74CC27B635F9009E757C /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F74CB27B635F9009E757C /* AVPlayer+Ding.swift */; };
 		767F74CE27B63868009E757C /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 767F74CD27B63868009E757C /* ding.wav */; };
 		769462E927C573E4006A660D /* BeAware-tutorial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 769462E827C573E4006A660D /* BeAware-tutorial.mp4 */; };
@@ -82,7 +81,6 @@
 		1FEB47DF27C433E40060F29A /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		76019E5227B052C200042B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760262FB27B47277003E52C1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		767F74C927B6351B009E757C /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		767F74CB27B635F9009E757C /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		767F74CD27B63868009E757C /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		769462E827C573E4006A660D /* BeAware-tutorial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeAware-tutorial.mp4"; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 				1F1DD5F027AB0EBA008FD66F /* Assets.xcassets */,
 				1F1DD5F227AB0EBA008FD66F /* Preview Content */,
 				760262FB27B47277003E52C1 /* Launch Screen.storyboard */,
-				767F74C927B6351B009E757C /* SpeechRecognizer.swift */,
 				767F74CB27B635F9009E757C /* AVPlayer+Ding.swift */,
 				767F74CD27B63868009E757C /* ding.wav */,
 				76F348B827BC719600BABBAD /* ImagePicker.swift */,
@@ -379,7 +376,6 @@
 				76F348E927BCC17000BABBAD /* Partner.intentdefinition in Sources */,
 				76F348F227BCC37100BABBAD /* Extensions.swift in Sources */,
 				76CC486B27E964B100EF1505 /* ShareSheet.swift in Sources */,
-				767F74CA27B6351B009E757C /* SpeechRecognizer.swift in Sources */,
 				76CE03ED27B0F416001FF3E9 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
