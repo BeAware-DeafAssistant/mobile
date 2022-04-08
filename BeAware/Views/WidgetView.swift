@@ -29,15 +29,15 @@ struct WidgetView: View {
                             .foregroundColor(Color("SecondaryColor"))
                             .multilineTextAlignment(.leading)
                             .padding(.top)
-                        Text("1    From the Home Screen, touch and hold a widget or an empty area until the apps jiggle.")                .font(Font.custom("Avenir", size: 18))
+                        Text("1. From the Home Screen, touch and hold a widget or an empty area until the apps jiggle.")                .font(Font.custom("Avenir", size: 18))
                             .foregroundColor(Color("SecondaryColor"))
                             .padding(.bottom)
 
-                        Text("2    Tap the Add button (+) in the upper-left corner.")                .font(Font.custom("Avenir", size: 18))
+                        Text("2. Tap the Add button (+) in the upper-left corner.")                .font(Font.custom("Avenir", size: 18))
                             .foregroundColor(Color("SecondaryColor"))
                             .padding(.bottom)
 
-                        Text("3    Select the BeAware widget and then tap Add Widget and then tap Done.")
+                        Text("3. Select the BeAware widget and then tap Add Widget and then tap Done.")
                             .font(Font.custom("Avenir", size: 18))
                             .foregroundColor(Color("SecondaryColor"))
                             .padding(.bottom)

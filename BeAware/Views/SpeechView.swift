@@ -179,7 +179,7 @@ struct SpeechView : View {
             transcription = message
         }
     }
-    
+    // Figured out thanks to https://www.wepstech.com/multi-user-voice-recognition-in-ios-swift-5/
     func cancelSpeechRecognization() {
         task?.finish()
         task?.cancel()

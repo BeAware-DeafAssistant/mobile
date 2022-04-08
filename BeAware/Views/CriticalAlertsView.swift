@@ -29,11 +29,13 @@ struct CriticalAlertsView: View {
                             .foregroundColor(Color("SecondaryColor"))
                             .multilineTextAlignment(.leading)
                             .padding(.top)
-                        Text("1    Open the Settings app, tap Accessibility, then tap Audio/Visual.")                .font(Font.custom("Avenir", size: 18))
+                        
+                        Text("1. Open the Settings app, tap Accessibility, then tap Audio/Visual.")
+                            .font(Font.custom("Avenir", size: 18))
                             .foregroundColor(Color("SecondaryColor"))
                             .padding(.bottom)
-
-                        Text("2    Turn on LED Flash for Alerts.")                .font(Font.custom("Avenir", size: 18))
+                        Text("2. Turn on LED Flash for Alerts.")
+                            .font(Font.custom("Avenir", size: 18))
                             .foregroundColor(Color("SecondaryColor"))
                             .padding(.bottom)
 

@@ -15,7 +15,6 @@ struct TextView : View {
     @State private var writtenText: String = ""
     @State private var newPreset: String = ""
     @AppStorage("TextFontSize") var fontSize = 50.0
-    var placeholderString = "Tap here to start typing"
    
     @AppStorage("items") var data:[String] = ["Why was I pulled over?","I'm deaf/Hard of Hearing"]
 
@@ -98,7 +97,7 @@ struct TextView : View {
                                 }
                                 .padding(.leading)
                         }
-                        Text("Preset phrases:")
+                        Text("Preset Phrases:")
                             .font(Font.custom("Avenir", size: 24))
                             .fontWeight(.heavy)
                             .foregroundColor(Color("SecondaryColor"))
@@ -139,7 +138,7 @@ struct TextView : View {
                         }
                         //-------
                         HStack{
-                            TextField("Type here...", text: $newPreset )
+                            TextField("Type here to add...", text: $newPreset )
                                 .frame(height: 50.0)
                                 .accessibilityLabel("Input a preset phrase you would like to add")
                                 .font(.custom("Avenir", size: 17))

@@ -17,7 +17,7 @@ struct SettingsView : View {
             Color("BrandColor")
             VStack {
                 List(infoItems) { item in
-                    if item.name == "Share"
+                    if item.name == NSLocalizedString("Share", comment: "Share")
                     {
                         Button(action: {
                             self.showShareSheet.toggle()
@@ -36,21 +36,21 @@ struct SettingsView : View {
                     else{
                         NavigationLink{
                             switch item.name{
-                            case "Video":
+                            case NSLocalizedString("Video", comment:"Video"):
                                 VideoView()
-                            case "Tutorial":
+                            case NSLocalizedString("Tutorial", comment: "Tutorial"):
                                 TutorialView()
-                            case "About":
+                            case NSLocalizedString("About Us", comment: "About"):
                                 AboutView()
-                            case "Widget":
+                            case NSLocalizedString("Widget", comment: "Widget"):
                                 WidgetView()
-                            case "Share":
+                            case NSLocalizedString("Share", comment: "Share"):
                                 WidgetView()
-                            case "Contact Us":
-                                WebView(url: URL(string: "https://forms.gle/RbQxn7ymAAHWGSoy8")!).navigationTitle("CONTACT")
-                            case "License Agreement":
-                                WebView(url: URL(string: "https://github.com/philparkus/BeAware/blob/main/LICENSE")!).navigationTitle("LICENSE")
-                            case "Terms Of Use":
+                            case NSLocalizedString("Contact Us", comment: "Contact Us"):
+                                WebView(url: URL(string: "https://forms.gle/RbQxn7ymAAHWGSoy8")!).navigationTitle("CONTACT US")
+                            case NSLocalizedString("License Agreement", comment: "License Agreement"):
+                                WebView(url: URL(string: "https://github.com/philparkus/BeAware/blob/main/LICENSE")!).navigationTitle("LICENSE AGREEMENT")
+                            case NSLocalizedString("Terms Of Use", comment: "Terms Of Use"):
                                 WebView(url: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!).navigationTitle("TERMS OF USE")
                             default:
                                 VideoView()

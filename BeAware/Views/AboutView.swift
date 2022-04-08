@@ -48,8 +48,12 @@ struct About: Identifiable {
 }
 
 var aboutItems: [About] = [
-    About(title:"WHO", description: "This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit"),
-    About(title:"WHY", description: "Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive"),
-    About(title:"FEEDBACK", description: "The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com"),
-    About(title:"CONTRIBUTE", description: "We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests"),
+    About(title:NSLocalizedString("WHO", comment: "WHO"),
+          description: NSLocalizedString("This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit", comment: "1st section")),
+    About(title:NSLocalizedString("WHY", comment: "WHY"),
+          description: NSLocalizedString("Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive", comment: "Section 2")),
+    About(title:NSLocalizedString("FEEDBACK", comment: "FEEDBACK"),
+          description: NSLocalizedString("The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com",comment: "3rd section")),
+    About(title:NSLocalizedString("CONTRIBUTE", comment: "CONTRIBUTE"),
+          description: NSLocalizedString("We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests", comment: "Last paragraph")),
 ]

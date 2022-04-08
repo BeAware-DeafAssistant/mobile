@@ -9,62 +9,60 @@ import SwiftUI
 
 struct TutorialView: View {
     private var idiom = UIDevice.current.userInterfaceIdiom == .pad ? "iPad" : "iPhone"
-
+    
     var body: some View {
-            ZStack{
-                Color("BrandColor")
-                ScrollView{
-                    VStack{
-                        Spacer()
-                        Text("Welcome to BeAware")
-                            .font(Font.custom("Avenir", size: 18))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color("SecondaryColor"))
-                            .padding()
-
-                        Text("This app has 4 main functions:")
-                            .font(Font.custom("Avenir", size: 18))
-                            .foregroundColor(Color("SecondaryColor"))
-                            .padding()
-                                
-                        VStack(alignment: .leading){
-                            Text("\(Image(systemName: "waveform")) Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you\n") // TODO: Use idiom instead of device
+        ZStack{
+            Color("BrandColor")
+            ScrollView{
+                VStack{
+                    Spacer()
+                    Text("Welcome to BeAware")
+                        .font(Font.custom("Avenir", size: 18))
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color("SecondaryColor"))
+                        .padding()
+                    
+                    Text("This app has 4 main functions:")
+                        .font(Font.custom("Avenir", size: 18))
+                        .foregroundColor(Color("SecondaryColor"))
+                        .padding()
+                    
+                    VStack(alignment: .leading){
+                        HStack{
+                            Text("\(Image(systemName: "waveform")) ")
+                                .foregroundColor(Color("SecondaryColor"))
+                            Text(NSLocalizedString("Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you", comment: "ALERT") + "\n") // TODO: Use idiom instead of device
                                 .font(Font.custom("Avenir", size: 18))
                                 .foregroundColor(Color("SecondaryColor"))
-
-                            Text("\(Image(systemName: "mic")) Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background\n")
+                        }
+                        HStack{
+                            Text("\(Image(systemName: "mic")) ")
+                                .foregroundColor(Color("SecondaryColor"))
+                            
+                            Text(NSLocalizedString("Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background", comment: "Speech") + "\n")
                                 .font(Font.custom("Avenir", size: 18))
                                 .foregroundColor(Color("SecondaryColor"))
-
-                            Text("\(Image(systemName: "keyboard")) Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases\n")
+                        }
+                        HStack{
+                            Text("\(Image(systemName: "keyboard")) ")
+                                .foregroundColor(Color("SecondaryColor"))
+                            Text(NSLocalizedString("Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases", comment: "Text") + "\n")
                                 .font(Font.custom("Avenir", size: 18))
                                 .foregroundColor(Color("SecondaryColor"))
-
-                            Text("\(Image(systemName: "checkerboard.rectangle")) Emoji Board - Communicate using curated emojis or add images")
+                        }
+                        HStack{
+                            Text("\(Image(systemName: "checkerboard.rectangle")) ")
+                                .foregroundColor(Color("SecondaryColor"))
+                            Text(NSLocalizedString("Emoji Board - Communicate using curated emojis or add images",
+                                                   comment: "Emoji") + "\n")
                                 .font(Font.custom("Avenir", size: 18))
                                 .foregroundColor(Color("SecondaryColor"))
-                        }.padding()
-                        Spacer()
-//                        Button(
-//                            action: {
-//                                print("Hi")
-//                                self.isActive = true
-//                            }
-//                        ){
-//                                    Text("Continue")
-//                                        .fontWeight(.semibold)
-//                                        .font(Font.custom("Avenir", size: 18))
-//                                        .frame(width: 190)
-//                                    .padding()
-//                                    .foregroundColor(Color("BrandColor"))
-//                                    .background(Color("SecondaryColor"))
-//
-//                        }   .cornerRadius(8)
-                        Spacer()
-                    }
+                        }
+                    }.padding()
+                    Spacer()
                 }
             }
-        // }
+        }
         .navigationTitle("TUTORIAL")
         .navigationBarTitleTextColor(Color("SecondaryColor"))
     }

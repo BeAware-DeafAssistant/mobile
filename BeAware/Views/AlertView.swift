@@ -37,7 +37,7 @@ struct AlertView : View {
                                 Text("10s") //Is never visible, but is needed
                             }
                             .padding(.horizontal)
-                            Text(String(describing: Int(noiseLength)) + " seconds")
+                            Text(String(describing: Int(noiseLength)) + " " + NSLocalizedString("seconds", comment: "2 seconds"))
                                 .font(Font.custom("Avenir", size: 20))
                                 .fontWeight(.heavy)
                                 .foregroundColor(Color("SecondaryColor"))
@@ -129,8 +129,8 @@ struct AlertView : View {
                             NavigationLink(
                                 destination: CriticalAlertsView()
                             ) {
-                                Text("Mark alerts as critical \(Image(systemName:"questionmark.app.fill"))")
-                                    .font(Font.custom("Avenir", size: 20))
+                                Text(NSLocalizedString("Mark alerts as critical", comment: "Mark alerts as critical") + " 􀿩")
+                                    .font(Font.custom("Avenir", size: 18))
                                     .foregroundColor(Color("SecondaryColor"))
                                     .padding(.leading)
                             }.layoutPriority(1000)
@@ -141,7 +141,7 @@ struct AlertView : View {
                         .padding(.bottom)
                     }
                 }}
-            .navigationTitle("ALERT")
+            .navigationTitle(NSLocalizedString("ALERT", comment: "Alert Navigation Page Title"))
             .navigationBarTitleTextColor(Color("SecondaryColor"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
