@@ -17,9 +17,7 @@ struct TextView : View {
     @AppStorage("TextFontSize") var fontSize = 50.0
     var placeholderString = "Tap here to start typing"
    
-        @AppStorage("items") var data:[String] = ["I would like to see the manager, to request a special accommodation!",
-                                        "Why was I pulled over?",
-                                        "I'm deaf/Hard of Hearing"]
+    @AppStorage("items") var data:[String] = ["Why was I pulled over?","I'm deaf/Hard of Hearing"]
 
     var body : some View {
         NavigationView{
@@ -27,11 +25,13 @@ struct TextView : View {
                 Color("BrandColor")
                 ScrollView{
                     VStack(alignment: .leading) {
-                        HStack{
-                            Text("Tap below to start typing:")
-                                .font(Font.custom("Avenir", size: 17))
-                                .foregroundColor(Color("SecondaryColor"))
-                            Spacer()
+                        if writtenText == ""{
+                            HStack{
+                                Text("Tap below to start typing:")
+                                    .font(Font.custom("Avenir", size: 17))
+                                    .foregroundColor(Color("SecondaryColor"))
+                                Spacer()
+                            }
                         }
                         TextEditor(
                             text: $writtenText
