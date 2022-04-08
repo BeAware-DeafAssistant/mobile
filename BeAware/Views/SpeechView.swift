@@ -13,7 +13,7 @@ import WidgetKit
 struct SpeechView : View {
     @State private var isRecording = false
     @State private var permissionStatus = SFSpeechRecognizerAuthorizationStatus.notDetermined
-    @State private var errorMessage = ""
+    @State private var errorMessage = "For this functionality to work, you need to provide permission in your settings"
     @State private var transcription = ""
     @State private var task: SFSpeechRecognitionTask? = SFSpeechRecognitionTask()
     @State private var audioEngine = AVAudioEngine()
@@ -84,7 +84,7 @@ struct SpeechView : View {
                     }
                     if (permissionStatus != SFSpeechRecognizerAuthorizationStatus.authorized)
                     {
-                        Text("For this functionality to work, you need to provide permission in your settings")
+                        Text(errorMessage)
                             .font(Font.custom("Avenir", size: 16))
                             .padding()
                             .foregroundColor(Color("SecondaryColor"))
@@ -169,7 +169,7 @@ struct SpeechView : View {
         task = myRecognization.recognitionTask(with: request) { (response, error) in
             guard let response = response else {
                 if error != nil {
-                    errorMessage = error.debugDescription
+                    errorMessage = error?.localizedDescription ?? "For this functionality to work, you need to provide permission in your settings"
                 }else {
                     errorMessage = "Problem in giving the response"
                 }
