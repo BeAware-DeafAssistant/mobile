@@ -27,9 +27,24 @@ extension View {
         let uiColor = UIColor(color)
     
         // Set appearance for both normal and large sizes.
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: uiColor, .font:UIFont(name: "Avenir-Black", size: 24)!]
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: uiColor, .font:UIFont(name: "Avenir-Black", size: 30)! ]
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.titleTextAttributes = [.foregroundColor: uiColor, .font:UIFont(name: "Avenir-Black", size: 24)!]
+        appearance.largeTitleTextAttributes = [.foregroundColor: uiColor, .font:UIFont(name: "Avenir-Black", size: 30)! ]
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+
+//        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: uiColor, .font:UIFont(name: "Avenir-Black", size: 24)!]
+//        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: uiColor, .font:UIFont(name: "Avenir-Black", size: 30)! ]
         
+        let tabAppearance = UITabBarAppearance()
+        tabAppearance.configureWithOpaqueBackground()
+        UITabBar.appearance().standardAppearance = tabAppearance
+
+        if #available(iOSApplicationExtension 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = tabAppearance
+        }
         return self
     }
 }

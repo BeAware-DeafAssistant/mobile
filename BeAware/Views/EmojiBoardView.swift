@@ -11,6 +11,7 @@ struct EmojiBoardView : View {
     @State private var inputImage: UIImage?
     @State private var uiImage: UIImage?
     @State private var image: Image?
+    @AppStorage("SelectedEmoji") var selectedEmoji = "🙂"
     @State var data = ["✈️","🍽","🏥","⏰","☕️","🎵","💦","🧻","☀️","📷","🚌","☎️","🏠","🌙","🔋","💵"]
     @State var images: [AddedImage?] = []
     @State var imageHere: Image?
@@ -25,35 +26,47 @@ struct EmojiBoardView : View {
                 
                 ScrollView{
                     VStack {
-                        LazyVGrid(columns: columns, spacing: 25) {
-                            ForEach(data, id: \.self) { item in
-                                ZStack{
-                                    Circle()
-                                        .foregroundColor(Color(hex: 0xb2ccde))
-                                        .frame(width:70, height:70)
-                                        .shadow(color: .black, radius: 2, x: 0, y: 4)
-                                    Text(item).font(Font.custom("Avenir", size: 36))
+                        Text(selectedEmoji)
+                            .font(.custom("Avenir", size: 128))
+                            .padding()
+                        Text("Select an emoji from the list to display above")
+                            .foregroundColor(Color("SecondaryColor"))
+                            .font(.custom("Avenir", size: 17))
+                            .accessibilityLabel("Add")
+                            .accessibilityHint("Adds images that you can show")
+                            .padding()
+                        HStack{
+                            ScrollView(.horizontal){
+                                HStack{
+                                    ForEach(data, id: \.self) { item in
+                                        Text(item).font(Font.custom("Avenir", size: 44))
+                                            .onTapGesture {
+                                                selectedEmoji = item
+                                            }
+                                    }
                                 }
                             }
+                            Text("\(Image(systemName: "chevron.right"))").foregroundColor(Color("SecondaryColor"))
+                        }.padding([.top, .leading, .bottom])
+                        Button(
+                            action: {
+                                showingImagePicker = true
+                            }
+                        ){
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 10).frame(width: 120, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                Text("ADD IMAGE").foregroundColor(Color("BrandColor"))
+                                    .font(.custom("Avenir", size: 17))
+                                    .accessibilityLabel("Add")
+                                    .accessibilityHint("Adds images that you can show")
+                            }
                         }
-                        .padding()
-                        //                        Image(image!)
-                        //                        if (uiImage != nil)
-                        //                        {
-                        //                            ZStack{
-                        //                                Circle()
-                        //                                    .foregroundColor(Color(hex: 0xb2ccde))
-                        //                                    .frame(width:70, height:70)
-                        //                                    .shadow(color: .black, radius: 2, x: 0, y: 4)
-                        //                                Image(uiImage: uiImage!)
-                        //                                    .frame(width:70, height:70)
-                        //                            }
-                        //                        }
+                        Spacer ()
                         LazyVGrid(columns: columns, spacing: 25) {
                             ForEach(images, id: \.self) { item in
                                 ZStack{
                                     Circle()
-                                        .foregroundColor(Color(hex: 0xb2ccde))
+                                        .foregroundColor(Color("SecondaryColor"))
                                         .frame(width:70, height:70)
                                         .shadow(color: .black, radius: 2, x: 0, y: 4)
                                     Image(uiImage: item!.image)
@@ -64,36 +77,25 @@ struct EmojiBoardView : View {
                                 }
                             }
                         }
-                        .padding()
-                        Spacer ()
-                        ZStack{
-                            Circle()
-                                .foregroundColor(Color(hex: 0xb2ccde))
-                                .frame(width:70, height:70)
-                                .shadow(color: .black, radius: 2, x: 0, y: 4)
-                            Text("➕").font(Font.custom("Avenir", size: 36))
-                                .onTapGesture {
-                                    showingImagePicker = true
-                                }
-                        }
                     }
-                    
                 }
-                .navigationTitle("Emoji Board")
-                .navigationBarTitleTextColor(Color("BrandColor"))
+                .navigationTitle("EMOJI BOARD")
+                .navigationBarTitleTextColor(Color("SecondaryColor"))
+                .navigationViewStyle(StackNavigationViewStyle())
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar{
                     ToolbarItem(placement: .navigationBarTrailing){
                         NavigationLink(
                             destination: SettingsView()
                         ) {
-                            Image(systemName: "gear")
-                                .foregroundColor(.blue)
+                            Image(systemName: "info.circle.fill")
+                                .foregroundColor(Color("SecondaryColor"))
                         }
                     }
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: $inputImage)
         }
@@ -104,7 +106,6 @@ struct EmojiBoardView : View {
         print(inputImage)
         image = Image(uiImage: inputImage)
         uiImage = inputImage
-        print(image)
         images.append(AddedImage(image: inputImage))
     }
 }

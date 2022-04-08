@@ -14,22 +14,62 @@
 		1FEB47DE27C40BCA0060F29A /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB47DD27C40BCA0060F29A /* TutorialView.swift */; };
 		1FEB47E027C433E40060F29A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB47DF27C433E40060F29A /* VideoView.swift */; };
 		760262FC27B47277003E52C1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760262FB27B47277003E52C1 /* Launch Screen.storyboard */; };
-		767F74CA27B6351B009E757C /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F74C927B6351B009E757C /* SpeechRecognizer.swift */; };
 		767F74CC27B635F9009E757C /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F74CB27B635F9009E757C /* AVPlayer+Ding.swift */; };
 		767F74CE27B63868009E757C /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 767F74CD27B63868009E757C /* ding.wav */; };
 		769462E927C573E4006A660D /* BeAware-tutorial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 769462E827C573E4006A660D /* BeAware-tutorial.mp4 */; };
-		7698190B27AC8883009AB2E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698190A27AC8883009AB2E2 /* Extensions.swift */; };
 		7698190D27AD6636009AB2E2 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698190C27AD6636009AB2E2 /* IntroductionView.swift */; };
 		7698190F27ADA49D009AB2E2 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698190E27ADA49D009AB2E2 /* SplashView.swift */; };
 		7698191127ADAF88009AB2E2 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698191027ADAF88009AB2E2 /* MyTabView.swift */; };
+		76CC486327E84A9200EF1505 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CC486227E84A9200EF1505 /* InfoRow.swift */; };
+		76CC486527E8589A00EF1505 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CC486427E8589A00EF1505 /* WebView.swift */; };
+		76CC486727E85B9C00EF1505 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CC486627E85B9C00EF1505 /* AboutView.swift */; };
+		76CC486927E85BAF00EF1505 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CC486827E85BAF00EF1505 /* WidgetView.swift */; };
+		76CC486B27E964B100EF1505 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CC486A27E964B100EF1505 /* ShareSheet.swift */; };
+		76CC486D27E965B900EF1505 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CC486C27E965B900EF1505 /* MailView.swift */; };
+		76CC486F27EB051100EF1505 /* CriticalAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CC486E27EB051000EF1505 /* CriticalAlertsView.swift */; };
 		76CE03E927B0F30E001FF3E9 /* SpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE03E827B0F30E001FF3E9 /* SpeechView.swift */; };
 		76CE03EB27B0F3F2001FF3E9 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE03EA27B0F3F2001FF3E9 /* AlertView.swift */; };
 		76CE03ED27B0F416001FF3E9 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE03EC27B0F416001FF3E9 /* TextView.swift */; };
 		76CE03EF27B0F43D001FF3E9 /* EmojiBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE03EE27B0F43D001FF3E9 /* EmojiBoardView.swift */; };
 		76CE03F127B0F732001FF3E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE03F027B0F732001FF3E9 /* SettingsView.swift */; };
+		76E087E027FB80F90008F4F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76E087DE27FB80F90008F4F0 /* Localizable.strings */; };
+		76E087E327FB810E0008F4F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76E087E127FB810E0008F4F0 /* Localizable.strings */; };
 		76F348B927BC719600BABBAD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F348B827BC719600BABBAD /* ImagePicker.swift */; };
 		76F348BB27BC7E1D00BABBAD /* AddedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F348BA27BC7E1D00BABBAD /* AddedImages.swift */; };
+		76F348DE27BCC16E00BABBAD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F348DD27BCC16E00BABBAD /* WidgetKit.framework */; };
+		76F348E027BCC16E00BABBAD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F348DF27BCC16E00BABBAD /* SwiftUI.framework */; };
+		76F348E327BCC16E00BABBAD /* Partner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F348E227BCC16E00BABBAD /* Partner.swift */; };
+		76F348E627BCC17000BABBAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F348E527BCC17000BABBAD /* Assets.xcassets */; };
+		76F348E827BCC17000BABBAD /* Partner.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 76F348E427BCC16E00BABBAD /* Partner.intentdefinition */; };
+		76F348E927BCC17000BABBAD /* Partner.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 76F348E427BCC16E00BABBAD /* Partner.intentdefinition */; };
+		76F348EC27BCC17000BABBAD /* PartnerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76F348DB27BCC16E00BABBAD /* PartnerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76F348F227BCC37100BABBAD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F348F127BCC37100BABBAD /* Extensions.swift */; };
+		76F348F327BCC37100BABBAD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F348F127BCC37100BABBAD /* Extensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76F348EA27BCC17000BABBAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1DD5E127AB0EB9008FD66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76F348DA27BCC16E00BABBAD;
+			remoteInfo = PartnerExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76F348ED27BCC17000BABBAD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76F348EC27BCC17000BABBAD /* PartnerExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F1DD5E927AB0EB9008FD66F /* BeAware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeAware.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,21 +81,38 @@
 		1FEB47DF27C433E40060F29A /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		76019E5227B052C200042B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760262FB27B47277003E52C1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		767F74C927B6351B009E757C /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		767F74CB27B635F9009E757C /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		767F74CD27B63868009E757C /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		769462E827C573E4006A660D /* BeAware-tutorial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeAware-tutorial.mp4"; sourceTree = "<group>"; };
-		7698190A27AC8883009AB2E2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7698190C27AD6636009AB2E2 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		7698190E27ADA49D009AB2E2 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7698191027ADAF88009AB2E2 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		76CC486227E84A9200EF1505 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		76CC486427E8589A00EF1505 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		76CC486627E85B9C00EF1505 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		76CC486827E85BAF00EF1505 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		76CC486A27E964B100EF1505 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		76CC486C27E965B900EF1505 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		76CC486E27EB051000EF1505 /* CriticalAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalAlertsView.swift; sourceTree = "<group>"; };
 		76CE03E827B0F30E001FF3E9 /* SpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechView.swift; sourceTree = "<group>"; };
 		76CE03EA27B0F3F2001FF3E9 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		76CE03EC27B0F416001FF3E9 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		76CE03EE27B0F43D001FF3E9 /* EmojiBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiBoardView.swift; sourceTree = "<group>"; };
 		76CE03F027B0F732001FF3E9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		76E087DF27FB80F90008F4F0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Localizable.strings; sourceTree = "<group>"; };
+		76E087E227FB810E0008F4F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		76F348B827BC719600BABBAD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		76F348BA27BC7E1D00BABBAD /* AddedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedImages.swift; sourceTree = "<group>"; };
+		76F348DB27BCC16E00BABBAD /* PartnerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PartnerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F348DD27BCC16E00BABBAD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		76F348DF27BCC16E00BABBAD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		76F348E227BCC16E00BABBAD /* Partner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partner.swift; sourceTree = "<group>"; };
+		76F348E427BCC16E00BABBAD /* Partner.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Partner.intentdefinition; sourceTree = "<group>"; };
+		76F348E527BCC17000BABBAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76F348E727BCC17000BABBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F348F127BCC37100BABBAD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		76F348F427BCC69B00BABBAD /* BeAware.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeAware.entitlements; sourceTree = "<group>"; };
+		76F348F527BCC6D100BABBAD /* PartnerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PartnerExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +123,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76F348D827BCC16E00BABBAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F348E027BCC16E00BABBAD /* SwiftUI.framework in Frameworks */,
+				76F348DE27BCC16E00BABBAD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1F1DD5E027AB0EB9008FD66F = {
 			isa = PBXGroup;
 			children = (
+				76F348F527BCC6D100BABBAD /* PartnerExtension.entitlements */,
+				76F348F127BCC37100BABBAD /* Extensions.swift */,
 				1F1DD5EB27AB0EB9008FD66F /* BeAware */,
+				76F348E127BCC16E00BABBAD /* Partner */,
+				76F348DC27BCC16E00BABBAD /* Frameworks */,
 				1F1DD5EA27AB0EB9008FD66F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1F1DD5E927AB0EB9008FD66F /* BeAware.app */,
+				76F348DB27BCC16E00BABBAD /* PartnerExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,15 +159,16 @@
 		1F1DD5EB27AB0EB9008FD66F /* BeAware */ = {
 			isa = PBXGroup;
 			children = (
+				76E087DD27FB80CE0008F4F0 /* fr.lproj */,
+				76E087DC27FB80C10008F4F0 /* en.lproj */,
+				76F348F427BCC69B00BABBAD /* BeAware.entitlements */,
 				76F348BC27BC7E2600BABBAD /* Views */,
 				1F1DD5EC27AB0EB9008FD66F /* BeAwareApp.swift */,
 				1F1DD5EE27AB0EB9008FD66F /* ContentView.swift */,
 				76019E5227B052C200042B51 /* Info.plist */,
 				1F1DD5F027AB0EBA008FD66F /* Assets.xcassets */,
 				1F1DD5F227AB0EBA008FD66F /* Preview Content */,
-				7698190A27AC8883009AB2E2 /* Extensions.swift */,
 				760262FB27B47277003E52C1 /* Launch Screen.storyboard */,
-				767F74C927B6351B009E757C /* SpeechRecognizer.swift */,
 				767F74CB27B635F9009E757C /* AVPlayer+Ding.swift */,
 				767F74CD27B63868009E757C /* ding.wav */,
 				76F348B827BC719600BABBAD /* ImagePicker.swift */,
@@ -114,6 +186,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		76E087DC27FB80C10008F4F0 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				76E087E127FB810E0008F4F0 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		76E087DD27FB80CE0008F4F0 /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				76E087DE27FB80F90008F4F0 /* Localizable.strings */,
+			);
+			path = fr.lproj;
+			sourceTree = "<group>";
+		};
 		76F348BC27BC7E2600BABBAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +215,35 @@
 				76CE03EE27B0F43D001FF3E9 /* EmojiBoardView.swift */,
 				76CE03F027B0F732001FF3E9 /* SettingsView.swift */,
 				1FEB47DF27C433E40060F29A /* VideoView.swift */,
+				76CC486227E84A9200EF1505 /* InfoRow.swift */,
+				76CC486427E8589A00EF1505 /* WebView.swift */,
+				76CC486627E85B9C00EF1505 /* AboutView.swift */,
+				76CC486827E85BAF00EF1505 /* WidgetView.swift */,
+				76CC486A27E964B100EF1505 /* ShareSheet.swift */,
+				76CC486C27E965B900EF1505 /* MailView.swift */,
+				76CC486E27EB051000EF1505 /* CriticalAlertsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		76F348DC27BCC16E00BABBAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76F348DD27BCC16E00BABBAD /* WidgetKit.framework */,
+				76F348DF27BCC16E00BABBAD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76F348E127BCC16E00BABBAD /* Partner */ = {
+			isa = PBXGroup;
+			children = (
+				76F348E227BCC16E00BABBAD /* Partner.swift */,
+				76F348E427BCC16E00BABBAD /* Partner.intentdefinition */,
+				76F348E527BCC17000BABBAD /* Assets.xcassets */,
+				76F348E727BCC17000BABBAD /* Info.plist */,
+			);
+			path = Partner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,15 +256,34 @@
 				1F1DD5E527AB0EB9008FD66F /* Sources */,
 				1F1DD5E627AB0EB9008FD66F /* Frameworks */,
 				1F1DD5E727AB0EB9008FD66F /* Resources */,
+				76F348ED27BCC17000BABBAD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				76F348EB27BCC17000BABBAD /* PBXTargetDependency */,
 			);
 			name = BeAware;
 			productName = BeAware;
 			productReference = 1F1DD5E927AB0EB9008FD66F /* BeAware.app */;
 			productType = "com.apple.product-type.application";
+		};
+		76F348DA27BCC16E00BABBAD /* PartnerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76F348F027BCC17000BABBAD /* Build configuration list for PBXNativeTarget "PartnerExtension" */;
+			buildPhases = (
+				76F348D727BCC16E00BABBAD /* Sources */,
+				76F348D827BCC16E00BABBAD /* Frameworks */,
+				76F348D927BCC16E00BABBAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PartnerExtension;
+			productName = PartnerExtension;
+			productReference = 76F348DB27BCC16E00BABBAD /* PartnerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -158,11 +292,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					1F1DD5E827AB0EB9008FD66F = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					76F348DA27BCC16E00BABBAD = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -173,6 +310,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 1F1DD5E027AB0EB9008FD66F;
 			productRefGroup = 1F1DD5EA27AB0EB9008FD66F /* Products */;
@@ -180,6 +318,7 @@
 			projectRoot = "";
 			targets = (
 				1F1DD5E827AB0EB9008FD66F /* BeAware */,
+				76F348DA27BCC16E00BABBAD /* PartnerExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -190,10 +329,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				760262FC27B47277003E52C1 /* Launch Screen.storyboard in Resources */,
+				76E087E027FB80F90008F4F0 /* Localizable.strings in Resources */,
 				1F1DD5F427AB0EBA008FD66F /* Preview Assets.xcassets in Resources */,
+				76E087E327FB810E0008F4F0 /* Localizable.strings in Resources */,
 				767F74CE27B63868009E757C /* ding.wav in Resources */,
 				769462E927C573E4006A660D /* BeAware-tutorial.mp4 in Resources */,
 				1F1DD5F127AB0EBA008FD66F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F348D927BCC16E00BABBAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F348E627BCC17000BABBAD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,27 +353,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76CC486927E85BAF00EF1505 /* WidgetView.swift in Sources */,
 				1F1DD5EF27AB0EB9008FD66F /* ContentView.swift in Sources */,
-				7698190B27AC8883009AB2E2 /* Extensions.swift in Sources */,
+				76CC486727E85B9C00EF1505 /* AboutView.swift in Sources */,
+				76CC486527E8589A00EF1505 /* WebView.swift in Sources */,
 				76CE03EB27B0F3F2001FF3E9 /* AlertView.swift in Sources */,
 				76F348B927BC719600BABBAD /* ImagePicker.swift in Sources */,
 				7698190F27ADA49D009AB2E2 /* SplashView.swift in Sources */,
+				76CC486D27E965B900EF1505 /* MailView.swift in Sources */,
 				1FEB47E027C433E40060F29A /* VideoView.swift in Sources */,
+				76CC486F27EB051100EF1505 /* CriticalAlertsView.swift in Sources */,
 				7698190D27AD6636009AB2E2 /* IntroductionView.swift in Sources */,
 				76F348BB27BC7E1D00BABBAD /* AddedImages.swift in Sources */,
 				7698191127ADAF88009AB2E2 /* MyTabView.swift in Sources */,
 				1F1DD5ED27AB0EB9008FD66F /* BeAwareApp.swift in Sources */,
 				76CE03E927B0F30E001FF3E9 /* SpeechView.swift in Sources */,
 				1FEB47DE27C40BCA0060F29A /* TutorialView.swift in Sources */,
+				76CC486327E84A9200EF1505 /* InfoRow.swift in Sources */,
 				76CE03EF27B0F43D001FF3E9 /* EmojiBoardView.swift in Sources */,
 				767F74CC27B635F9009E757C /* AVPlayer+Ding.swift in Sources */,
 				76CE03F127B0F732001FF3E9 /* SettingsView.swift in Sources */,
-				767F74CA27B6351B009E757C /* SpeechRecognizer.swift in Sources */,
+				76F348E927BCC17000BABBAD /* Partner.intentdefinition in Sources */,
+				76F348F227BCC37100BABBAD /* Extensions.swift in Sources */,
+				76CC486B27E964B100EF1505 /* ShareSheet.swift in Sources */,
 				76CE03ED27B0F416001FF3E9 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76F348D727BCC16E00BABBAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F348E327BCC16E00BABBAD /* Partner.swift in Sources */,
+				76F348F327BCC37100BABBAD /* Extensions.swift in Sources */,
+				76F348E827BCC17000BABBAD /* Partner.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76F348EB27BCC17000BABBAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76F348DA27BCC16E00BABBAD /* PartnerExtension */;
+			targetProxy = 76F348EA27BCC17000BABBAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76E087DE27FB80F90008F4F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76E087DF27FB80F90008F4F0 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		76E087E127FB810E0008F4F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76E087E227FB810E0008F4F0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1F1DD5F527AB0EBA008FD66F /* Debug */ = {
@@ -346,16 +539,19 @@
 		1F1DD5F827AB0EBA008FD66F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BeAware/BeAware.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"BeAware/Preview Content\"";
-				DEVELOPMENT_TEAM = 539H954LB4;
+				DEVELOPMENT_TEAM = VTU445YWD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeAware/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "BeAware. Communicate Better";
+				INFOPLIST_KEY_CFBundleDisplayName = "BeAware. Deaf Assistant";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses your camera to display your picture in the emoji board";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Your microphone will be used to record your speech when you press the \"Start Recording\" button.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app uses your gallery to display selected ones in the emoji board";
@@ -364,16 +560,17 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.BeAware;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfp.beaware;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,16 +580,19 @@
 		1F1DD5F927AB0EBA008FD66F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BeAware/BeAware.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"BeAware/Preview Content\"";
-				DEVELOPMENT_TEAM = 539H954LB4;
+				DEVELOPMENT_TEAM = VTU445YWD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeAware/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "BeAware. Communicate Better";
+				INFOPLIST_KEY_CFBundleDisplayName = "BeAware. Deaf Assistant";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses your camera to display your picture in the emoji board";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Your microphone will be used to record your speech when you press the \"Start Recording\" button.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app uses your gallery to display selected ones in the emoji board";
@@ -401,16 +601,75 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.BeAware;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfp.beaware;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76F348EE27BCC17000BABBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PartnerExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = VTU445YWD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Partner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Partner;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfp.beaware.partner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76F348EF27BCC17000BABBAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PartnerExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = VTU445YWD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Partner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Partner;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfp.beaware.partner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,6 +693,15 @@
 			buildConfigurations = (
 				1F1DD5F827AB0EBA008FD66F /* Debug */,
 				1F1DD5F927AB0EBA008FD66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76F348F027BCC17000BABBAD /* Build configuration list for PBXNativeTarget "PartnerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F348EE27BCC17000BABBAD /* Debug */,
+				76F348EF27BCC17000BABBAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
