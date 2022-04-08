@@ -12,8 +12,6 @@ import WidgetKit
 let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 var audioRecorder: AVAudioRecorder?
 
-//let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
-
 struct AlertView : View {
     @State private var noiseLengthCounter = 0.0
     @AppStorage("noiseLength") var noiseLength = 2.0
@@ -85,7 +83,7 @@ struct AlertView : View {
                                     }
                                     WidgetCenter.shared.reloadAllTimelines()
 
-                                    isRecording ? stopRecording() : startRecording()
+                                    isRecording ? stopRecording() : startRecording(isCritical: isCritical)
                                     print(isRecording)
                                     isRecording.toggle()
                                 }
@@ -105,7 +103,7 @@ struct AlertView : View {
                                     }
                                     WidgetCenter.shared.reloadAllTimelines()
 
-                                    isRecording ? stopRecording() : startRecording()
+                                    isRecording ? stopRecording() : startRecording(isCritical: isCritical)
                                     print(isRecording)
                                     isRecording.toggle()
                                 }
@@ -234,10 +232,13 @@ struct AlertView_Previews : PreviewProvider {
     }
 }
 
-func startRecording()
+func startRecording(isCritical: Bool)
 {
     let userNotificationCenter = UNUserNotificationCenter.current()
-    let authOptions = UNAuthorizationOptions.init(arrayLiteral: .alert, .badge, .sound, .criticalAlert)
+    var authOptions : UNAuthorizationOptions = UNAuthorizationOptions.init(arrayLiteral: .alert, .badge, .sound, .alert)
+    if isCritical{
+        authOptions = UNAuthorizationOptions.init(arrayLiteral: .alert, .badge, .sound, .criticalAlert)
+    }
     userNotificationCenter.requestAuthorization(options: authOptions) { (success, error) in
         if let error = error {
             print("Error: ", error)
