@@ -1,0 +1,95 @@
+"Be Aware" = "Waspadalah-BeAware";
+"The Deaf Assistant" = "Asisten Tuli";
+"Use the speech feature to convert voice to text" = "Gunakan fitur pidato untuk mengkonversi suara ke teks";
+"Your microphone will be used to record your speech when you press the 'Start Recording' button." = "Mikrofon Anda akan digunakan untuk merekam pidato Anda ketika Anda menekan tombol 'Mulai Rekaman'.";
+
+"ALERT" = "PERINGATAN";
+"Alert" = "Peringatan";
+"Alert Frequency" = "Frekuensi peringatan";
+"1s" = "1s.";
+"10s" = "10s.";
+"Noise Threshold" = "Ambang kebisingan";
+"seconds" = "detik";
+"60db" = "60db.";
+"Start Noise Alert" = "Mulai Peringatan Kebisingan";
+"Stop Noise Alert" = "Menghentikan peringatan kebisingan";
+"Mark alerts as critical" = "Tandai peringatan sebagai kritis";
+
+"SPEECH" = "PIDATO";
+"Speech" = "Pidato";
+"I can’t hear you clearly.  I use this tool to understand what people are saying. Please speak into the mic" = "Aku tidak bisa mendengarmu dengan jelas. Saya menggunakan alat ini untuk memahami apa yang dikatakan orang. Tolong bicarakan mikrofon";
+
+"TEXT" = "TEKS";
+"Text" = "Teks";
+"Tap below to start typing:" = "Ketuk di bawah ini untuk mulai mengetik:";
+"PLAY" = "BERMAIN";
+"FLIP TEXT" = "Flip Text.";
+"Preset Phrases:" = "Frase Preset:";
+"Type here to add..." = "Ketik di sini untuk menambah ...";
+"ADD" = "MENAMBAHKAN";
+"I'm deaf or hard of hearing" = "Saya tuli atau sulit mendengar";
+
+"EMOJI BOARD" = "Papan Emoji.";
+"Emoji Board" = "Papan Emoji.";
+"Select an emoji from the list to display above" = "Pilih emoji dari daftar untuk ditampilkan di atas";
+"ADD IMAGE" = "MENAMBAHKAN GAMBAR";
+
+"INFO" = "Info";
+"Tutorial" = "Tutorial.";
+"License Agreement" = "Perjanjian lisensi";
+"LICENSE AGREEMENT" = "PERJANJIAN LISENSI";
+"About Us" = "Tentang kami";
+"Video" = "Video";
+"Video" = "Video";
+"Widget" = "Widget.";
+"Contact Us" = "Hubungi kami";
+"CONTACT US" = "HUBUNGI KAMI";
+"Share" = "Membagikan";
+"Terms Of Use" = "Syarat Penggunaan";
+"TERMS OF USE" = "SYARAT PENGGUNAAN";
+
+"TUTORIAL" = "Tutorial.";
+"Welcome to BeAware" = "Selamat datang di Waspadalah-BeAware.";
+"This app has 4 main functions:" = "Aplikasi ini memiliki 4 fungsi utama:";
+"Continue" = "Melanjutkan";
+"Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you" = "Alert - Ubah perangkat Anda menjadi alat peringatan elit dengan peringatan yang dapat disesuaikan dari suara pendek atau berkepanjangan di sekitar Anda";
+"Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background" = "Pidato - manfaatkan kemampuan pidato-ke-teks ponsel Anda untuk ditulis, bahkan saat aplikasi berada di latar belakang";
+"Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases" = "Text - Waspadalah-BeAware adalah satu-satunya aplikasi yang dapat membaca teks dengan keras Anda panggilan telepon langsung Anda, dibantu oleh frasa preset yang dapat disesuaikan";
+"Emoji Board - Communicate using curated emojis or add images" = "Dewan Emoji - berkomunikasi menggunakan emoji yang dikuratori atau menambahkan gambar";
+
+"ABOUT US" = "TENTANG KAMI";
+"WHO" = "Siapa";
+"This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit" = "Aplikasi ini dikeluarkan, dirancang dan dikembangkan oleh sekelompok teman yang bertemu di Akademi Pengembang Apple di Detroit";
+"WHY" = "MENGAPA";
+"Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive" = "Tujuan kami untuk membangun ini adalah untuk membuat aplikasi yang akan meningkatkan tugas sehari-hari untuk orang-orang saat inklusif";
+"FEEDBACK" = "MASUKAN";
+"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "Aplikasi ini jauh dari sempurna, tetapi kami ingin mendengar dari Anda, untuk mengetahui perbaikan apa yang memprioritaskan. Email kami di hi@deafassistant.com";
+"CONTRIBUTE" = "MENYUMBANG";
+"We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests" = "Kami menggunakan kerangka kerja iOS SwiftUI terbaru untuk membangun semua bagian dari aplikasi ini. Kode ini open source dan begitu juga desainnya. Kami akan menyukai keterlibatan Anda dan permintaan kode menarik";
+
+"CRITICAL ALERTS" = "Peringatan kritis";
+"What are Critical Alerts?" = "Apa itu peringatan kritis?";
+"If you would like alerts to display even when the app is in Do Not Disturb/Focus modes, you can mark the alerts as critical." = "Jika Anda ingin peringatan untuk ditampilkan bahkan ketika aplikasi tidak mengganggu / memfokuskan mode, Anda dapat menandai peringatan sebagai kritis.";
+"How to turn on LED Flash" = "Cara Mengaktifkan LED Flash";
+"1. Open the Settings app, tap Accessibility, then tap Audio/Visual." = "1. Buka aplikasi Pengaturan, ketuk Aksesibilitas, lalu ketuk Audio / Visual.";
+"2. Turn on LED Flash for Alerts." = "2. Nyalakan LED Flash untuk peringatan.";
+"To prevent LED flashes when your device is in silent mode, turn off Flash on Silent. LED Flash for Alerts works only when your device is locked." = "Untuk mencegah LED berkedip ketika perangkat Anda dalam mode diam, matikan flash pada diam. LED flash untuk peringatan hanya berfungsi ketika perangkat Anda terkunci.";
+
+"WIDGET" = "Widget";
+"What does the Widget Show?" = "Apa yang ditunjukkan widget?";
+"If you would like view the status of your noise alert running in the background, you can add the widget to your home screen." = "Jika Anda ingin melihat status peringatan kebisingan Anda berjalan di latar belakang, Anda dapat menambahkan widget ke layar beranda Anda.";
+"Adding the widget" = "Menambahkan widget";
+"1. From the Home Screen, touch and hold a widget or an empty area until the apps jiggle." = "1. Dari layar beranda, sentuh dan tahan widget atau area kosong hingga aplikasi bergoncang.";
+"2. Tap the Add button (+) in the upper-left corner." = "2. Ketuk tombol Add (+) di sudut kiri atas.";
+"3. Select the BeAware widget and then tap Add Widget and then tap Done." = "3. Pilih widgete Waspadalah-BeAware dan kemudian ketuk Tambahkan widget dan kemudian ketuk Selesai.";
+
+"BeAware The D/deaf Assistant" = "Waspadalah-BeAware asisten tuli";
+"The Must Have Alerting Tool" = "Harus memiliki alat peringatan";
+"Get LED Flashes For Noise Alerts" = "Dapatkan LED Flashes untuk peringatan kebisingan";
+"Feature Packed With Essentials" = "Fitur dikemas dengan esensi";
+"Play Text Into Live Phone Calls" = "Mainkan Teks ke Panggilan Telepon Langsung";
+"Download, Enjoy, Utilise, Share" = "Unduh, nikmati, manfaatkan, bagikan";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "Hai, saya mengunduh aplikasi Anda dan saya ingin memberikan umpan balik berikut:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "Hai! Saya mengunduh Waspadalah-BeAware - assistant tuna rungu untuk iPhone dan saya benar-benar berpikir Anda harus memeriksanya. Belum dirilis ke publik, sehingga Anda dapat memasang versi gratis khusus melalui sini: https://testflight.apple.com/join/3ixejpsz";
+"Do you like this app?" = "Apakah Anda suka aplikasi ini?";

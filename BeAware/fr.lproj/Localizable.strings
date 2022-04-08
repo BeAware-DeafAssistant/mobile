@@ -31,7 +31,7 @@ NSSpeechRecognitionUsageDescription = "Utilisez la fonction de parole pour conve
 "ADD" = "AJOUTER";
 "I'm deaf or hard of hearing" = "Je suis sourds ou mal entendu";
 
-"EMOJI BOARD" = "Conseil d'emoji";
+"EMOJI BOARD" = "CONSEIL D'EMOJI";
 "Emoji Board" = "Conseil d'emoji";
 "Select an emoji from the list to display above" = "Sélectionnez un emoji dans la liste à afficher ci-dessus";
 "ADD IMAGE" = "AJOUTER UNE IMAGE";
@@ -65,7 +65,7 @@ NSSpeechRecognitionUsageDescription = "Utilisez la fonction de parole pour conve
 "WHY" = "POURQUOI";
 "Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive" = "Notre objectif de construire c'était de créer une application qui améliorerait les tâches quotidiennes des personnes tout en étant inclusive";
 "FEEDBACK" = "RETOUR D'INFORMATION";
-"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "L'application est loin d'être parfaite, mais nous aimerions avoir de vos nouvelles, savoir quelles améliorations à la priorité. Envoyez-nous un email à hi@deafassistisant.com";
+"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "L'application est loin d'être parfaite, mais nous aimerions avoir de vos nouvelles, savoir quelles améliorations à la priorité. Envoyez-nous un email à hi@deafassistant.com";
 "CONTRIBUTE" = "CONTRIBUER";
 "We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests" = "Nous utilisons le dernier cadre IOS SWIFTUI pour créer toutes les parties de cette application. Le code est open source et est donc la conception. Nous aimerions votre implication et votre code Tirer des demandes";
 
@@ -91,3 +91,7 @@ NSSpeechRecognitionUsageDescription = "Utilisez la fonction de parole pour conve
 "Feature Packed With Essentials" = "Caractéristique emballée avec des éléments essentiels";
 "Play Text Into Live Phone Calls" = "Jouez texte dans des appels téléphoniques en direct";
 "Download, Enjoy, Utilise, Share" = "Télécharger, profiter, utiliser, partager";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "Bonjour, j'ai téléchargé votre application et je voudrais fournir les commentaires suivants:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "Salut! J'ai téléchargé Baeware - l'assistant sourd pour iPhones et je pense vraiment que vous devriez vérifier. Il n'a pas encore été publié au public. Vous pouvez donc installer une version gratuite spéciale ici: https://testflight.apple.com/join/3ixejpsz";
+"Do you like this app?" = "Aimez-vous cette application?";

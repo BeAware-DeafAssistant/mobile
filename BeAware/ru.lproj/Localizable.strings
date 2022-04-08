@@ -1,0 +1,95 @@
+"Be Aware" = "Знать-BeAware";
+"The Deaf Assistant" = "Глухого помощника";
+"Use the speech feature to convert voice to text" = "Используйте речевую функцию для преобразования голоса в текст";
+"Your microphone will be used to record your speech when you press the 'Start Recording' button." = "Ваш микрофон будет использоваться для записи вашей речи при нажатии кнопки «Начните запись».";
+
+"ALERT" = "ТРЕВОГА";
+"Alert" = "Тревога";
+"Alert Frequency" = "Частота предупреждения";
+"1s" = "1S.";
+"10s" = "10s.";
+"Noise Threshold" = "Порог шума";
+"seconds" = "секунды";
+"60db" = "60 дБ";
+"Start Noise Alert" = "Запустите шум оповещения";
+"Stop Noise Alert" = "Остановить шум оповещения";
+"Mark alerts as critical" = "Отметьте оповещения как критические";
+
+"SPEECH" = "РЕЧЬ";
+"Speech" = "Речь";
+"I can’t hear you clearly.  I use this tool to understand what people are saying. Please speak into the mic" = "Я не слышу тебя ясно. Я использую этот инструмент, чтобы понять, что говорят люди. Пожалуйста, поговорите в микрофон";
+
+"TEXT" = "ТЕКСТ";
+"Text" = "Текст";
+"Tap below to start typing:" = "Нажмите ниже, чтобы начать печатать:";
+"PLAY" = "ИГРАТЬ";
+"FLIP TEXT" = "Флип текст";
+"Preset Phrases:" = "Предустановленные фразы:";
+"Type here to add..." = "Тип здесь, чтобы добавить ...";
+"ADD" = "ДОБАВИТЬ";
+"I'm deaf or hard of hearing" = "Я глухой или сложно слышать";
+
+"EMOJI BOARD" = "Emoji Board.";
+"Emoji Board" = "Emoji Board.";
+"Select an emoji from the list to display above" = "Выберите Emoji из списка для отображения выше";
+"ADD IMAGE" = "Добавить изображение";
+
+"INFO" = "ИНФОРМАЦИЯ";
+"Tutorial" = "Руководство";
+"License Agreement" = "Лицензионное соглашение";
+"LICENSE AGREEMENT" = "ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ";
+"About Us" = "О нас";
+"Video" = "видео";
+"Video" = "видео";
+"Widget" = "Виджет";
+"Contact Us" = "Связаться с нами";
+"CONTACT US" = "СВЯЗАТЬСЯ С НАМИ";
+"Share" = "Делиться";
+"Terms Of Use" = "Условия эксплуатации";
+"TERMS OF USE" = "УСЛОВИЯ ЭКСПЛУАТАЦИИ";
+
+"TUTORIAL" = "РУКОВОДСТВО";
+"Welcome to BeAware" = "Добро пожаловать в Знать-BeAware";
+"This app has 4 main functions:" = "Это приложение имеет 4 основных функции:";
+"Continue" = "Продолжать";
+"Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you" = "Предупреждение - поверните устройство в инструмент оповещения Elite с настраиваемыми оповещениями о коротких или длительных звуках вокруг вас";
+"Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background" = "Речь - воспользуйтесь мощным способом вашего телефона.";
+"Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases" = "Text - Знать-BeAware - единственное приложение, которое может громко читать текст в ваших телефонных звонках, помогая настраиваемыми предустановленными фразами";
+"Emoji Board - Communicate using curated emojis or add images" = "Emoji Board - общаться с использованием курируемых эмоджей или добавить изображения";
+
+"ABOUT US" = "О НАС";
+"WHO" = "ВОЗ";
+"This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit" = "Это приложение было безусловно, спроектировано и разработано группой друзей, которые встретились в Академии разработчиков Apple в Детройте";
+"WHY" = "ЗАЧЕМ";
+"Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive" = "Наша цель для создания этого было создание приложения, которое улучшило бы повседневные задачи для людей, будучи включенным";
+"FEEDBACK" = "ОБРАТНАЯ СВЯЗЬ";
+"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "Приложение далеко не идеально, но мы хотели бы услышать от вас, узнать, какие улучшения для приоритетов. Напишите нам на hi@deafassistant.com";
+"CONTRIBUTE" = "СПОСОБСТВОВАТЬ";
+"We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests" = "Мы используем новейшие Framework iOS SWIFTUI для создания всех частей этого приложения. Код - это открытый источник и как и дизайн. Мы будем любить ваше участие и кодовые запросы";
+
+"CRITICAL ALERTS" = "Критические оповещения";
+"What are Critical Alerts?" = "Что такое критические оповещения?";
+"If you would like alerts to display even when the app is in Do Not Disturb/Focus modes, you can mark the alerts as critical." = "Если вы хотите оповещения отображать, даже когда приложение не беспокоит / режимы фокусировки, вы можете пометить оповещения как критические.";
+"How to turn on LED Flash" = "Как включить светодиодную вспышку";
+"1. Open the Settings app, tap Accessibility, then tap Audio/Visual." = "1. Откройте приложение настроек, нажмите Accessibility, затем нажмите Audio / Visual.";
+"2. Turn on LED Flash for Alerts." = "2. Включите светодиодную вспышку для предупреждений.";
+"To prevent LED flashes when your device is in silent mode, turn off Flash on Silent. LED Flash for Alerts works only when your device is locked." = "Для предотвращения мигающих светодиодов, когда ваше устройство находится в тихом режиме, выключите вспышку на молчании. Светодиодная вспышка для предупреждений работает только тогда, когда ваше устройство заблокировано.";
+
+"WIDGET" = "Виджет";
+"What does the Widget Show?" = "Что показывает виджету?";
+"If you would like view the status of your noise alert running in the background, you can add the widget to your home screen." = "Если вы хотите просмотреть состояние вашего оповещения о шуме на заднем плане, вы можете добавить виджет на ваш домашний экран.";
+"Adding the widget" = "Добавление виджета";
+"1. From the Home Screen, touch and hold a widget or an empty area until the apps jiggle." = "1. На главном экране коснитесь и удерживайте виджет или пустую область до тех пор, пока приложения не покачатся.";
+"2. Tap the Add button (+) in the upper-left corner." = "2. Нажмите кнопку «Добавить» (+) в верхнем левом углу.";
+"3. Select the BeAware widget and then tap Add Widget and then tap Done." = "3. Выберите виджет Bea Bearo, а затем нажмите «Добавить виджет», а затем нажмите «Готово».";
+
+"BeAware The D/deaf Assistant" = "Знать-BeAware глухой помощник";
+"The Must Have Alerting Tool" = "Должен иметь оповещение";
+"Get LED Flashes For Noise Alerts" = "Получить светодиодные вспышки для шума оповещений";
+"Feature Packed With Essentials" = "Функция упакована с помощью Essentials";
+"Play Text Into Live Phone Calls" = "Играть в текст в прямые телефонные звонки";
+"Download, Enjoy, Utilise, Share" = "Скачать, наслаждайтесь, использование, поделиться";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "Привет, я скачал ваше приложение, и я хотел бы предоставить следующие отзывы:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "Привет! Я скачал Beaware - глухого помощника для iPhone, и я действительно думаю, что вы должны проверить это. Он еще не был выпущен до публики, поэтому вы можете установить специальную бесплатную версию здесь: https://testflight.apple.com/join/3ixejpsz";
+"Do you like this app?" = "Вам нравится это приложение?";

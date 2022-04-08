@@ -1,0 +1,95 @@
+"Be Aware" = "محطاط رہو-BeAware";
+"The Deaf Assistant" = "بہرے اسسٹنٹ";
+"Use the speech feature to convert voice to text" = "آواز کو متن میں تبدیل کرنے کے لئے تقریر کی خصوصیت کا استعمال کریں";
+"Your microphone will be used to record your speech when you press the 'Start Recording' button." = "جب آپ 'شروع ریکارڈنگ' کے بٹن کو دبائیں تو آپ کا مائیکروفون آپ کی تقریر کو ریکارڈ کرنے کے لئے استعمال کیا جائے گا.";
+
+"ALERT" = "انتباہ";
+"Alert" = "انتباہ";
+"Alert Frequency" = "انتباہ کی تعدد";
+"1s" = "1S.";
+"10s" = "10s.";
+"Noise Threshold" = "شور کی حد";
+"seconds" = "سیکنڈ";
+"60db" = "60 ڈی بی";
+"Start Noise Alert" = "شور انتباہ شروع کرو";
+"Stop Noise Alert" = "شور انتباہ بند کرو";
+"Mark alerts as critical" = "مارک الرٹ کے طور پر اہم";
+
+"SPEECH" = "تقریر";
+"Speech" = "تقریر";
+"I can’t hear you clearly.  I use this tool to understand what people are saying. Please speak into the mic" = "میں آپ کو واضح طور پر سن نہیں سکتا. میں اس آلے کو سمجھنے کے لئے استعمال کرتا ہوں جو لوگ کہہ رہے ہیں. برائے مہربانی مائک میں بات کریں";
+
+"TEXT" = "متن";
+"Text" = "متن";
+"Tap below to start typing:" = "ٹائپنگ شروع کرنے کے لئے ذیل میں ٹیپ کریں:";
+"PLAY" = "کھیلیں";
+"FLIP TEXT" = "فلپ متن";
+"Preset Phrases:" = "پیش سیٹ کے جملے:";
+"Type here to add..." = "یہاں شامل کرنے کے لئے یہاں ٹائپ کریں ...";
+"ADD" = "شامل";
+"I'm deaf or hard of hearing" = "میں بہرے یا سننا مشکل ہوں";
+
+"EMOJI BOARD" = "emoji بورڈ";
+"Emoji Board" = "emoji بورڈ";
+"Select an emoji from the list to display above" = "اوپر ظاہر کرنے کے لئے فہرست سے ایک emoji منتخب کریں";
+"ADD IMAGE" = "تصویر شامل کریں";
+
+"INFO" = "معلومات";
+"Tutorial" = "سبق";
+"License Agreement" = "لائسنس کے معاہدے";
+"LICENSE AGREEMENT" = "لائسنس کے معاہدے";
+"About Us" = "ہمارے بارے میں";
+"Video" = "ویڈیو";
+"Video" = "ویڈیو";
+"Widget" = "ویجیٹ";
+"Contact Us" = "ہم سے رابطہ کریں";
+"CONTACT US" = "ہم سے رابطہ کریں";
+"Share" = "بانٹیں";
+"Terms Of Use" = "استعمال کرنے کی شرائط";
+"TERMS OF USE" = "استعمال کرنے کی شرائط";
+
+"TUTORIAL" = "سبق";
+"Welcome to BeAware" = "محطاط رہو-BeAware میں خوش آمدید";
+"This app has 4 main functions:" = "یہ اپلی کیشن 4 اہم افعال ہے:";
+"Continue" = "جاری رہے";
+"Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you" = "انتباہ - اپنے آلے کو ایک اشرافیہ انتباہ کے آلے میں تبدیل کریں آپ کے ارد گرد مختصر یا طویل آوازوں کے مرضی کے مطابق انتباہات کے ساتھ";
+"Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background" = "تقریر - آپ کے فون کی طاقتور تقریر سے ٹیکسٹ کی صلاحیت کا فائدہ اٹھانے کے لۓ، یہاں تک کہ جب اپلی کیشن پس منظر میں ہے";
+"Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases" = "متن - محطاط رہو-BeAware صرف ایک ہی اپلی کیشن ہے جو آپ کے لائیو فون کالز میں بلند آواز کو پڑھ سکتے ہیں، اپنی مرضی کے مطابق پیش سیٹ کے جملے کی مدد سے";
+"Emoji Board - Communicate using curated emojis or add images" = "Emoji بورڈ - curated Emojis استعمال کرتے ہوئے مواصلات یا تصاویر شامل کریں";
+
+"ABOUT US" = "ہمارے بارے میں";
+"WHO" = "ہم کون ہیں";
+"This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit" = "یہ اپلی کیشن کو دوستوں کے ایک گروپ کی طرف سے ڈیزائن اور تیار کیا گیا تھا جو ڈاٹروٹ میں ایپل ڈویلپر اکیڈمی میں ملاقات کی گئی تھی";
+"WHY" = "کیوں";
+"Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive" = "اس عمارت کے لئے ہمارا مقصد یہ ایک اپلی کیشن بنانا تھا جس میں لوگوں کے لئے روزمرہ کے کاموں کو بہتر بنایا جائے گا";
+"FEEDBACK" = "تاثرات";
+"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "اے پی پی کامل سے دور ہے، لیکن ہم آپ سے سننا چاہتے ہیں، جاننے کے لئے کہ کس کو ترجیح دیتے ہیں. ہمیں ای میل کریں hi@deafassistant.com";
+"CONTRIBUTE" = "شراکت";
+"We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests" = "ہم اس اپلی کیشن کے تمام حصوں کی تعمیر کے لئے تازہ ترین iOS SWIFTUI فریم ورک کا استعمال کر رہے ہیں. کوڈ کھلا ذریعہ ہے اور یہ ڈیزائن ہے. ہم آپ کی شمولیت اور کوڈ ھیںچو درخواستوں سے محبت کریں گے";
+
+"CRITICAL ALERTS" = "اہم انتباہات";
+"What are Critical Alerts?" = "اہم انتباہ کیا ہیں؟";
+"If you would like alerts to display even when the app is in Do Not Disturb/Focus modes, you can mark the alerts as critical." = "اگر آپ ایپ کو ظاہر کرنے کے لئے انتباہ پسند کریں گے جب اپلی کیشن کو پریشان کن / توجہ مرکوز نہیں کرتے، تو آپ انتباہات کو اہم قرار دیتے ہیں.";
+"How to turn on LED Flash" = "ایل ای ڈی فلیش کو کیسے تبدیل کرنا";
+"1. Open the Settings app, tap Accessibility, then tap Audio/Visual." = "1. ترتیبات اپلی کیشن کو کھولیں، رسائی کو ٹیپ کریں، پھر آڈیو / بصری ٹیپ کریں.";
+"2. Turn on LED Flash for Alerts." = "2. انتباہات کے لئے ایل ای ڈی فلیش کو تبدیل کریں.";
+"To prevent LED flashes when your device is in silent mode, turn off Flash on Silent. LED Flash for Alerts works only when your device is locked." = "جب آپ کا آلہ خاموش موڈ میں ہے تو ایل ای ڈی کی چمکتاوں کو روکنے کے لئے، خاموش پر فلیش بند کردیں. الارم کے لئے ایل ای ڈی فلیش صرف کام کرتا ہے جب آپ کا آلہ بند ہوجاتا ہے.";
+
+"WIDGET" = "ویجیٹ";
+"What does the Widget Show?" = "ویجیٹ کیا دکھاتا ہے؟";
+"If you would like view the status of your noise alert running in the background, you can add the widget to your home screen." = "اگر آپ پس منظر میں چلنے والے اپنے شور انتباہ کی حیثیت کو دیکھنا چاہتے ہیں، تو آپ ویجیٹ کو آپ کے گھر کی سکرین میں شامل کرسکتے ہیں.";
+"Adding the widget" = "ویجیٹ کو شامل کرنا";
+"1. From the Home Screen, touch and hold a widget or an empty area until the apps jiggle." = "1. گھر کی سکرین سے، اطلاقات jiggle تک ایک ویجیٹ یا ایک خالی علاقے کو چھونے اور پکڑو.";
+"2. Tap the Add button (+) in the upper-left corner." = "2. اوپری بائیں کونے میں شامل بٹن (+) کو تھپتھپائیں.";
+"3. Select the BeAware widget and then tap Add Widget and then tap Done." = "3. محطاط رہو-BeAware Widget کو منتخب کریں اور پھر ویجیٹ شامل کریں اور پھر ٹیپ کریں.";
+
+"BeAware The D/deaf Assistant" = "محطاط رہو-BeAware بہرے اسسٹنٹ";
+"The Must Have Alerting Tool" = "آلے کو انتباہ کرنا ضروری ہے";
+"Get LED Flashes For Noise Alerts" = "شور الارٹس کے لئے ایل ای ڈی فلیشز حاصل کریں";
+"Feature Packed With Essentials" = "ضروریات کے ساتھ پیک کیا گیا ہے";
+"Play Text Into Live Phone Calls" = "لائیو فون کالز میں متن کھیلیں";
+"Download, Enjoy, Utilise, Share" = "ڈاؤن لوڈ، لطف اندوز، استعمال، اشتراک";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "ہیلو، میں نے آپ کے ایپ کو ڈاؤن لوڈ کیا اور میں مندرجہ ذیل رائے فراہم کرنا چاہتا ہوں:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "ہیلو! میں نے آئی فونز کے لئے  بہرے اسسٹنٹ کو ڈاؤن لوڈ کیا اور مجھے واقعی لگتا ہے کہ آپ اسے چیک کرنا چاہئے. یہ عوام کو ابھی تک جاری نہیں کیا گیا ہے، لہذا آپ یہاں ایک خاص مفت ورژن انسٹال کر سکتے ہیں: https://testflight.apple.com/join/3ixejpsz";
+"Do you like this app?" = "کیا آپ یہ اپلی کیشن پسند کرتے ہیں؟";

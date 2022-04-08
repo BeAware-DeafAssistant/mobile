@@ -1,0 +1,95 @@
+"Be Aware" = "Consapevole-BeAware";
+"The Deaf Assistant" = "L'assistente sordo";
+"Use the speech feature to convert voice to text" = "Utilizzare la funzione vocale per convertire la voce in testo";
+"Your microphone will be used to record your speech when you press the 'Start Recording' button." = "Il tuo microfono verrà utilizzato per registrare il tuo discorso quando si preme il pulsante 'Avvia registrazione'.";
+
+"ALERT" = "METTERE IN GUARDIA";
+"Alert" = "Mettere in guardia";
+"Alert Frequency" = "Frequenza di avviso";
+"1s" = "1s.";
+"10s" = "10s.";
+"Noise Threshold" = "Soglia di rumore";
+"seconds" = "secondi";
+"60db" = "60db.";
+"Start Noise Alert" = "Avviare il disturbo del rumore";
+"Stop Noise Alert" = "Interrompi il rumore di avviso";
+"Mark alerts as critical" = "Mark Avvicinamento come critico";
+
+"SPEECH" = "DISCORSO";
+"Speech" = "Discorso";
+"I can’t hear you clearly.  I use this tool to understand what people are saying. Please speak into the mic" = "Non riesco a sentirti chiaramente. Io uso questo strumento per capire cosa dicono le persone. Per favore parla nel microfono";
+
+"TEXT" = "TESTO";
+"Text" = "Testo";
+"Tap below to start typing:" = "Tocca sotto per avviare la digitazione:";
+"PLAY" = "GIOCARE A";
+"FLIP TEXT" = "Flip testo.";
+"Preset Phrases:" = "Frasi preimpostate:";
+"Type here to add..." = "Digita qui per aggiungere ...";
+"ADD" = "INSERISCI";
+"I'm deaf or hard of hearing" = "Sono sordo o difficile ascoltare";
+
+"EMOJI BOARD" = "Board Emoji.";
+"Emoji Board" = "Board Emoji.";
+"Select an emoji from the list to display above" = "Seleziona un emoji dall'elenco da visualizzare sopra";
+"ADD IMAGE" = "AGGIUNGI IMMAGINE";
+
+"INFO" = "INFORMAZIONI";
+"Tutorial" = "Tutorial";
+"License Agreement" = "Accordo di licenza";
+"LICENSE AGREEMENT" = "ACCORDO DI LICENZA";
+"About Us" = "Chi siamo";
+"Video" = "Video";
+"Video" = "Video";
+"Widget" = "Aggeggio";
+"Contact Us" = "Contattaci";
+"CONTACT US" = "CONTATTACI";
+"Share" = "Condividere";
+"Terms Of Use" = "Termini di utilizzo";
+"TERMS OF USE" = "TERMINI DI UTILIZZO";
+
+"TUTORIAL" = "TUTORIAL";
+"Welcome to BeAware" = "Benvenuti a Consapevole-BeAware.";
+"This app has 4 main functions:" = "Questa app ha 4 funzioni principali:";
+"Continue" = "Continua";
+"Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you" = "Alert: trasforma il tuo dispositivo in uno strumento di avviso d'élite con avvisi personalizzabili di suoni corti o prolungati intorno a te";
+"Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background" = "Discorso - Approfitta della potente capacità vocale del tuo telefono di trascrivere, anche se l'app è in background";
+"Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases" = "Testo - Consapevole-BeAware è l'unica app che può leggere il testo ad alta voce in voi le tue telefonate in diretta, assistita da frasi preimpostabili personalizzabili";
+"Emoji Board - Communicate using curated emojis or add images" = "Scheda EMOJI - Comunica utilizzando emoji curati o aggiungi immagini";
+
+"ABOUT US" = "CHI SIAMO";
+"WHO" = "CHI";
+"This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit" = "Questa app è stata ideata, progettata e sviluppata da un gruppo di amici che si sono incontrati presso l'Accademia Developer Apple a Detroit";
+"WHY" = "PERCHÉ";
+"Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive" = "Il nostro obiettivo per costruire questo è stato creare un'app che migliorerebbe i compiti quotidiani per le persone pur essendo incluse";
+"FEEDBACK" = "RISPOSTA";
+"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "L'app è tutt'altro che perfetta, ma vorremmo sentire da te, per sapere quali miglioramenti da definire. Inviaci un'email a hi@deafassistant.com";
+"CONTRIBUTE" = "CONTRIBUIRE";
+"We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests" = "Stiamo usando l'ultimo framework IOS Swiftui per creare tutte le parti di questa app. Il codice è open source e così è il design. Amerebbe il tuo coinvolgimento e il tuo codice tira le richieste";
+
+"CRITICAL ALERTS" = "AVVISI CRITICI";
+"What are Critical Alerts?" = "Quali sono gli avvisi critici?";
+"If you would like alerts to display even when the app is in Do Not Disturb/Focus modes, you can mark the alerts as critical." = "Se desideri che gli avvisi vengano visualizzati anche quando l'app è in modalità non disturbi / messa a fuoco, è possibile contrassegnare gli avvisi come critici.";
+"How to turn on LED Flash" = "Come accendere il flash LED";
+"1. Open the Settings app, tap Accessibility, then tap Audio/Visual." = "1. Aprire l'app Impostazioni, toccare Accessibilità, quindi toccare Audio / Visual.";
+"2. Turn on LED Flash for Alerts." = "2. Accendi il flash LED per gli avvisi.";
+"To prevent LED flashes when your device is in silent mode, turn off Flash on Silent. LED Flash for Alerts works only when your device is locked." = "Per evitare che LED lampeggia quando il dispositivo è in modalità silenziosa, spegnere il flash su silenzioso. Il flash LED per gli avvisi funziona solo quando il dispositivo è bloccato.";
+
+"WIDGET" = "AGGEGGIO";
+"What does the Widget Show?" = "Che cosa mostra il widget?";
+"If you would like view the status of your noise alert running in the background, you can add the widget to your home screen." = "Se desideri visualizzare lo stato del tuo avviso del rumore in esecuzione in background, è possibile aggiungere il widget alla schermata iniziale.";
+"Adding the widget" = "Aggiungendo il widget.";
+"1. From the Home Screen, touch and hold a widget or an empty area until the apps jiggle." = "1. Dalla schermata iniziale, toccare e tenere premuto un widget o un'area vuota fino a quando le app si muovono.";
+"2. Tap the Add button (+) in the upper-left corner." = "2. Toccare il pulsante Aggiungi (+) nell'angolo in alto a sinistra.";
+"3. Select the BeAware widget and then tap Add Widget and then tap Done." = "3. Selezionare il widget Consapevole-BeAware e quindi toccare Aggiungi widget e quindi toccare Fatto.";
+
+"BeAware The D/deaf Assistant" = "Consapevole-BeAware L'assistente D / sordo";
+"The Must Have Alerting Tool" = "Il Deve avere uno strumento di avviso";
+"Get LED Flashes For Noise Alerts" = "Ottieni lampeggi LED per gli avvisi di rumore";
+"Feature Packed With Essentials" = "Caratteristica imballata con elementi essenziali";
+"Play Text Into Live Phone Calls" = "Riproduci il testo in telefonate in diretta";
+"Download, Enjoy, Utilise, Share" = "Scarica, divertiti, Utilize, Condividi";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "Ciao, ho scaricato la tua app e vorrei fornire il seguente feedback:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "Ciao! Ho scaricato Consapevole-BeAware, l'assistente sordo per iPhone e penso davvero che dovresti controllarlo. Non è stato ancora rilasciato al pubblico, quindi è possibile installare una versione gratuita speciale tra qui: https://testflight.apple.com/join/3ixejpsz";
+"Do you like this app?" = "Ti piace questa app?";

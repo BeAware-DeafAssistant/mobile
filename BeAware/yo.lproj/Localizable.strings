@@ -1,0 +1,95 @@
+"Be Aware" = "Jẹ mọ-BeAware";
+"The Deaf Assistant" = "Iwe-aṣẹ Arki";
+"Use the speech feature to convert voice to text" = "Lo ẹya ọrọ-ọrọ lati ṣe iyipada ohun si ọrọ";
+"Your microphone will be used to record your speech when you press the 'Start Recording' button." = "Gbogbogbo rẹ yoo ṣee lo lati gbasilẹ ọrọ rẹ nigbati o tẹ bọtini 'Bẹrẹ silẹ.";
+
+"ALERT" = "Itaniji";
+"Alert" = "Itaniji";
+"Alert Frequency" = "Iṣalaye itaniji";
+"1s" = "1s";
+"10s" = "10s";
+"Noise Threshold" = "Ariwo alate";
+"seconds" = "Awọn aaya";
+"60db" = "60DB";
+"Start Noise Alert" = "Bẹrẹ itaniji ariwo";
+"Stop Noise Alert" = "Da itaniji ariwo";
+"Mark alerts as critical" = "Samisi awọn itaniji bi pataki";
+
+"SPEECH" = "Ọrọ";
+"Speech" = "Ọrọ";
+"I can’t hear you clearly.  I use this tool to understand what people are saying. Please speak into the mic" = "Emi ko le gbọ o kedere. Mo lo ọpa yii lati ni oye ohun ti eniyan nsọ. Jọwọ sọrọ sinu mic";
+
+"TEXT" = "Ọrọ";
+"Text" = "Ọrọ";
+"Tap below to start typing:" = "Fọwọ ba ni isalẹ lati bẹrẹ titẹ:";
+"PLAY" = "Mu ṣiṣẹ";
+"FLIP TEXT" = "Ẹyọ isipade";
+"Preset Phrases:" = "Awọn gbolohun ọrọ tito:";
+"Type here to add..." = "Tẹ nibi lati ṣafikun ...";
+"ADD" = "Fikun";
+"I'm deaf or hard of hearing" = "Mo adití tabi lile ti igbọran";
+
+"EMOJI BOARD" = "Emoji ọkọ";
+"Emoji Board" = "Emoji ọkọ";
+"Select an emoji from the list to display above" = "Yan emoji lati atokọ lati ṣafihan loke";
+"ADD IMAGE" = "Ṣafikun aworan";
+
+"INFO" = "Alaye";
+"Tutorial" = "Ikẹkọ";
+"License Agreement" = "Adehun Iwe-aṣẹ";
+"LICENSE AGREEMENT" = "Adehun Iwe-aṣẹ";
+"About Us" = "Nipa re";
+"Video" = "Fidio";
+"Video" = "Fidio";
+"Widget" = "Mu nkan";
+"Contact Us" = "Pe wa";
+"CONTACT US" = "PE WA";
+"Share" = "Pin";
+"Terms Of Use" = "Awọn ofin lilo";
+"TERMS OF USE" = "AWỌN OFIN LILO";
+
+"TUTORIAL" = "Ikẹkọ";
+"Welcome to BeAware" = "Kaabọ si Jẹ mọ-BeAware";
+"This app has 4 main functions:" = "Ìfilọlẹ yii ni awọn iṣẹ akọkọ 4:";
+"Continue" = "Tẹsiwaju";
+"Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you" = "Itaniji - Tan ẹrọ rẹ sinu Ọpa Nlari ti o tobi pẹlu awọn itaniji isọdi ti awọn ohun kukuru tabi gigun ni ayika rẹ";
+"Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background" = "Ọrọ - lo anfani ti ọrọ-ọrọ ti o ni agbara ti o lagbara lati ṣe irapada, paapaa lakoko ti app wa ni abẹlẹ";
+"Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases" = "Ọrọ - Jẹ mọ-BeAware ni app nikan ti o le ka ọrọ ti nyawo si ọ awọn ipe foonu Live wa";
+"Emoji Board - Communicate using curated emojis or add images" = "Igbimọ Emoji - baraẹnisọrọ nipa lilo emojis curated tabi ṣafikun awọn aworan";
+
+"ABOUT US" = "NIPA RE";
+"WHO" = "TANI AWA";
+"This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit" = "Yi app ti wa ni ti a ti ṣe, apẹrẹ ati idagbasoke nipasẹ ẹgbẹ kan ti awọn ọrẹ ti o pade ni ile-ẹkọ giga julọ Apple ni Detroit";
+"WHY" = "Kilode";
+"Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive" = "Ibi-afẹde wa fun kọ eyi ni lati ṣẹda ohun elo kan ti yoo mu awọn iṣẹ ṣiṣe lojoojumọ fun awọn eniyan lakoko ti o jẹ pẹlu";
+"FEEDBACK" = "Esi";
+"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "Ìfilọlẹ naa jinna, ṣugbọn a yoo fẹ lati gbọ lati ọdọ rẹ, lati mọ kini awọn ilọsiwaju lati ṣaju. Imeeli wa ni hi@deafassistant.com";
+"CONTRIBUTE" = "Ṣojuuṣe";
+"We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests" = "A nlo ilana SwiftU tuntun ti tuntun lati kọ gbogbo awọn ẹya ti app yii. Koodu naa wa ni orisun ṣiṣi ati bẹ bẹ ni apẹrẹ. A yoo nifẹ si ilowosi rẹ ati koodu fa awọn ibeere";
+
+"CRITICAL ALERTS" = "Awọn itaniji to ṣe pataki";
+"What are Critical Alerts?" = "Kini awọn itaniji to ṣe pataki?";
+"If you would like alerts to display even when the app is in Do Not Disturb/Focus modes, you can mark the alerts as critical." = "Ti o ba fẹ awọn itaniji lati ṣafihan paapaa nigbati app naa ba wa ni ko ni idamu / awọn ipo idojukọ, o le samisi awọn itaniji bi pataki.";
+"How to turn on LED Flash" = "Bi o ṣe le tan filasi LED";
+"1. Open the Settings app, tap Accessibility, then tap Audio/Visual." = "1. Ṣii app awọn eto, tẹ Ayewo, lẹhinna tẹ ohun ohun / wiwo.";
+"2. Turn on LED Flash for Alerts." = "2. Tan-an Flash Flash fun awọn itaniji.";
+"To prevent LED flashes when your device is in silent mode, turn off Flash on Silent. LED Flash for Alerts works only when your device is locked." = "Lati yago fun awọn itanna LED nigbati ẹrọ rẹ ba wa ni ipo ipalọlọ, pa filasi sori ipalọlọ. LED Flash fun awọn itaniji Ṣiṣẹ nikan nigbati ẹrọ rẹ ba pa.";
+
+"WIDGET" = "Mu nkan";
+"What does the Widget Show?" = "Kini ẹrọ ailorukọ han?";
+"If you would like view the status of your noise alert running in the background, you can add the widget to your home screen." = "Ti o ba fẹ wo ipo ti itaniji Ṣiiipa rẹ nṣiṣẹ ni abẹlẹ, o le ṣafikun ẹrọ ailorukọ si iboju ile rẹ.";
+"Adding the widget" = "Ṣafikun ẹrọ ailorukọ naa";
+"1. From the Home Screen, touch and hold a widget or an empty area until the apps jiggle." = "1. Lati iboju ile, ifọwọkan ati mu ẹrọ ailorukọ kan tabi agbegbe sofo titi di awọn ohun elo jiggle.";
+"2. Tap the Add button (+) in the upper-left corner." = "2. Tẹ bọtini Fikun (+) ni igun apa osi oke.";
+"3. Select the BeAware widget and then tap Add Widget and then tap Done." = "3. Yan ẹrọ ailorukọ Jẹ mọ-BeAware ati lẹhinna tẹ Ṣafikun ẹrọ ailorukọ lẹhinna tẹ Tio.";
+
+"BeAware The D/deaf Assistant" = "Jẹ mọ-BeAware Iwe-aṣẹ Arki";
+"The Must Have Alerting Tool" = "O gbọdọ ni ohun elo titaniji";
+"Get LED Flashes For Noise Alerts" = "Gba awọn itanna fun awọn itaniji ariwo";
+"Feature Packed With Essentials" = "Ẹya-ara ti o wa pẹlu awọn nkan pataki";
+"Play Text Into Live Phone Calls" = "Mu ṣiṣẹ ọrọ sinu awọn ipe foonu ifiwe";
+"Download, Enjoy, Utilise, Share" = "Ṣe igbasilẹ, gbadun, lo, pin";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "Bawo, Mo gbasilẹ app rẹ ati pe Emi yoo fẹ lati pese esi atẹle:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "Bawo! Mo ṣe igbasilẹ beach- oluranlọwọ adie fun awọn iPhones ati pe Mo ro looto o yẹ ki o ṣayẹwo. Ko ti tu silẹ si ita sibẹsibẹ, nitorinaa o le fi ẹya pataki si ẹya pataki nipasẹ nibi: HTTPS://testflight.aple.com/join/3Extejpz";
+"Do you like this app?" = "Ṣe o fẹran app yii?";

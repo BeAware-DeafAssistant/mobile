@@ -1,0 +1,95 @@
+"Be Aware" = "परिचित होना-BeAware";
+"The Deaf Assistant" = "बधिर सहायक";
+"Use the speech feature to convert voice to text" = "आवाज को पाठ में परिवर्तित करने के लिए भाषण सुविधा का उपयोग करें";
+"Your microphone will be used to record your speech when you press the 'Start Recording' button." = "जब आप 'स्टार्ट रिकॉर्डिंग' बटन दबाते हैं तो आपके माइक्रोफ़ोन का उपयोग आपके भाषण को रिकॉर्ड करने के लिए किया जाएगा।";
+
+"ALERT" = "चेतावनी";
+"Alert" = "चेतावनी";
+"Alert Frequency" = "अलर्ट आवृत्ति";
+"1s" = "1से";
+"10s" = "10से";
+"Noise Threshold" = "शोर दहलीज";
+"seconds" = "सेकेंड";
+"60db" = "60 डीबी";
+"Start Noise Alert" = "शोर चेतावनी शुरू करें";
+"Stop Noise Alert" = "शोर अलर्ट बंद करो";
+"Mark alerts as critical" = "मार्क अलर्ट को महत्वपूर्ण के रूप में चिह्नित करें";
+
+"SPEECH" = "भाषण";
+"Speech" = "भाषण";
+"I can’t hear you clearly.  I use this tool to understand what people are saying. Please speak into the mic" = "मैं आपको स्पष्ट रूप से नहीं सुन सकता। मैं इस उपकरण का उपयोग यह समझने के लिए करता हूं कि लोग क्या कह रहे हैं। कृपया माइक में बात करें";
+
+"TEXT" = "मूलपाठ";
+"Text" = "मूलपाठ";
+"Tap below to start typing:" = "टाइपिंग शुरू करने के लिए नीचे टैप करें:";
+"PLAY" = "प्ले PLAY";
+"FLIP TEXT" = "फ्लिप टेक्स्ट";
+"Preset Phrases:" = "प्रीसेट वाक्यांश:";
+"Type here to add..." = "जोड़ने के लिए यहां टाइप करें ...";
+"ADD" = "जोड़ें";
+"I'm deaf or hard of hearing" = "मैं बहरा हूँ या सुनवाई का कठिन हूँ";
+
+"EMOJI BOARD" = "इमोजी बोर्ड";
+"Emoji Board" = "इमोजी बोर्ड";
+"Select an emoji from the list to display above" = "ऊपर प्रदर्शित करने के लिए सूची से एक इमोजी का चयन करें";
+"ADD IMAGE" = "छवि जोड़ें";
+
+"INFO" = "जानकारी";
+"Tutorial" = "ट्यूटोरियल";
+"License Agreement" = "लाइसेंस समझौता";
+"LICENSE AGREEMENT" = "लाइसेंस समझौता";
+"About Us" = "हमारे बारे में";
+"Video" = "वीडियो";
+"Video" = "वीडियो";
+"Widget" = "विजेट";
+"Contact Us" = "संपर्क करें";
+"CONTACT US" = "संपर्क करें";
+"Share" = "साझा करना";
+"Terms Of Use" = "उपयोग की शर्तें";
+"TERMS OF USE" = "उपयोग की शर्तें";
+
+"TUTORIAL" = "ट्यूटोरियल";
+"Welcome to BeAware" = "परिचित होना-BeAware में आपका स्वागत है";
+"This app has 4 main functions:" = "इस ऐप में 4 मुख्य कार्य हैं:";
+"Continue" = "जारी रखना";
+"Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you" = "चेतावनी - अपने डिवाइस को अपने आस-पास के छोटे या लंबे समय तक ध्वनियों के अनुकूलन अलर्ट के साथ एक कुलीन चेतावनी उपकरण में बदलें";
+"Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background" = "भाषण - ऐप पृष्ठभूमि में होने पर भी, ट्रांसक्रिप्ट के लिए अपने फोन की शक्तिशाली भाषण-से-टेक्स्ट क्षमता का लाभ उठाएं";
+"Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases" = "टेक्स्ट - परिचित होना-BeAware एकमात्र ऐप है जो आपके लाइव फोन कॉल में टेक्स्ट को ज़ोर से पढ़ सकता है, जो अनुकूलन प्रीसेट वाक्यांशों द्वारा सहायता प्राप्त करता है";
+"Emoji Board - Communicate using curated emojis or add images" = "इमोजी बोर्ड - क्यूरेटेड इमोजिस का उपयोग करके संवाद करें या छवियां जोड़ें";
+
+"ABOUT US" = "हमारे बारे में";
+"WHO" = "हम कौन हैं";
+"This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit" = "यह ऐप डेट्रोइट में ऐप्पल डेवलपर अकादमी में मिले दोस्तों के एक समूह द्वारा विचार, डिजाइन और विकसित किया गया था";
+"WHY" = "क्यों";
+"Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive" = "इमारत के लिए हमारा लक्ष्य एक ऐप बनाना था जो समावेशी होने के दौरान लोगों के लिए रोजमर्रा के कार्यों में सुधार करेगा";
+"FEEDBACK" = "प्रतिक्रिया";
+"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "ऐप सही से दूर है, लेकिन हम यह जानने के लिए कि क्या सुधार करने के लिए आप से सुनना चाहते हैं। hi@deafassistant.com पर हमें ईमेल करें";
+"CONTRIBUTE" = "योगदान";
+"We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests" = "हम इस ऐप के सभी हिस्सों को बनाने के लिए नवीनतम आईओएस स्विफ्टुई फ्रेमवर्क का उपयोग कर रहे हैं। कोड ओपन सोर्स है और इसलिए डिज़ाइन भी है। हम आपकी भागीदारी और कोड पुल अनुरोधों से प्यार करेंगे";
+
+"CRITICAL ALERTS" = "क्रिटिकल अलर्ट";
+"What are Critical Alerts?" = "महत्वपूर्ण अलर्ट क्या हैं?";
+"If you would like alerts to display even when the app is in Do Not Disturb/Focus modes, you can mark the alerts as critical." = "यदि आप ऐप को डिस्प्ले / फोकस मोड में नहीं होने पर भी प्रदर्शित करने के लिए अलर्ट करना चाहते हैं, तो आप अलर्ट को महत्वपूर्ण रूप से चिह्नित कर सकते हैं।";
+"How to turn on LED Flash" = "एलईडी फ्लैश पर कैसे चालू करें";
+"1. Open the Settings app, tap Accessibility, then tap Audio/Visual." = "1. सेटिंग्स ऐप खोलें, अभिगम्यता टैप करें, फिर ऑडियो / दृश्य टैप करें।";
+"2. Turn on LED Flash for Alerts." = "2. अलर्ट के लिए एलईडी फ्लैश चालू करें।";
+"To prevent LED flashes when your device is in silent mode, turn off Flash on Silent. LED Flash for Alerts works only when your device is locked." = "जब आपका डिवाइस साइलेंट मोड में है, तो एलईडी फ्लैश को रोकने के लिए, चुप पर फ्लैश बंद करें। अलर्ट के लिए एलईडी फ्लैश केवल तभी काम करता है जब आपका डिवाइस लॉक हो।";
+
+"WIDGET" = "विजेट";
+"What does the Widget Show?" = "विजेट क्या दिखाता है?";
+"If you would like view the status of your noise alert running in the background, you can add the widget to your home screen." = "यदि आप पृष्ठभूमि में अपने शोर चेतावनी की स्थिति को देखना चाहते हैं, तो आप अपनी होम स्क्रीन पर विजेट जोड़ सकते हैं।";
+"Adding the widget" = "विजेट जोड़ना";
+"1. From the Home Screen, touch and hold a widget or an empty area until the apps jiggle." = "1. होम स्क्रीन से, ऐप्स को छेड़छाड़ तक विजेट या एक खाली क्षेत्र को स्पर्श करके रखें।";
+"2. Tap the Add button (+) in the upper-left corner." = "2. ऊपरी-बाएं कोने में जोड़ें बटन (+) को टैप करें।";
+"3. Select the BeAware widget and then tap Add Widget and then tap Done." = "3. परिचित होना-BeAware विजेट का चयन करें और फिर विजेट जोड़ें टैप करें और फिर पूर्ण टैप करें।";
+
+"BeAware The D/deaf Assistant" = "परिचित होना-BeAware बधिर सहायक";
+"The Must Have Alerting Tool" = "टूल को सतर्क करना होगा";
+"Get LED Flashes For Noise Alerts" = "शोर अलर्ट के लिए एलईडी चमक प्राप्त करें";
+"Feature Packed With Essentials" = "सुविधा आवश्यक के साथ पैक किया गया";
+"Play Text Into Live Phone Calls" = "लाइव फोन कॉल में टेक्स्ट चलाएं";
+"Download, Enjoy, Utilise, Share" = "डाउनलोड करें, आनंद लें, उपयोग करें, साझा करें";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "हाय, मैंने आपका ऐप डाउनलोड किया और मैं निम्नलिखित प्रतिक्रिया प्रदान करना चाहता हूं:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "नमस्ते! मैंने परिचित होना-BeAware डाउनलोड किया- आईफोन के लिए बहरा सहायक और मुझे सच में लगता है कि आपको इसे देखना चाहिए। इसे अभी तक जनता को जारी नहीं किया गया है, इसलिए आप यहां एक विशेष मुफ्त संस्करण स्थापित कर सकते हैं: https://testflight.apple.com/join/3ixejpsz";
+"Do you like this app?" = "क्या आपको यह ऐप पसंद है?";

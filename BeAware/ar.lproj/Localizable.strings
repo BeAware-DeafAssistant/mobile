@@ -1,0 +1,95 @@
+"Be Aware" = "كن حذرا-BeAware";
+"The Deaf Assistant" = "مساعد الصم";
+"Use the speech feature to convert voice to text" = "استخدم ميزة الكلام لتحويل الصوت إلى النص";
+"Your microphone will be used to record your speech when you press the 'Start Recording' button." = "سيتم استخدام ميكروفونك لتسجيل خطابك عند الضغط على زر بدء التسجيل.";
+
+"ALERT" = "إنذار";
+"Alert" = "إنذار";
+"Alert Frequency" = "تكرار التنبيه";
+"1s" = "1s.";
+"10s" = "10s.";
+"Noise Threshold" = "عتبة الضوضاء";
+"seconds" = "ثانية";
+"60db" = "60db.";
+"Start Noise Alert" = "بدء تنبيه الضوضاء";
+"Stop Noise Alert" = "وقف تنبيه الضوضاء";
+"Mark alerts as critical" = "وضع علامة تنبيهات";
+
+"SPEECH" = "خطاب";
+"Speech" = "خطاب";
+"I can’t hear you clearly.  I use this tool to understand what people are saying. Please speak into the mic" = "لا أستطيع سماعك بوضوح. يمكنني استخدام هذه الأداة لفهم ما يقوله الناس. يرجى التحدث في ميكروفون";
+
+"TEXT" = "نص";
+"Text" = "نص";
+"Tap below to start typing:" = "اضغط أدناه لبدء الكتابة:";
+"PLAY" = "لعب";
+"FLIP TEXT" = "الوجه النص";
+"Preset Phrases:" = "عبارات محددة مسبقا:";
+"Type here to add..." = "اكتب هنا لإضافة ...";
+"ADD" = "يضيف";
+"I'm deaf or hard of hearing" = "أنا أصم أو شاق السمع";
+
+"EMOJI BOARD" = "لوحة الرموز التعبيرية";
+"Emoji Board" = "لوحة الرموز التعبيرية";
+"Select an emoji from the list to display above" = "حدد emoji من القائمة لعرض أعلاه";
+"ADD IMAGE" = "إضافة صورة";
+
+"INFO" = "معلومات";
+"Tutorial" = "الدورة التعليمية";
+"License Agreement" = "اتفاقية الترخيص";
+"LICENSE AGREEMENT" = "اتفاقية الترخيص";
+"About Us" = "معلومات عنا";
+"Video" = "فيديو";
+"Video" = "فيديو";
+"Widget" = "القطعة";
+"Contact Us" = "اتصل بنا";
+"CONTACT US" = "اتصل بنا";
+"Share" = "يشارك";
+"Terms Of Use" = "تعليمات الاستخدام";
+"TERMS OF USE" = "تعليمات الاستخدام";
+
+"TUTORIAL" = "الدورة التعليمية";
+"Welcome to BeAware" = "مرحبا بكم في كن حذرا- BeAware.";
+"This app has 4 main functions:" = "هذا التطبيق لديه 4 وظائف رئيسية:";
+"Continue" = "يكمل";
+"Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you" = "تنبيه - تشغيل جهازك إلى أداة تنبيه النخبة مع تنبيهات قابلة للتخصيص أصوات قصيرة أو طويلة من حولك";
+"Speech - Take advantage of your phone's powerful speech-to-text capability to transcribe, even while the app is in the background" = "الكلام - استفد من إمكانية خطاب التحدث القوية لهاتفك للبطولة، حتى أثناء وجود التطبيق في الخلفية";
+"Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases" = "النص - كن حذرا-BeAware هو التطبيق الوحيد الذي يمكنه قراءة النص بصوت عال في مكالماتك الهاتفية المباشرة، بمساعدة عبارات محددة مسبقا تخصيصا";
+"Emoji Board - Communicate using curated emojis or add images" = "لوحة الرموز التعبيرية - التواصل باستخدام الرموز التعبيرية المنقولة أو إضافة الصور";
+
+"ABOUT US" = "معلومات عنا";
+"WHO" = "من نحن";
+"This app was ideated, designed and developed by a group of friends that met at the Apple Developer Academy in Detroit" = "كان هذا التطبيق مهيئ ومصمم وتطويره من قبل مجموعة من الأصدقاء الذين اجتمعوا في أكاديمية مطور التفاح في ديترويت";
+"WHY" = "لماذا";
+"Our goal for building this was to create an app that would improve the everyday tasks for people while being inclusive" = "كان هدفنا لبناء هذا هو إنشاء تطبيق من شأنه تحسين المهام اليومية للأشخاص بينما يجري شاملا";
+"FEEDBACK" = "ردود الفعل";
+"The app is far from perfect, but we would like to hear from you, to know what improvements to prioritize. Email us at hi@deafassistant.com" = "التطبيق بعيد عن الكمال، لكننا نود أن نسمع منك، لمعرفة التحسينات التي تعطيل الأولوية. البريد الإلكتروني لنا في hi@deafassistant.com";
+"CONTRIBUTE" = "مساهمة";
+"We are using the latest iOS SwiftUI framework to build all parts of this app. The code is open source and so is the design. We would love your involvement and code pull requests" = "نحن نستخدم أحدث إطار IOS Swiftui لبناء جميع أجزاء هذا التطبيق. الرمز هو المصدر المفتوح وكذلك هو التصميم. نود أن نطلب مشاركتك ورمز التعليمات";
+
+"CRITICAL ALERTS" = "التنبيهات الحرجة";
+"What are Critical Alerts?" = "ما هي التنبيهات الحرجة؟";
+"If you would like alerts to display even when the app is in Do Not Disturb/Focus modes, you can mark the alerts as critical." = "إذا كنت ترغب في التنبيهات لعرضها حتى عندما يكون التطبيق قيد الإزعاج / التركيز، يمكنك وضع علامة على التنبيهات بحذر.";
+"How to turn on LED Flash" = "كيفية تشغيل الصمام فلاش";
+"1. Open the Settings app, tap Accessibility, then tap Audio/Visual." = "1. افتح تطبيق الإعدادات، انقر فوق إمكانية الوصول، ثم انقر فوق الصوت / المرئي.";
+"2. Turn on LED Flash for Alerts." = "2. قم بتشغيل فلاش LED للتنبيهات.";
+"To prevent LED flashes when your device is in silent mode, turn off Flash on Silent. LED Flash for Alerts works only when your device is locked." = "لمنع ومضات LED عندما يكون جهازك في وضع صامت، قم بإيقاف تشغيل الفلاش الصامت. LED فلاش لتنبيهات يعمل فقط عند مغلق جهازك.";
+
+"WIDGET" = "القطعة";
+"What does the Widget Show?" = "ماذا تظهر القطعة؟";
+"If you would like view the status of your noise alert running in the background, you can add the widget to your home screen." = "إذا كنت ترغب في عرض حالة تنبيه الضوضاء قيد التشغيل في الخلفية، فيمكنك إضافة القطعة إلى شاشتك الرئيسية.";
+"Adding the widget" = "إضافة القطعة";
+"1. From the Home Screen, touch and hold a widget or an empty area until the apps jiggle." = "1. من الشاشة الرئيسية، المس وحفظ عنصر واجهة مستخدم أو منطقة فارغة حتى تعزز التطبيقات.";
+"2. Tap the Add button (+) in the upper-left corner." = "2. انقر فوق الزر 'إضافة' (+) في الزاوية العلوية اليسرى.";
+"3. Select the BeAware widget and then tap Add Widget and then tap Done." = "3. حدد عنصر القطعة كن حذرا-BeAware ثم انقر فوق إضافة عنصر واجهة مستخدم ثم انقر فوق القيام به.";
+
+"BeAware The D/deaf Assistant" = "كن حذرا-BeAware مساعد الصم";
+"The Must Have Alerting Tool" = "يجب أن يكون لديك أداة تنبيه";
+"Get LED Flashes For Noise Alerts" = "الحصول على ومضات LED لتنبيهات الضوضاء";
+"Feature Packed With Essentials" = "ميزة معبأة مع أساسيات";
+"Play Text Into Live Phone Calls" = "تشغيل النص في مكالمات هاتفية مباشرة";
+"Download, Enjoy, Utilise, Share" = "تحميل، استمتع، الاستفادة، مشاركة";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "مرحبا، قمت بتنزيل تطبيقك وأود تقديم ملاحظات التالية:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "أهلا! قمت بتنزيل Beaware - مساعد الصم لأجهزة iPhone وأعتقد حقا أنه يجب عليك التحقق من ذلك. لم يتم إصداره للجمهور بعد، حتى تتمكن من تثبيت نسخة مجانية خاصة من خلال هنا: https://testflight.apple.com/join/3ixejpsz";
+"Do you like this app?" = "هل مثل هذا التطبيق؟";

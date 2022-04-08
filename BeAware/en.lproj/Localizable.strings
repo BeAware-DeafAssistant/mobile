@@ -1,3 +1,4 @@
+//Check for WHO, BeAware, D/deaf, 2 seconds, Capitalization,
 NSMicrophoneUsageDescription = "Your microphone will be used to record your speech when you press the 'Start Recording' button.";
 NSSpeechRecognitionUsageDescription = "Use the speech feature to convert voice to text";
 "Be Aware" = "Be Aware";
@@ -90,3 +91,7 @@ NSSpeechRecognitionUsageDescription = "Use the speech feature to convert voice t
 "Feature Packed With Essentials" = "Feature Packed With Essentials";
 "Play Text Into Live Phone Calls" = "Play Text Into Live Phone Calls";
 "Download, Enjoy, Utilise, Share" = "Download, Enjoy, Utilise, Share";
+
+"Hi, I downloaded your app and I would like to provide the following feedback:" = "Hi, I downloaded your app and I would like to provide the following feedback:";
+"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz";
+"Do you like this app?" = "Do you like this app?";
