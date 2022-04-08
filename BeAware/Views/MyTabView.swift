@@ -12,19 +12,20 @@ struct MyTabView: View {
         TabView {
             AlertView ()
                 .tabItem {
-                    Label(NSLocalizedString("ALERT", comment: "Alert Title"), systemImage: "waveform")
+                    // Using only Alert instead of NSLocalizedString("Alert", comment: "Alert Title"), doesn't work here
+                    Label(NSLocalizedString("Alert", comment: "Alert Title"), systemImage: "waveform")
                 }
             SpeechView()
                 .tabItem {
-                    Label(NSLocalizedString("SPEECH", comment: "Speech Title"), systemImage: "mic")
+                    Label(NSLocalizedString("Speech", comment: "Speech Title"), systemImage: "mic")
                 }
             TextView ()
                 .tabItem {
-                    Label(NSLocalizedString("TEXT", comment: "Text Title"), systemImage: "keyboard")
+                    Label(NSLocalizedString("Text", comment: "Text Title"), systemImage: "keyboard")
                 }
             EmojiBoardView()
                 .tabItem {
-                    Label(NSLocalizedString("EMOJI BOARD", comment: "Emoji Board Title"), systemImage: "checkerboard.rectangle")
+                    Label(NSLocalizedString("Emoji Board", comment: "Emoji Board Title"), systemImage: "checkerboard.rectangle")
                 }
         }
     }

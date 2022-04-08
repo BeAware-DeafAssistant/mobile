@@ -1,3 +1,5 @@
+NSMicrophoneUsageDescription = "Your microphone will be used to record your speech when you press the 'Start Recording' button.";
+NSSpeechRecognitionUsageDescription = "Use the speech feature to convert voice to text";
 "Be Aware" = "Be Aware";
 "The Deaf Assistant" = "The Deaf Assistant";
 "Use the speech feature to convert voice to text" = "Use the speech feature to convert voice to text";

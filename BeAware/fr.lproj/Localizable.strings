@@ -1,3 +1,5 @@
+NSMicrophoneUsageDescription = "Votre microphone sera utilisé pour enregistrer votre discours lorsque vous appuyez sur le bouton 'Démarrer l'enregistrement'.";
+NSSpeechRecognitionUsageDescription = "Utilisez la fonction de parole pour convertir la voix en texte";
 "Be Aware" = "ÊtreConscient-BeAware";
 "The Deaf Assistant" = "L'assistant sourd";
 "Use the speech feature to convert voice to text" = "Utilisez la fonction de parole pour convertir la voix en texte";

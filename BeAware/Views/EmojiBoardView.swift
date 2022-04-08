@@ -54,7 +54,7 @@ struct EmojiBoardView : View {
                             }
                         ){
                             ZStack{
-                                RoundedRectangle(cornerRadius: 10).frame(width: 120, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                RoundedRectangle(cornerRadius: 10).frame(width: 200, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
                                 Text("ADD IMAGE").foregroundColor(Color("BrandColor"))
                                     .font(.custom("Avenir", size: 17))
                                     .accessibilityLabel("Add")
