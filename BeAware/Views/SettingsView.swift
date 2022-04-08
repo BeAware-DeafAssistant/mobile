@@ -65,7 +65,7 @@ struct SettingsView : View {
         }.navigationTitle("INFO")
             .navigationBarTitleTextColor(Color("SecondaryColor"))
             .sheet(isPresented: $showShareSheet) {
-                        ShareSheet(activityItems: ["Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz"])
+                ShareSheet(activityItems: [NSLocalizedString("Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz", comment: "ShareSheet")])
                     }
             .sheet(isPresented: $isShowingMailView) {
                 MailView(isShowing: self.$isShowingMailView, result: self.$result)

@@ -48,7 +48,7 @@ struct MailView: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
         let vc = MFMailComposeViewController()
         vc.setToRecipients(["hi@deafassistant.com"])
-        vc.setMessageBody("Hi, I downloaded your app and I would like to provide the following feedback:", isHTML: false)
+        vc.setMessageBody(NSLocalizedString("Hi, I downloaded your app and I would like to provide the following feedback:", comment: "Email Feedback"), isHTML: false)
         vc.mailComposeDelegate = context.coordinator
         return vc
     }
