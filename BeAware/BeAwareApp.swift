@@ -13,7 +13,7 @@ struct BeAwareApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            IntroductionView()
         }
     }
 }
