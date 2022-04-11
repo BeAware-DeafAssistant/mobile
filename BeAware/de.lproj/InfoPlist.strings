@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "Ihr Mikrofon wird verwendet, um Ihre Sprache aufzunehmen, wenn Sie die Taste 'Start aufnehmen' drücken.";
+"NSSpeechRecognitionUsageDescription" = "Verwenden Sie die Sprachfunktion, um Stimme in Text umzuwandeln";
+"CFBundleName" = "SeiVorsichtig-BeAware";
+"CFBundleDisplayName" = "SeiVorsichtig-BeAware";

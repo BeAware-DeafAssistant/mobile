@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "Su micrófono se utilizará para grabar su voz cuando presione el botón 'Iniciar grabación'.";
+"NSSpeechRecognitionUsageDescription" = "Utilice la función de voz para convertir voz en texto";
+"CFBundleName" = "TenerEnCuenta-BeAware";
+"CFBundleDisplayName" = "TenerEnCuenta-BeAware";

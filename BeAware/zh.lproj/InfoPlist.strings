@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "当您按下“开始录制”按钮时，您的麦克风将用于记录您的演讲。";
+"NSSpeechRecognitionUsageDescription" = "使用语音功能将语音转换为文本";
+"CFBundleName" = "意识到-BeAware";
+"CFBundleDisplayName" = "意识到-BeAware";

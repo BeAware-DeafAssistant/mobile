@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "Kipaza sauti yako itatumika kurekodi hotuba yako wakati unasisitiza kifungo cha 'Kuanza Kurekodi'";
+"NSSpeechRecognitionUsageDescription" = "Tumia kipengele cha hotuba ili kubadilisha sauti kwa maandishi";
+"CFBundleName" = "KuwaNaUfahamu-BeAware";
+"CFBundleDisplayName" = "KuwaNaUfahamu-BeAware";

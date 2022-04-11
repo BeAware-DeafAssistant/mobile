@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "جب آپ 'شروع ریکارڈنگ' کے بٹن کو دبائیں تو آپ کا مائیکروفون آپ کی تقریر کو ریکارڈ کرنے کے لئے استعمال کیا جائے گا.";
+"NSSpeechRecognitionUsageDescription" = "آواز کو متن میں تبدیل کرنے کے لئے تقریر کی خصوصیت کا استعمال کریں";
+"CFBundleName" = "محطاط رہو-BeAware";
+"CFBundleDisplayName" = "محطاط رہو-BeAware";

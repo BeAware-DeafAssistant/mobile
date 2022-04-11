@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "سيتم استخدام ميكروفونك لتسجيل خطابك عند الضغط على زر بدء التسجيل.";
+"NSSpeechRecognitionUsageDescription" = "استخدم ميزة الكلام لتحويل الصوت إلى النص";
+"CFBundleName" = "كن حذرا-BeAware";
+"CFBundleDisplayName" = "كن حذرا-BeAware";

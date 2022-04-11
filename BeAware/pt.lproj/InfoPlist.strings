@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "Seu microfone será usado para gravar sua fala quando você pressionar o botão 'Iniciar Gravação'.";
+"NSSpeechRecognitionUsageDescription" = "Use o recurso de fala para converter voz em texto";
+"CFBundleName" = "EstejaCiente-BeAware";
+"CFBundleDisplayName" = "EstejaCiente-BeAware";

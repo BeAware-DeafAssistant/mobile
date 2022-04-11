@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "Mikrofon Anda akan digunakan untuk merekam pidato Anda ketika Anda menekan tombol 'Mulai Rekaman'.";
+"NSSpeechRecognitionUsageDescription" = "Gunakan fitur pidato untuk mengkonversi suara ke teks";
+"CFBundleName" = "Waspadalah-BeAware";
+"CFBundleDisplayName" = "Waspadalah-BeAware";

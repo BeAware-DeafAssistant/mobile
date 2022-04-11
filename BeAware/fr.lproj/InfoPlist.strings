@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "Votre microphone sera utilisé pour enregistrer votre discours lorsque vous appuyez sur le bouton 'Démarrer l'enregistrement'.";
+"NSSpeechRecognitionUsageDescription" = "Utilisez la fonction de parole pour convertir la voix en texte";
+"CFBundleName" = "ÊtreConscient-BeAware";
+"CFBundleDisplayName" = "ÊtreConscient-BeAware";

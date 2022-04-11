@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "Ваш микрофон будет использоваться для записи вашей речи при нажатии кнопки «Начните запись».";
+"NSSpeechRecognitionUsageDescription" = "Используйте речевую функцию для преобразования голоса в текст";
+"CFBundleName" = "Знать-BeAware";
+"CFBundleDisplayName" = "Знать-BeAware";

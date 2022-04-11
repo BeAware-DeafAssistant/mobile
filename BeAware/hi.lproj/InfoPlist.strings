@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "जब आप 'स्टार्ट रिकॉर्डिंग' बटन दबाते हैं तो आपके माइक्रोफ़ोन का उपयोग आपके भाषण को रिकॉर्ड करने के लिए किया जाएगा।";
+"NSSpeechRecognitionUsageDescription" = "आवाज को पाठ में परिवर्तित करने के लिए भाषण सुविधा का उपयोग करें";
+"CFBundleName" = "परिचित होना-BeAware";
+"CFBundleDisplayName" = "परिचित होना-BeAware";

@@ -1,0 +1,4 @@
+"NSMicrophoneUsageDescription" = "Il tuo microfono verrà utilizzato per registrare il tuo discorso quando si preme il pulsante 'Avvia registrazione'.";
+"NSSpeechRecognitionUsageDescription" = "Utilizzare la funzione vocale per convertire la voce in testo";
+"CFBundleName" = "Consapevole-BeAware";
+"CFBundleDisplayName" = "Consapevole-BeAware";
