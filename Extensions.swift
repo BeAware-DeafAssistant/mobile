@@ -17,6 +17,7 @@ extension Color {
     }
 }
 
+//@available(iOS 15.0, *)
 extension View {
     /// Sets the text color for a navigation bar title.
     /// - Parameter color: Color the title should be
@@ -42,9 +43,7 @@ extension View {
         tabAppearance.configureWithOpaqueBackground()
         UITabBar.appearance().standardAppearance = tabAppearance
 
-        if #available(iOSApplicationExtension 15.0, *) {
-            UITabBar.appearance().scrollEdgeAppearance = tabAppearance
-        }
+//            UITabBar.appearance().scrollEdgeAppearance = tabAppearance
         return self
     }
 }
@@ -83,4 +82,10 @@ extension Array: RawRepresentable where Element: Codable {
         }
         return result
     }
+}
+
+extension UIScreen {
+    static let screenWidth = UIScreen.main.bounds.width
+    static let screenHeight = UIScreen.main.bounds.height
+    static let screenSize = UIScreen.main.bounds.size
 }
