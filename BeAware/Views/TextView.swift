@@ -14,9 +14,8 @@ struct TextView : View {
     @State private var engine: CHHapticEngine?
     @State private var writtenText: String = ""
     @State private var newPreset: String = ""
-    @AppStorage("TextFontSize") var fontSize = 50.0
-   
-    @AppStorage("items") var data:[String] = ["Why was I pulled over?","I'm deaf/Hard of Hearing"]
+    @AppStorage("TextFontSize") var fontSize = 50.0   
+    @AppStorage("items") var data:[String] = [NSLocalizedString("I'm deaf or hard of hearing", comment: "I'm deaf or hard of hearing")]
 
     var body : some View {
         NavigationView{
@@ -105,7 +104,7 @@ struct TextView : View {
                         ForEach(data, id: \.self) { item in
                             //---
                             HStack{
-                                Text("\(Image(systemName: "plus")) \(item)")
+                                Text("\(Image(systemName: "plus.bubble")) \(item)")
                                     .font(Font.custom("Avenir", size: 17))
                                     .foregroundColor(Color("SecondaryColor"))
                                     .lineLimit(1)
@@ -139,7 +138,7 @@ struct TextView : View {
                         //-------
                         HStack{
                             TextField("Type here to add...", text: $newPreset )
-                                .frame(height: 50.0)
+                                .frame(height: 70.0)
                                 .accessibilityLabel("Input a preset phrase you would like to add")
                                 .font(.custom("Avenir", size: 17))
                             Button(
@@ -151,11 +150,14 @@ struct TextView : View {
                                 }
                             ){
                                 ZStack{
-                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
-                                    Text("ADD").foregroundColor(Color("BrandColor"))
-                                        .font(.custom("Avenir", size: 17))
-                                        .accessibilityLabel("Add")
-                                        .accessibilityHint("Adds the phrase you input to a list of preset phrases")
+//                                    RoundedRectangle(cornerRadius: 10).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
+//                                    Text("ADD").foregroundColor(Color("BrandColor"))
+//                                        .font(.custom("Avenir", size: 17))
+//                                        .accessibilityLabel("Add")
+//                                        .accessibilityHint("Adds the phrase you input to a list of preset phrases")
+                                    Image(systemName: "plus.circle")
+                                        .font(.system(size:28))
+                                        .foregroundColor(Color("SecondaryColor"))
                                 }
                             }
                         }
