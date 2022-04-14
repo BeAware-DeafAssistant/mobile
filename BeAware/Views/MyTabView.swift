@@ -13,7 +13,7 @@ struct MyTabView: View {
             AlertView ()
                 .tabItem {
                     // Using only Alert instead of NSLocalizedString("Alert", comment: "Alert Title"), doesn't work here
-                    Label(NSLocalizedString("Alert", comment: "Alert Title"), systemImage: "waveform")
+                    Label(NSLocalizedString("Alert", comment: "Alert Title"), systemImage: "bell.and.waveform.fill")
                 }
             SpeechView()
                 .tabItem {

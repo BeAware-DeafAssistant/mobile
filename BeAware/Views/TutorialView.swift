@@ -29,7 +29,7 @@ struct TutorialView: View {
                     
                     VStack(alignment: .leading){
                         HStack{
-                            Text("\(Image(systemName: "waveform")) ")
+                            Text("\(Image(systemName: "bell.and.waveform.fill")) ")
                                 .foregroundColor(Color("SecondaryColor"))
                             Text(NSLocalizedString("Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you", comment: "ALERT") + "\n") // TODO: Use idiom instead of device
                                 .font(Font.custom("Avenir", size: 18))

@@ -10,6 +10,7 @@ import SwiftUI
 struct IntroductionView: View {
     @AppStorage("DidShowIntroductionView") var isActive:Bool = false
     private var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
+    @Environment(\.openURL) var openURL
 
     var body: some View {
         if self.isActive {
@@ -36,7 +37,7 @@ struct IntroductionView: View {
                                 
                         VStack(alignment: .leading){
                             HStack{
-                                Text("\(Image(systemName: "waveform")) ")
+                                Text("\(Image(systemName: "bell.and.waveform.fill")) ")
                                     .foregroundColor(Color("SecondaryColor"))
                                 Text(NSLocalizedString("Alert - Turn your device into an elite alerting tool with customizable alerts of short or prolonged sounds around you", comment: "ALERT") + "\n") // TODO: Use idiom instead of device
                                     .font(Font.custom("Avenir", size: 18))
@@ -51,7 +52,7 @@ struct IntroductionView: View {
                                     .foregroundColor(Color("SecondaryColor"))
                             }
                             HStack{
-                                Text("\(Image(systemName: "mic")) ")
+                                Text("\(Image(systemName: "keyboard")) ")
                                     .foregroundColor(Color("SecondaryColor"))
                                 Text(NSLocalizedString("Text - BeAware is the only app that can read text loud into you your live phone calls, assisted by customizable preset phrases", comment: "Text") + "\n")
                                     .font(Font.custom("Avenir", size: 18))
@@ -66,7 +67,12 @@ struct IntroductionView: View {
                                     .foregroundColor(Color("SecondaryColor"))
                             }
                         }.padding()
-                        Spacer()
+                        Text("By tapping Continue, you agree to our \(Text("privacy policy").underline())")
+                            .font(Font.custom("Avenir", size: 18))
+                            .foregroundColor(Color("SecondaryColor"))
+                            .onTapGesture {
+                                openURL(URL(string: "https://www.deafassistant.com/privacy-policy.html")!)
+                            }
                         Button(
                             action: {
                                 simpleSuccessHaptic()

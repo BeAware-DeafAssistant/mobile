@@ -27,6 +27,13 @@ extension View {
     func navigationBarTitleTextColor(_ color: Color) -> some View {
         let uiColor = UIColor(color)
     
+//        Adding these lines causes the subsequent pages (like critical alerts page) to appear with a green bottom tab bar, probably one of these lines causes it
+//        UIToolbar.appearance().barTintColor = .green// UIColor(named: "BrandColor")
+//        appearance.backgroundColor = .green// UIColor(named: "BrandColor")
+//        tabAppearance.backgroundColor = .green
+//        UIToolbar.appearance().backgroundColor = .green
+//        UIToolbar.appearance().barTintColor = .green
+
         // Set appearance for both normal and large sizes.
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
@@ -41,6 +48,7 @@ extension View {
         
         let tabAppearance = UITabBarAppearance()
         tabAppearance.configureWithOpaqueBackground()
+        
         UITabBar.appearance().standardAppearance = tabAppearance
 
 //            UITabBar.appearance().scrollEdgeAppearance = tabAppearance

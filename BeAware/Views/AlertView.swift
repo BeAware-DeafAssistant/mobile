@@ -8,16 +8,19 @@ import SwiftUI
 import UserNotifications
 import AVFoundation
 import WidgetKit
+import StoreKit
 
 let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 var audioRecorder: AVAudioRecorder?
 
 struct AlertView : View {
-    @State private var noiseLengthCounter = 0.0
+    @AppStorage("ratingTapCounter") var ratingTapCounter = 0
     @AppStorage("noiseLength") var noiseLength = 2.0
     @AppStorage("noiseThreshold") private var noiseThreshold = 20.0
-    @State private var isRecording = false
     @AppStorage("isCritical") var isCritical = false
+    @State private var noiseLengthCounter = 0.0
+    @State private var isRecording = false
+    @State private var showRateSheet = false
     var body : some View {
         NavigationView{
             ZStack {
@@ -77,6 +80,12 @@ struct AlertView : View {
                                 .foregroundColor(Color("SecondaryColor"))
                                 .accessibilityLabel("Start Noise Alert")
                                 .onTapGesture {
+                                    ratingTapCounter+=1
+                                    if ratingTapCounter == 10 || ratingTapCounter == 50 || ratingTapCounter == 150 || ratingTapCounter == 350 || ratingTapCounter == 600 || ratingTapCounter == 900
+                                    {
+                                        self.showRateSheet.toggle()
+                                    }
+                                    print(ratingTapCounter)
                                     simpleBigHaptic()
                                     if let userDefaults = UserDefaults(suiteName: "group.com.tfp.beaware") {
                                         userDefaults.setValue("noise alert", forKey: "state")
@@ -97,6 +106,12 @@ struct AlertView : View {
                                 .foregroundColor(Color(hex: 0xea333c))
                                 .accessibilityLabel("Stop Noise Alert")
                                 .onTapGesture {
+                                    ratingTapCounter+=1
+                                    if ratingTapCounter == 10 || ratingTapCounter == 50 || ratingTapCounter == 150 || ratingTapCounter == 350 || ratingTapCounter == 600 || ratingTapCounter == 900
+                                    {
+                                        self.showRateSheet.toggle()
+                                    }
+                                    print(ratingTapCounter)
                                     simpleEndHaptic()
                                     if let userDefaults = UserDefaults(suiteName: "group.com.tfp.beaware") {
                                         userDefaults.setValue("stopped", forKey: "state")
@@ -144,6 +159,16 @@ struct AlertView : View {
             .navigationTitle(NSLocalizedString("ALERT", comment: "Alert Navigation Page Title"))
             .navigationBarTitleTextColor(Color("SecondaryColor"))
             .navigationBarTitleDisplayMode(.inline)
+            .alert(isPresented: $showRateSheet, content: {
+                Alert(
+                    title: Text("Do you like this app?"),
+                    primaryButton: .default(Text("Yes"), action: {
+                        print("Pressed")
+                        if let windowScene = UIApplication.shared.windows.first?.windowScene { SKStoreReviewController.requestReview(in: windowScene) }
+                    }),
+                    secondaryButton: .destructive(Text("No"))
+                )
+            })
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
                     NavigationLink(
@@ -178,7 +203,7 @@ struct AlertView : View {
         audioRecorder?.updateMeters()
         // NOTE: seems to be the approx correction to get real decibels
         let correction: Float = 80
-        let average = (audioRecorder?.averagePower(forChannel: 0) ?? 0) + correction
+//        let average = (audioRecorder?.averagePower(forChannel: 0) ?? 0) + correction
         let peak = (audioRecorder?.peakPower(forChannel: 0) ?? 0) + correction
         print(peak)
         if (peak > Float(60 + noiseThreshold))

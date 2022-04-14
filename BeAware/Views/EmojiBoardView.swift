@@ -18,6 +18,11 @@ struct EmojiBoardView : View {
     let columns = [
         GridItem(.adaptive(minimum: 75))
     ]
+    init(){
+    // These don't have any effect
+        //UIToolbar.appearance().backgroundColor =        UIColor(named: "BrandColor")
+//        UIToolbar.appearance().barTintColor = UIColor(named: "BrandColor")
+    }
     var body : some View {
         
         NavigationView{

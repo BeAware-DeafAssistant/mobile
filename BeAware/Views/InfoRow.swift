@@ -41,4 +41,6 @@ var infoItems: [Info] = [
     Info(name:NSLocalizedString("Contact Us", comment: "Contact Us"), icon: "envelope"),
     Info(name:NSLocalizedString("License Agreement", comment: "License Agreement"), icon: "applepencil"),
     Info(name:NSLocalizedString("Terms Of Use", comment: "Terms Of Use"), icon: "scroll"),
+    Info(name:NSLocalizedString("Privacy Policy", comment: "Privacy Policy"), icon: "magnifyingglass.circle"),
+    Info(name:NSLocalizedString("Rate The App", comment: "Rate The App"), icon: "star.fill"),
 ]

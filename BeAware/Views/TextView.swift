@@ -8,12 +8,15 @@ import SwiftUI
 import CoreHaptics
 import AVFoundation
 import AVFAudio
+import StoreKit
 
 struct TextView : View {
     @State private var rotation = 0.0
     @State private var engine: CHHapticEngine?
     @State private var writtenText: String = ""
     @State private var newPreset: String = ""
+    @State private var showRateSheet = false
+    @AppStorage("ratingTapCounter") var ratingTapCounter = 0
     @AppStorage("TextFontSize") var fontSize = 50.0   
     @AppStorage("items") var data:[String] = [NSLocalizedString("I'm deaf or hard of hearing", comment: "I'm deaf or hard of hearing")]
 
@@ -55,13 +58,15 @@ struct TextView : View {
 
                                 }
                             ){
-                                ZStack{
-                                    RoundedRectangle(cornerRadius: 10).frame(width: 80, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
-                                    Text("PLAY").foregroundColor(Color("BrandColor"))
-                                        .font(.custom("Avenir", size: 17))
-                                        .accessibilityLabel("Play")
-                                        .accessibilityHint("Play the the text loud, even to the other party during a call")
-                                }
+//                                Text("Hello")
+                                Image(systemName: "iphone.badge.play")
+                                    .resizable()
+                                    .foregroundColor(Color("SecondaryColor"))
+                                    .scaledToFit()
+                                    .frame(width: 40, height: 40)
+//                                    .foregroundColor(Color("BrandColor"))
+                                    .accessibilityLabel("Play")
+                                    .accessibilityHint("Play the the text loud, even to the other party during a phone or video call")
                             }
                             Button(
                                 action: {
@@ -71,10 +76,15 @@ struct TextView : View {
                                     else {
                                         rotation = 0
                                     }
+                                    ratingTapCounter+=1
+                                    if ratingTapCounter == 10 || ratingTapCounter == 50 || ratingTapCounter == 150 || ratingTapCounter == 350 || ratingTapCounter == 600 || ratingTapCounter == 900
+                                    {
+                                        self.showRateSheet.toggle()
+                                    }
                                 }
                             ){
                                 ZStack{
-                                    RoundedRectangle(cornerRadius: 10).frame(width: 100, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
+                                    RoundedRectangle(cornerRadius: 10).frame(width: 150, height: 40).foregroundColor(Color("SecondaryColor")).shadow(color: .black, radius: 5, x: 0, y: 4)
                                     Text("FLIP TEXT").foregroundColor(Color("BrandColor"))
                                         .font(.custom("Avenir", size: 17))
                                         .accessibilityLabel("flip screen")
@@ -113,6 +123,11 @@ struct TextView : View {
                                     .onTapGesture(count: 1) {
                                         writtenText += " \(item)"
                                         complexSuccess()
+                                        ratingTapCounter+=1
+                                        if ratingTapCounter == 10 || ratingTapCounter == 50 || ratingTapCounter == 150 || ratingTapCounter == 350 || ratingTapCounter == 600 || ratingTapCounter == 900
+                                        {
+                                            self.showRateSheet.toggle()
+                                        }
                                     }
                                 Spacer()
                                 Image(systemName: "trash")
@@ -169,6 +184,16 @@ struct TextView : View {
                 .navigationBarTitleDisplayMode(.inline)
                 .font(.custom("Avenir", size:17))
                 .navigationBarTitleTextColor(Color("SecondaryColor"))
+                .alert(isPresented: $showRateSheet, content: {
+                    Alert(
+                        title: Text("Do you like this app?"),
+                        primaryButton: .default(Text("Yes"), action: {
+                            print("Pressed")
+                            if let windowScene = UIApplication.shared.windows.first?.windowScene { SKStoreReviewController.requestReview(in: windowScene) }
+                        }),
+                        secondaryButton: .destructive(Text("No"))
+                    )
+                })
                 .toolbar{
                     ToolbarItem(placement: .navigationBarTrailing){
                         NavigationLink(
