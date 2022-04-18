@@ -19,6 +19,8 @@ We believe that people with passion can change the world. And we believe that in
 
 So when Grandma Gina is looking after her grandkids, she knows exactly when the babies need attention. We want people like her to not even realize that they’re Deaf
 
+Check out the [BeAware Deaf Assistant App website](https://deafassistant.com) and download the latest version on [Apple's TestFlight](https://testflight.apple.com/join/3ixeJPSz)
+
 ## Introduction
 
 This app consists of a several lists, grids and navigation concepts to form the complex UI. This app illustrates several concepts in SwiftUI Mobile Development including
