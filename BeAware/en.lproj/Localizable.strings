@@ -1,4 +1,4 @@
-//Check for WHO, BeAware, D/deaf, 2 seconds, Capitalization,
+//Check for WHO, BeAware, d/Deaf, 2 seconds, Capitalization,
 "Be Aware" = "Be Aware";
 "The Deaf Assistant" = "The Deaf Assistant";
 "Use the speech feature to convert voice to text" = "Use the speech feature to convert voice to text";
@@ -28,7 +28,7 @@
 "Preset Phrases:" = "Preset Phrases:";
 "Type here to add..." = "Type here to add...";
 "ADD" = "ADD";
-"I'm deaf or hard of hearing" = "I'm deaf or hard of hearing";
+"I'm Deaf or hard of hearing" = "I'm Deaf or hard of hearing";
 
 "EMOJI BOARD" = "EMOJI BOARD";
 "Emoji Board" = "Emoji Board";
@@ -83,7 +83,7 @@
 "2. Tap the Add button (+) in the upper-left corner." = "2. Tap the Add button (+) in the upper-left corner.";
 "3. Select the BeAware widget and then tap Add Widget and then tap Done." = "3. Select the BeAware widget and then tap Add Widget and then tap Done.";
 
-"BeAware The D/deaf Assistant" = "BeAware The D/deaf Assistant";
+"BeAware The d/Deaf Assistant" = "BeAware The d/Deaf Assistant";
 "The Must Have Alerting Tool" = "The Must Have Alerting Tool";
 "Get LED Flashes For Noise Alerts" = "Get LED Flashes For Noise Alerts";
 "Feature Packed With Essentials" = "Feature Packed With Essentials";
@@ -91,5 +91,5 @@
 "Download, Enjoy, Utilise, Share" = "Download, Enjoy, Utilise, Share";
 
 "Hi, I downloaded your app and I would like to provide the following feedback:" = "Hi, I downloaded your app and I would like to provide the following feedback:";
-"Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "Hi! I downloaded BeAware- the deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz";
+"Hi! I downloaded BeAware- the Deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz" = "Hi! I downloaded BeAware- the Deaf assistant for iPhones and I really think you should check it out. It has not been released to the public yet, so you can install a special free version through here: https://testflight.apple.com/join/3ixeJPSz";
 "Do you like this app?" = "Do you like this app?";

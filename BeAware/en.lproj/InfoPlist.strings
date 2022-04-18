@@ -1,4 +1,4 @@
 "NSMicrophoneUsageDescription" = "Your microphone will be used to record your speech when you press the 'Start Recording' button.";
 "NSSpeechRecognitionUsageDescription" = "Use the speech feature to convert voice to text";
-"CFBundleName" = "BeAware The D/deaf Assistant";
-"CFBundleDisplayName" = "BeAware The D/deaf Assistant";
+"CFBundleName" = "BeAware The d/Deaf Assistant";
+"CFBundleDisplayName" = "BeAware The d/Deaf Assistant";

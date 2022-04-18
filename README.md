@@ -2,13 +2,13 @@
 
 Everyday Angela goes to high school by public transport in Detroit, and her hearing disability never affected her.
 Then one day, her mom heard the story about her classmate, a girl who got assaulted
-Because of that, Angela's mom became more anxious for her deaf daughter’s well being
+Because of that, Angela's mom became more anxious for her Deaf daughter’s well being
 Ever since then she began to look for possible solutions, but they were all too expensive or unpopular to trust
 
-We have over 600k deaf or head of hearing residents in Michigan now! Isn’t that unbelievable? 
-600k dead/hard of hearing people! That’s 1 person of for every 3 households in every city in every neighborhood, and also includes babies and their mothers
+We have over 600k Deaf or head of hearing residents in Michigan now! Isn’t that unbelievable? 
+600k Deaf/hard of hearing people! That’s 1 person of for every 3 households in every city in every neighborhood, and also includes babies and their mothers
 
-Introducing BeAware, an assistant for the deaf and hard of hearing.
+Introducing BeAware, an assistant for the Deaf and hard of hearing.
 
 Video Walkthrough - https://vimeo.com/678886593
 
@@ -17,7 +17,7 @@ And, when Matt goes to the store to pick up his groceries, he doesn’t need spe
 
 We believe that people with passion can change the world. And we believe that in this world, people can change it for the better. Let’s bring BeAware to life, and enable those believers.
 
-So when Grandma Gina is looking after her grandkids, she knows exactly when the babies need attention. We want people like her to not even realize that they’re deaf
+So when Grandma Gina is looking after her grandkids, she knows exactly when the babies need attention. We want people like her to not even realize that they’re Deaf
 
 ## Introduction
 
@@ -47,4 +47,4 @@ This app consists of a several lists, grids and navigation concepts to form the 
 
 * Fork this repo and Create a PR if you want to tackle any of the To Do's
 * This app follows the basic SwiftUI tutorials from different websites, and so you can go through the commit history to see each of the buildable stages.
-* You can use this code to create a deaf assistant with your own customizations
+* You can use this code to create a Deaf assistant with your own customizations

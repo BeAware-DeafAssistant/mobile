@@ -18,7 +18,7 @@ struct TextView : View {
     @State private var showRateSheet = false
     @AppStorage("ratingTapCounter") var ratingTapCounter = 0
     @AppStorage("TextFontSize") var fontSize = 50.0   
-    @AppStorage("items") var data:[String] = [NSLocalizedString("I'm deaf or hard of hearing", comment: "I'm deaf or hard of hearing")]
+    @AppStorage("items") var data:[String] = [NSLocalizedString("I'm Deaf or hard of hearing", comment: "I'm Deaf or hard of hearing")]
 
     var body : some View {
         NavigationView{
